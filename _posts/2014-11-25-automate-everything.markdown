@@ -16,7 +16,7 @@ I’ve been facing some of these situations very frequently on my past projects:
 After some days of frustration, I spent some time writing a small script to do all this tiring work for me. That was the first time, when I first discovered the joy of automation beyond my project test suite.
 
 
-![Setting Up Data on Different Environments]({{ site.url }}/assets/try.png)
+
 
 
 
