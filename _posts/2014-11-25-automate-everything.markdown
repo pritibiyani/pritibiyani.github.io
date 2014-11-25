@@ -8,8 +8,7 @@ Yeah.. yeah.. I know what you are thinking. The title contradicts with the princ
 
 I am not going to talk about testing coverage or test Pyramid. What I am going to talk about is Automate everything that you come across which will ease your day to day work. While it obviously helps you to speed up your mundane tasks, it also allows you to learn alongside!
 
-Following are some situations I was regularly faced with while working on my previous project:
-
+I’ve been facing some of these situations very frequently on my past projects:
 
 **1. Setting up data, again and again!**
 
@@ -17,7 +16,8 @@ Following are some situations I was regularly faced with while working on my pre
 After some days of frustration, I spent some time writing a small script to do all this tiring work for me. That was the first time, when I first discovered the joy of automation beyond my project test suite.
 
 
-->![Setting Up Data on Different Environments]({{ site.url }}/assets/try.png)<-
+![Setting Up Data on Different Environments]({{ site.url }}/assets/try.png)
+
 
 
 **2. Different data formats!**
