@@ -24,7 +24,26 @@ After some days of frustration, I spent some time writing a small script to do a
 
 While doing production support, when something goes wrong, content creators often wanted some pointers on what data might be wrong. Unfortunately, they edited contents in excel, while the system understood only JSON. To get the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for excel was a tedious task and not scalable. To solve this problem, I knew just one answer - Automate! A small script to convert data between formats was all I needed.
 
-![Business/Content Creator]({{ site.url }}/assets/ORG_1.png)
+![Business/Content Creator]({{ site.url }}/assets/ORG_1.png)![Support People]({{ site.url }}/assets/try_2.png)
+
+**3. Debugging branches**
+
+The presence of a parameter in the API response decides next debugging steps. Manually going through each parameter within every response was time consuming and after some time, it was getting very difficult to track all the parameters for debugging. Again, a script to automate this debugging came to my rescue.
+
+These were just some of my experiences. But you get the idea. Don’t you?
+
+Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
+
+**To summarise, here are the take aways:**
+When you repeat, Think!
+If you are doing same thing over and over again, stop, and think. Do I really need to repeat the same steps again? This might be a good candidate for automation.
+Don’t try to automate everything at once!
+When you are writing some script, take baby steps. Think, “what is the minimalistic thing I want right away!”. Keep building on top of it whenever tasks get complicated.
+Be patient!
+You will struggle to find what you need, be patient and keep working till you get it right! Don’t give up, there will be light at the end of the long tunnel. ;)
+Automate Everything!
+Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
+
 
 
 {% highlight ruby %}
