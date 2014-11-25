@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Automate Everything!"
 date:   2014-11-25 13:30:04
 categories: jekyll update
 ---
