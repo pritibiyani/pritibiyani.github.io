@@ -12,7 +12,7 @@ I’ve been facing some of these situations very frequently on my past projects:
 
 **1. Setting up data, again and again!**
 
-<p>This was the one thing I hated doing. Every time a new feature was released, I had to setup the test data on different environments with different variations. Though I could use REST plugins for browser (like POSTMAN), it was difficult to track all that test data. Bulk upload and variations of the data was almost impossible to keep track of.
+This was the one thing I hated doing. Every time a new feature was released, I had to setup the test data on different environments with different variations. Though I could use REST plugins for browser (like POSTMAN), it was difficult to track all that test data. Bulk upload and variations of the data was almost impossible to keep track of.
 After some days of frustration, I spent some time writing a small script to do all this tiring work for me. That was the first time, when I first discovered the joy of automation beyond my project test suite.
 
 
