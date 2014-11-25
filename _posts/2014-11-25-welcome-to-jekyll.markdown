@@ -14,6 +14,7 @@ Jekyll also offers powerful support for code snippets:
 
 
 ![My helpful screenshot]({{ site.url }}/assets/data_format_01.png)
+![My helpful screenshot]({{ site.url }}/assets/data_format_02_resize.png)
 
 
 {% highlight ruby %}
