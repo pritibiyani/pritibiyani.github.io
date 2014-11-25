@@ -30,7 +30,6 @@ While doing production support, when something goes wrong, content creators ofte
 	<figcaption>Caption describing these two images.</figcaption>
 </figure>
 
-![Business/Content Creator]({{ site.url }}/assets/ORG_1.png) ![Support People]({{ site.url }}/assets/try_2.png)
 
 **3. Debugging branches**
 
