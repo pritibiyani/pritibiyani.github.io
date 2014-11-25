@@ -37,14 +37,18 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 **To summarise, here are the take aways:**
 
 * When you repeat, Think!
+
 If you are doing same thing over and over again, stop, and think. Do I really need to repeat the same steps again? This might be a good candidate for automation.
 
 * Don’t try to automate everything at once!
+
 When you are writing some script, take baby steps. Think, “what is the minimalistic thing I want right away!”. Keep building on top of it whenever tasks get complicated.
 
 * Be patient!
+
 You will struggle to find what you need, be patient and keep working till you get it right! Don’t give up, there will be light at the end of the long tunnel. ;)
 
 * Automate Everything!
+
 Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
 
