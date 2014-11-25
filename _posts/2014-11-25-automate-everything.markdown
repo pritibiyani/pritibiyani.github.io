@@ -4,11 +4,12 @@ title:  "Automate Everything!"
 date:   2014-11-25 13:30:04
 categories: jekyll update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+Yeah.. yeah.. I know what you are thinking. The title contradicts with the principle ‘Do Not Automate Everything!’ Well it still holds  true when you think of the test suite for your projects!
 
-To add new posts, simply add a file in the `_posts` directory that follows the convention `YYYY-MM-DD-name-of-post.ext` and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.
+I am not going to talk about testing coverage or test Pyramid. What I am going to talk about is Automate everything that you come across which will ease your day to day work. While it obviously helps you to speed up your mundane tasks, it also allows you to learn alongside!
 
-Jekyll also offers powerful support for code snippets:
+Following are some situations I was regularly faced with while working on my previous project:
+
 
 **hi**
 
