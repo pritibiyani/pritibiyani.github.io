@@ -15,9 +15,9 @@ I’ve been facing some of these situations very frequently on my past projects:
 This was the one thing I hated doing. Every time a new feature was released, I had to setup the test data on different environments with different variations. Though I could use REST plugins for browser (like POSTMAN), it was difficult to track all that test data. Bulk upload and variations of the data was almost impossible to keep track of.
 After some days of frustration, I spent some time writing a small script to do all this tiring work for me. That was the first time, when I first discovered the joy of automation beyond my project test suite.
 
-
-![Setting Up Data on Different Environments]({{ site.url }}/assets/post_to_diff_env.png)
-
+<p align="middle">
+<img src="/assets/post_to_diff_env.png" alt="">
+</p>
 
 
 **2. Different data formats!**
@@ -49,17 +49,18 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
     When you are writing some script, take baby steps. Think, “what is the minimalistic thing I want right away!”. Keep building on top of it whenever tasks get complicated.
 
-3. ** Be patient! **
+3. <u> Be patient! </u>
 
      You will struggle to find what you need, be patient and keep working till you get it right! Don’t give up, there will be light at the end of the long tunnel. ;)
 
-4. Automate Everything!
+4. <u> Automate Everything! </u>
 
     Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
 
 <p align="middle">
-An obligatory <a href="http://xkcd.com/1319">XKCD</a>
-
-<img src="/assets/automation.png" alt ="XKCD"> </p>
+    An obligatory <a href="http://xkcd.com/1319">XKCD</a>
+    <br/>
+    <img src="/assets/automation.png" alt ="XKCD">
+</p>
 
 
