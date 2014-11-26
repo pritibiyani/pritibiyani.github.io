@@ -16,7 +16,8 @@ This was the one thing I hated doing. Every time a new feature was released, I h
 After some days of frustration, I spent some time writing a small script to do all this tiring work for me. That was the first time, when I first discovered the joy of automation beyond my project test suite.
 
 <p align="middle">
-<img src="/assets/post_to_diff_env.png" alt="">
+    <img src="/assets/post_to_diff_env.png" alt="">
+    <figcaption>Caption describing these two images.</figcaption>
 </p>
 
 
@@ -27,7 +28,7 @@ While doing production support, when something goes wrong, content creators ofte
 <figure class="half">
     <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left">
 	<img src="/assets/support_people.png" alt="Support People" width="300">
-	<figcaption>Caption describing these two images.</figcaption>
+	<figcaption> 'M' Environments, 'N' JSONS. </figcaption>
 </figure>
 
 
