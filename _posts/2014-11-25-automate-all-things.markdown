@@ -6,8 +6,7 @@ categories: agile testing
 ---
 
 <p align="middle">
-    <img src="/assets/post_to_diff_env.png" alt="Post to different environment" width = "400">
-    <figcaption align="middle">'M' Environments, 'N' JSONS </figcaption>
+    <img src="/assets/automate-all-the-things.png" alt="Automate All Things" width = "400">
 </p>
 
 In agile world, there is a theme of  <a href="https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation">"ruthless automation"</a>. But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
