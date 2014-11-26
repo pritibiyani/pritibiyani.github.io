@@ -26,7 +26,7 @@ While doing production support, when something goes wrong, content creators ofte
 
 <figure class="half">
 	<img src="/assets/data_format_01.png" alt="">
-	<img src="/assets/ORG_1.png" alt="">
+	<img src="/assets/data_format_02.png" alt="">
 	<figcaption>Caption describing these two images.</figcaption>
 </figure>
 
@@ -56,4 +56,10 @@ You will struggle to find what you need, be patient and keep working till you ge
 * Automate Everything!
 
 Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
+
+
+                                    An obligatory  <a href="http://xkcd.com/1319/ ">XKCD</a>
+
+![Setting Up Data on Different Environments]({{ site.url }}/assets/automation.png)
+
 
