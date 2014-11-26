@@ -1,5 +1,5 @@
 # Site settings
-title: Your awesome title
+title: ""
 baseurl: "" # the subpath of your site, e.g. /blog/
 permalink: /blog/:year/:month/:day/:title
 url: "http://pritibiyani.github.io" # the base hostname & protocol for your site

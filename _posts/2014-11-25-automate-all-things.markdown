@@ -1,14 +1,16 @@
 ---
 layout: post
-title:  "Automate Everything!"
+title:  "Automate All Things!"
 date:   2014-11-25 13:30:04
 categories: agile testing
 ---
-Yeah.. yeah.. I know what you are thinking. The title contradicts with the principle <i>‘Do Not Automate Everything!’</i>  Well it still holds  true when you think of the test suite for your projects!
 
-I am not going to talk about testing coverage or test Pyramid. What I am going to talk about is **Automate everything**  that you come across which will ease your day to day work. While it obviously helps you to speed up your mundane tasks, it also allows you to learn alongside!
+<p align="middle">
+    <img src="/assets/post_to_diff_env.png" alt="Post to different environment" width = "400">
+    <figcaption align="middle">'M' Environments, 'N' JSONS </figcaption>
+</p>
 
-I’ve been facing some of these situations very frequently on my past projects:
+In agile world, there is a theme of  <a href="https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation">"ruthless automation"</a>. But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
 
 **1. Setting up data, again and again!**
 
