@@ -58,8 +58,8 @@ You will struggle to find what you need, be patient and keep working till you ge
 Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
 
 
-                                    An obligatory <a href="http://xkcd.com/1319/ ">XKCD</a>
+An obligatory <a href="http://xkcd.com/1319">XKCD</a>
 
--> ![Setting Up Data on Different Environments]({{ site.url }}/assets/automation.png) <-
+<img src="/assets/automation.png" alt ="XKCD" align="middle">
 
 
