@@ -16,7 +16,7 @@ This was the one thing I hated doing. Every time a new feature was released, I h
 After some days of frustration, I spent some time writing a small script to do all this tiring work for me. That was the first time, when I first discovered the joy of automation beyond my project test suite.
 
 
-![Setting Up Data on Different Environments]({{ site.url }}/assets/try.png)
+![Setting Up Data on Different Environments]({{ site.url }}/assets/post_to_diff_env.png)
 
 
 
@@ -25,8 +25,8 @@ After some days of frustration, I spent some time writing a small script to do a
 While doing production support, when something goes wrong, content creators often wanted some pointers on what data might be wrong. Unfortunately, they edited contents in excel, while the system understood only JSON. To get the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for excel was a tedious task and not scalable. To solve this problem, I knew just one answer - Automate! A small script to convert data between formats was all I needed.
 
 <figure class="half">
-	<img src="/assets/data_format_01.png" alt="">
-	<img src="/assets/data_format_02.png" alt="">
+	<img src="/assets/data_format_01.png" alt="Business/Content Creator">
+	<img src="/assets/" alt="">
 	<figcaption>Caption describing these two images.</figcaption>
 </figure>
 
@@ -58,7 +58,7 @@ You will struggle to find what you need, be patient and keep working till you ge
 Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
 
 
-                                    An obligatory  <a href="http://xkcd.com/1319/ ">XKCD</a>
+                                    An obligatory <a href="http://xkcd.com/1319/ ">XKCD</a>
 
 ![Setting Up Data on Different Environments]({{ site.url }}/assets/automation.png)
 
