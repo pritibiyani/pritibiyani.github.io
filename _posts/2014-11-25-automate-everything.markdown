@@ -4,7 +4,7 @@ title:  "Automate Everything!"
 date:   2014-11-25 13:30:04
 categories: agile testing
 ---
-Yeah.. yeah.. I know what you are thinking. The title contradicts with the principle ‘Do Not Automate Everything!’ Well it still holds  true when you think of the test suite for your projects!
+Yeah.. yeah.. I know what you are thinking. The title contradicts with the principle <u>‘Do Not Automate Everything!’</u> Well it still holds  true when you think of the test suite for your projects!
 
 I am not going to talk about testing coverage or test Pyramid. What I am going to talk about is Automate everything that you come across which will ease your day to day work. While it obviously helps you to speed up your mundane tasks, it also allows you to learn alongside!
 
@@ -41,21 +41,21 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
 **To summarise, here are the take aways:**
 
-* When you repeat, Think!
+1. <u> When you repeat, Think! </u>
 
-If you are doing same thing over and over again, stop, and think. Do I really need to repeat the same steps again? This might be a good candidate for automation.
+    If you are doing same thing over and over again, stop, and think. Do I really need to repeat the same steps again? This might be a good candidate for automation.
 
-* Don’t try to automate everything at once!
+2. <u>Don’t try to automate everything at once!</u>
 
-When you are writing some script, take baby steps. Think, “what is the minimalistic thing I want right away!”. Keep building on top of it whenever tasks get complicated.
+    When you are writing some script, take baby steps. Think, “what is the minimalistic thing I want right away!”. Keep building on top of it whenever tasks get complicated.
 
-* Be patient!
+3. ** Be patient! **
 
-You will struggle to find what you need, be patient and keep working till you get it right! Don’t give up, there will be light at the end of the long tunnel. ;)
+     You will struggle to find what you need, be patient and keep working till you get it right! Don’t give up, there will be light at the end of the long tunnel. ;)
 
-* Automate Everything!
+4. Automate Everything!
 
-Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
+    Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
 
 <p align="middle">
 An obligatory <a href="http://xkcd.com/1319">XKCD</a>
