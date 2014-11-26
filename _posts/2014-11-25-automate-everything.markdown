@@ -26,7 +26,7 @@ While doing production support, when something goes wrong, content creators ofte
 
 <figure class="half">
 	<img src="/assets/data_format_01.png" alt="Business/Content Creator">
-	<img src="/assets/" alt="">
+	<img src="/assets/ORG_2.png" alt="">
 	<figcaption>Caption describing these two images.</figcaption>
 </figure>
 
