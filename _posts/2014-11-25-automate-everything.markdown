@@ -4,7 +4,7 @@ title:  "Automate Everything!"
 date:   2014-11-25 13:30:04
 categories: agile testing
 ---
-Yeah.. yeah.. I know what you are thinking. The title contradicts with the principle <u>‘Do Not Automate Everything!’</u> Well it still holds  true when you think of the test suite for your projects!
+Yeah.. yeah.. I know what you are thinking. The title contradicts with the principle <i>‘Do Not Automate Everything!’</i> Well it still holds  true when you think of the test suite for your projects!
 
 I am not going to talk about testing coverage or test Pyramid. What I am going to talk about is Automate everything that you come across which will ease your day to day work. While it obviously helps you to speed up your mundane tasks, it also allows you to learn alongside!
 
