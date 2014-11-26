@@ -16,8 +16,10 @@ This was the one thing I hated doing. Every time a new feature was released, I h
 After some days of frustration, I spent some time writing a small script to do all this tiring work for me. That was the first time, when I first discovered the joy of automation beyond my project test suite.
 
 <p align="middle">
+    <figure>
     <img src="/assets/post_to_diff_env.png" alt="">
-    <figcaption>Caption describing these two images.</figcaption>
+    <figcaption>'M' Environments, 'N' JSONS </figcaption>
+    </figure>
 </p>
 
 
@@ -25,10 +27,11 @@ After some days of frustration, I spent some time writing a small script to do a
 
 While doing production support, when something goes wrong, content creators often wanted some pointers on what data might be wrong. Unfortunately, they edited contents in excel, while the system understood only JSON. To get the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for excel was a tedious task and not scalable. To solve this problem, I knew just one answer - Automate! A small script to convert data between formats was all I needed.
 
+
 <figure class="half">
     <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left">
 	<img src="/assets/support_people.png" alt="Support People" width="300">
-	<figcaption> 'M' Environments, 'N' JSONS. </figcaption>
+	<figcaption> </figcaption>
 </figure>
 
 
