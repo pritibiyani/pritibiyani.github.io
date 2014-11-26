@@ -60,6 +60,6 @@ Well, its fun! You reduce the time you spend on repetitive tasks, speed up task 
 
                                     An obligatory <a href="http://xkcd.com/1319/ ">XKCD</a>
 
-![Setting Up Data on Different Environments]({{ site.url }}/assets/automation.png)
+-> ![Setting Up Data on Different Environments]({{ site.url }}/assets/automation.png) <-
 
 
