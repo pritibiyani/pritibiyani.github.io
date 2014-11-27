@@ -8,3 +8,5 @@ github_username:  pritibiyani
 
 # Build settings
 markdown: kramdown
+comments: True
+highlighter: pygments
