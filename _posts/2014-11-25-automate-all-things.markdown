@@ -5,11 +5,6 @@ date:   2014-11-25 13:30:04
 categories: agile testing
 ---
 
-<p align="middle">
-    <img src="/assets/automate-all-the-things.png" alt="Automate All Things" width = "400">
-
-</p>
-
 In agile world, there is a theme of  <a href="https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation">"ruthless automation"</a>. But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
 
 Before I start with my experience, here are few things about project:
@@ -77,6 +72,12 @@ I realized repetitive steps and wrote script for the same. Refer [gist](http://b
 
 These were just some of my experiences. But you get the idea. Don’t you?
 
+<p align="middle">
+    An obligatory <a href="http://xkcd.com/1319">XKCD</a>
+    <br/>
+    <img src="/assets/automation.png" alt ="XKCD">
+</p>
+
 Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
 
 **To summarise, here are the take aways:**
@@ -93,14 +94,13 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
      You will struggle to find what you need, be patient and keep working till you get it right! Don’t give up, there will be light at the end of the long tunnel. ;)
 
-4. <u> Automate Everything! </u>
+4. <u> Automate All Things! </u>
 
     Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
 
 <p align="middle">
-    An obligatory <a href="http://xkcd.com/1319">XKCD</a>
-    <br/>
-    <img src="/assets/automation.png" alt ="XKCD">
+    <img src="/assets/automate-all-the-things.png" alt="Automate All Things" width = "400">
+
 </p>
 
 [1]: http://en.wikipedia.org/wiki/Content_management_system
