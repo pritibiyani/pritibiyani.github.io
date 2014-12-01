@@ -11,6 +11,17 @@ categories: agile testing
 
 In agile world, there is a theme of  <a href="https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation">"ruthless automation"</a>. But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
 
+Before I start with my experience, here are few things about project:
+
+Project I had worked on was rich content website which demanded a complex interactive content with high availability. This marketing site has global presence in world.
+The architecture of the complete project can be divided into two major chunks: Content Creation and Content Delivery.
+Content creation was done using various tools(CMS)[1]. This was distributed among different organizations.
+To support different formats of contents, we had adapter layer in between.
+As being marketing site, Content creation was major task and routine work.
+Business/Content Creator wanted data to preview before publishing and hence we had Preview and Live stack in Delivery stack.
+With every new feature, to test all these platforms we had different production like environments(SIT,Integration,UAT etc) in place.
+To have sample data and pages, we had dummy data set up on some of the environments.
+
 **1. Setting up data, again and again!**
 
 This was one thing I hated doing.  Each new feature release would mean setting up the test data on every environment with appropriate variations. Though I could easily use REST plugins for browser (like POSTMAN), it was difficult to track all that test data. Bulk upload and variations of the data was almost impossible to keep track of.
