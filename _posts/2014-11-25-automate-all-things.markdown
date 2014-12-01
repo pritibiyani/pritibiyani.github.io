@@ -19,7 +19,7 @@ The architecture of the complete project can be divided into two major chunks: C
 
 </p>
 
-Content creation was done using various tools[CMS]( http://en.wikipedia.org/wiki/Content_management_system). This was distributed among different organizations.
+Content creation was done using various tools ([CMS] ( http://en.wikipedia.org/wiki/Content_management_system)). This was distributed among different organizations.
 To support different formats of contents, we had adapter layer in between.
 As being marketing site, Content creation was major task and routine work.
 
@@ -94,7 +94,7 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
      You will struggle to find what you need, be patient and keep working till you get it right! Don’t give up, there will be light at the end of the long tunnel. ;)
 
-4. <u> Automate All Things! </u>
+4. <u> Automate All The Things! </u>
 
     Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
 
