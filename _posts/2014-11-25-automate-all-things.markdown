@@ -7,6 +7,7 @@ categories: agile testing
 
 <p align="middle">
     <img src="/assets/automate-all-the-things.png" alt="Automate All Things" width = "400">
+
 </p>
 
 In agile world, there is a theme of  <a href="https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation">"ruthless automation"</a>. But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
@@ -19,6 +20,8 @@ The architecture of the complete project can be divided into two major chunks: C
 
 <p align="middle">
     <img src="/assets/project_overview.png" alt="Automate All Things" width = "400">
+    	    <figcaption align="middle"> Project Architecture </figcaption>
+
 </p>
 
 Content creation was done using various tools(CMS)[1]. This was distributed among different organizations.
@@ -65,6 +68,11 @@ While debugging, to reach to certain conclusion I needed to check the state of J
 Manually going through each parameter within every response was time consuming. I used to miss some of the important publish driven parameters. Also, date format was not readable and I used to convert that using online tools.
 
 I realized repetitive steps and wrote script for the same.
+
+<p align="middle">
+    <img src="/assets/Preview_Live_Debugging.png" alt="Automate All Things" width = "400">
+</p>
+
 These were just some of my experiences. But you get the idea. Don’t you?
 
 Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
