@@ -14,18 +14,29 @@ In agile world, there is a theme of  <a href="https://www.google.co.in/webhp?sou
 Before I start with my experience, here are few things about project:
 
 Project I had worked on was rich content website which demanded a complex interactive content with high availability. This marketing site has global presence in world.
+
 The architecture of the complete project can be divided into two major chunks: Content Creation and Content Delivery.
+
+<p align="middle">
+    <img src="/assets/project_overview.png" alt="Automate All Things" width = "400">
+</p>
+
 Content creation was done using various tools(CMS)[1]. This was distributed among different organizations.
 To support different formats of contents, we had adapter layer in between.
 As being marketing site, Content creation was major task and routine work.
+
 Business/Content Creator wanted data to preview before publishing and hence we had Preview and Live stack in Delivery stack.
 With every new feature, to test all these platforms we had different production like environments(SIT,Integration,UAT etc) in place.
-To have sample data and pages, we had dummy data set up on some of the environments.
+
+To have sample pages, we had dummy data set up on some of the environments.
 
 **1. Setting up data, again and again!**
 
-This was one thing I hated doing.  Each new feature release would mean setting up the test data on every environment with appropriate variations. Though I could easily use REST plugins for browser (like POSTMAN), it was difficult to track all that test data. Bulk upload and variations of the data was almost impossible to keep track of.
-After some days of frustration, I spent some time writing a small script to do all this tiring work for me. That was the first time, when I first discovered the joy of automation beyond my project test suite.
+This was the one thing I hated doing. Every time a new feature was released, I had to setup the test data on 'M' environments. Though I could use REST plugins for browser (like POSTMAN), it was difficult to track all that test data for a feature.
+ Also, we had provision on each environment to clear the data via pipeline. With cleaning of data, I needed to set up data again!
+It was very difficult to upload multiple variations of same data.
+
+I wrote small script which will upload data to specified environment.It solved problem of bulk upload and I was able to track what data is present on which environment.
 
 <p align="middle">
     <img src="/assets/post_to_diff_env.png" alt="Post to different environment" width = "400">
@@ -35,20 +46,25 @@ After some days of frustration, I spent some time writing a small script to do a
 
 **2. Different data formats!**
 
-While doing production support, when something goes wrong, content creators often wanted some pointers on what data might be wrong. Unfortunately, they edited contents in excel, while the system understood only JSON. To get the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for excel was a tedious task and not scalable. To solve this problem, I knew just one answer - Automate! A small script to convert data between formats was all I needed.
-
+While doing production support, when something goes wrong, business people often wanted some pointers on what data might be wrong. As content creator used to create data in different formats, they used to prefer same format rather than JSON.
+  To get the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for excel was a tedious task and not scalable. To solve this problem, I knew just one answer - Automate! A small script to convert data between formats was all I needed.
 
 <p align = "middle">
         <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left">
 	    <img src="/assets/support_people.png" alt="Support People" width="300">
-	    <figcaption align="middle">THINK </figcaption>
+	    <figcaption align="middle"> Content Creator </figcaption>
 </p>
 
 
 **3. Debugging branches**
 
-The presence of a parameter in the API response decides next debugging steps. Manually going through each parameter within every response was time consuming and after some time, it was getting very difficult to track all the parameters for debugging. Again, a script to automate this debugging came to my rescue.
+Preview and Publish stack played a vital role in Content Creation. Certain parameters along with Date used to drive the the transition from Preview to Live stack.
+	With big launches, huge data creation used to happen and apparently content creators used to face many issues with data being shown on Preview Stack and not on Live Stack.
 
+While debugging, to reach to certain conclusion I needed to check the state of JSON data.
+Manually going through each parameter within every response was time consuming. I used to miss some of the important publish driven parameters. Also, date format was not readable and I used to convert that using online tools.
+
+I realized repetitive steps and wrote script for the same.
 These were just some of my experiences. But you get the idea. Don’t you?
 
 Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
@@ -76,5 +92,8 @@ Quite a few of us are usually little hesitant to try out these kind of things be
     <br/>
     <img src="/assets/automation.png" alt ="XKCD">
 </p>
+
+[1]: http://en.wikipedia.org/wiki/Content_management_system
+
 
 
