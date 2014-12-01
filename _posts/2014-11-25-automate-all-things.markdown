@@ -39,7 +39,7 @@ This was the one thing I hated doing. Every time a new feature was released, I h
  Also, we had provision on each environment to clear the data via pipeline. With cleaning of data, I needed to set up data again!
 It was very difficult to upload multiple variations of same data.
 
-I wrote small script which will upload data to specified environment.It solved problem of bulk upload and I was able to track what data is present on which environment.
+I wrote small (script)[http://bit.do/gist_post_data_to_env] which will upload data to specified environment.It solved problem of bulk upload and I was able to track what data is present on which environment.
 
 <p align="middle">
     <img src="/assets/post_to_diff_env.png" alt="Post to different environment" width = "400">
@@ -59,7 +59,7 @@ While doing production support, when something goes wrong, business people often
 </p>
 
 
-**3. Debugging branches**
+**3. Debugging with Preview and Live stack**
 
 Preview and Publish stack played a vital role in Content Creation. Certain parameters along with Date used to drive the the transition from Preview to Live stack.
 	With big launches, huge data creation used to happen and apparently content creators used to face many issues with data being shown on Preview Stack and not on Live Stack.
@@ -67,12 +67,13 @@ Preview and Publish stack played a vital role in Content Creation. Certain param
 While debugging, to reach to certain conclusion I needed to check the state of JSON data.
 Manually going through each parameter within every response was time consuming. I used to miss some of the important publish driven parameters. Also, date format was not readable and I used to convert that using online tools.
 
-I realized repetitive steps and wrote script for the same.
 
 <p align="middle">
     <img src="/assets/Preview_Live_Debugging.png" alt="Automate All Things" width = "400">
+    <figcaption align="middle"> Preview Live Content Debugging </figcaption>
 </p>
 
+I realized repetitive steps and wrote script for the same. Refer [gist](http://bit.do/gist_extract_publish_driven_parameters) for the script.
 These were just some of my experiences. But you get the idea. Don’t you?
 
 Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
