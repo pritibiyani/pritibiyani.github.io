@@ -5,7 +5,7 @@ date:   2014-11-25 13:30:04
 categories: agile testing
 ---
 
-In agile world, there is a theme of  <a href="https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation">"ruthless automation"</a>. But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
+In agile world, there is a theme of [ruthless automation](https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation). But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
 
 Before I start with my experience, here are few things about project:
 
@@ -19,7 +19,7 @@ The architecture of the complete project can be divided into two major chunks: C
 
 </p>
 
-Content creation was done using various tools(CMS)[1]. This was distributed among different organizations.
+Content creation was done using various tools[CMS]( http://en.wikipedia.org/wiki/Content_management_system). This was distributed among different organizations.
 To support different formats of contents, we had adapter layer in between.
 As being marketing site, Content creation was major task and routine work.
 
@@ -103,7 +103,7 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
 </p>
 
-[1]: http://en.wikipedia.org/wiki/Content_management_system
+
 
 
 
