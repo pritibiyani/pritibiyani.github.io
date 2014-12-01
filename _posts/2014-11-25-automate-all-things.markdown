@@ -19,7 +19,7 @@ The architecture of the complete project can be divided into two major chunks: C
 
 </p>
 
-Content creation was done using various tools ([CMS] ( http://en.wikipedia.org/wiki/Content_management_system)). This was distributed among different organizations.
+Content creation was done using various tools ( [CMS]( http://en.wikipedia.org/wiki/Content_management_system) ). This was distributed among different organizations.
 To support different formats of contents, we had adapter layer in between.
 As being marketing site, Content creation was major task and routine work.
 
