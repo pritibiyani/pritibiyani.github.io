@@ -39,7 +39,7 @@ This was the one thing I hated doing. Every time a new feature was released, I h
  Also, we had provision on each environment to clear the data via pipeline. With cleaning of data, I needed to set up data again!
 It was very difficult to upload multiple variations of same data.
 
-I wrote small (script)[http://bit.do/gist_post_data_to_env] which will upload data to specified environment.It solved problem of bulk upload and I was able to track what data is present on which environment.
+I wrote small [script](http://bit.do/gist_post_data_to_env) which will upload data to specified environment.It solved problem of bulk upload and I was able to track what data is present on which environment.
 
 <p align="middle">
     <img src="/assets/post_to_diff_env.png" alt="Post to different environment" width = "400">
@@ -74,6 +74,7 @@ Manually going through each parameter within every response was time consuming. 
 </p>
 
 I realized repetitive steps and wrote script for the same. Refer [gist](http://bit.do/gist_extract_publish_driven_parameters) for the script.
+
 These were just some of my experiences. But you get the idea. Don’t you?
 
 Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
