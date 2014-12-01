@@ -28,6 +28,10 @@ With every new feature, to test all these platforms we had different production 
 
 To have sample pages, we had dummy data set up on some of the environments.
 
+
+
+Following are some situations I came across, where I tried to Automate:
+
 **1. Setting up data, again and again!**
 
 This was the one thing I hated doing. Every time a new feature was released, I had to setup the test data on 'M' environments. Though I could use REST plugins for browser (like POSTMAN), it was difficult to track all that test data for a feature.
