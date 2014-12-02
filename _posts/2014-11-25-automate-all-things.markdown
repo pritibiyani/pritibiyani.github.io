@@ -20,10 +20,10 @@ The architecture of the complete project can be divided into two major chunks: C
 </p>
 
 Content creation was done using various tools ( [CMS]( http://en.wikipedia.org/wiki/Content_management_system) ). This was distributed among different organizations.
-To support different formats of contents, we had adapter layer in between.
+To support different formats of contents, we had an adapter layer for data transformation in between.
 As being marketing site, Content creation was major task and routine work.
 
-Business/Content Creator wanted data to preview before publishing and hence we had Preview and Live stack in Delivery stack.
+Business/content creator wanted data to preview before publishing and hence we had Preview and Live stack in Delivery stack.
 With every new feature, to test all these platforms we had different production like environments(SIT,Integration,UAT etc) in place.
 
 To have sample pages, we had dummy data set up on some of the environments.
@@ -60,11 +60,11 @@ While doing production support, when something goes wrong, business people often
 
 **3. Debugging with Preview and Live stack**
 
-Preview and Publish stack played a vital role in Content Creation. Certain parameters along with Date used to drive the the transition from Preview to Live stack.
+Preview and Publish stack played a vital role in content creation. Certain parameters along with Date used to drive the the transition from Preview to Live stack.
 	With big launches, huge data creation used to happen and apparently content creators used to face many issues with data being shown on Preview Stack and not on Live Stack.
 
 While debugging, to reach to certain conclusion I needed to check the state of JSON data.
-Manually going through each parameter within every response was time consuming. I used to miss some of the important publish driven parameters. Also, date format was not readable and I used to convert that using online tools.
+Manually going through each parameter within every response was time consuming. I used to miss some of the important publish driven parameters. Also, date format was not readable and I used to convert it using online tools.
 
 
 <p align="middle">
@@ -79,7 +79,7 @@ These were just some of my experiences. But you get the idea. Don’t you?
 <p align="middle">
     An obligatory <a href="http://xkcd.com/1319">XKCD</a>
     <br/>
-    <img src="/assets/automation.png" alt ="XKCD">
+    <img src="/assets/automation.png" alt ="XKCD" width = "400">
 </p>
 
 Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
