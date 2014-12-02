@@ -77,9 +77,9 @@ I realized repetitive steps and wrote script for the same. Refer [gist](http://b
 These were just some of my experiences. But you get the idea. Don’t you?
 
 <p align="middle">
-    An obligatory <a href="http://xkcd.com/1319">XKCD</a>
-    <br/>
     <img src="/assets/automation.png" alt ="XKCD" width = "400" height="350">
+    <br/>
+    An obligatory <a href="http://xkcd.com/1319">XKCD</a>
 </p>
 
 Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
