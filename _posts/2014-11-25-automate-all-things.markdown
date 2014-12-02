@@ -54,7 +54,7 @@ While doing production support, when something goes wrong, business people often
 <p align = "middle">
         <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left">
 	    <img src="/assets/support_people.png" alt="Support People" width="300">
-	    <figcaption align="middle"> Content Creator </figcaption>
+	    <figcaption align="middle"> Different Data Formats Need </figcaption>
 </p>
 
 
@@ -68,7 +68,7 @@ Manually going through each parameter within every response was time consuming. 
 
 
 <p align="middle">
-    <img src="/assets/Preview_Live_Debugging.png" alt="Automate All Things" width = "400">
+    <img src="/assets/Preview_Live_Debugging.png" alt="Automate All Things" width = "400" height="300">
     <figcaption align="middle"> Preview Live Content Debugging </figcaption>
 </p>
 
@@ -79,7 +79,7 @@ These were just some of my experiences. But you get the idea. Don’t you?
 <p align="middle">
     An obligatory <a href="http://xkcd.com/1319">XKCD</a>
     <br/>
-    <img src="/assets/automation.png" alt ="XKCD" width = "400">
+    <img src="/assets/automation.png" alt ="XKCD" width = "400" height="350">
 </p>
 
 Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
