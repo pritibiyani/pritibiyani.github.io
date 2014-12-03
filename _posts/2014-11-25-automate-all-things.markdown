@@ -1,15 +1,13 @@
 ---
 layout: post
-title:  "Automate All Things!"
+title:  "Automate all the things!"
 date:   2014-11-25 13:30:04
-categories: agile testing
+categories: agile testing automation qa
 ---
 
 In agile world, there is a theme of [ruthless automation](https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation). But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
 
-Before I start with my experience, here are few things about project:
-
-Project I had worked on was rich content website which demanded a complex interactive content with high availability. This marketing site has global presence in world.
+The project I was working on was a rich content website which demanded a complex interactive content with high availability. This marketing site has global presence in the world.
 
 The architecture of the complete project can be divided into two major chunks: Content Creation and Content Delivery.
 
@@ -19,51 +17,51 @@ The architecture of the complete project can be divided into two major chunks: C
 
 </p>
 
-Content creation was done using various tools ( [CMS]( http://en.wikipedia.org/wiki/Content_management_system) ). This was distributed among different organizations.
+Content creation was done using various tools ([CMS]( http://en.wikipedia.org/wiki/Content_management_system)). This was distributed among different organizations.
 To support different formats of contents, we had an adapter layer for data transformation in between.
 As being marketing site, Content creation was major task and routine work.
 
-Business/content creator wanted data to preview before publishing and hence we had Preview and Live stack in Delivery stack.
-With every new feature, to test all these platforms we had different production like environments(SIT,Integration,UAT etc) in place.
+Business/content creator wanted data to preview before publishing and hence we had preview and live slice in Delivery stack.
+With every new feature, to test all these platforms we had different production like environments(SIT, Integration, UAT etc) in place.
 
-To have sample pages, we had dummy data set up on some of the environments.
+To have sample pages, we had sample data set up on some of the environments.
 
 
 
-Following are some situations I came across, where I tried to Automate:
+What follows are a few situations that I came across, where I tried to automate some drudgery:
 
 **1. Setting up data, again and again!**
 
-This was the one thing I hated doing. Every time a new feature was released, I had to setup the test data on 'M' environments. Though I could use REST plugins for browser (like POSTMAN), it was difficult to track all that test data for a feature.
- Also, we had provision on each environment to clear the data via pipeline. With cleaning of data, I needed to set up data again!
-It was very difficult to upload multiple variations of same data.
+This was one thing I never looked forward to. Every time a new feature was released, I had to set up the test data on multiple environments. Though I could use REST plugins for browser (like POSTMAN), it was difficult to track all that test data for a feature.
+ Also, we had provision on each environment to clear the data. With cleaning of data, I needed to set up data again. Also, it was becoming very difficult to upload multiple variations of same data.
 
-I wrote small [script](http://bit.do/gist_post_data_to_env) which will upload data to specified environment.It solved problem of bulk upload and I was able to track what data is present on which environment.
+I wrote a small [script](http://bit.do/gist_post_data_to_env) which will upload data to specified environment. It solved above mentioned problems with bulk upload and tracking.
 
 <p align="middle">
     <img src="/assets/post_to_diff_env.png" alt="Post to different environment" width = "400">
-    <figcaption align="middle">'M' Environments, 'N' JSONS </figcaption>
 </p>
+<br/>
 
 
 **2. Different data formats!**
 
-While doing production support, when something goes wrong, business people often wanted some pointers on what data might be wrong. As content creator used to create data in different formats, they used to prefer same format rather than JSON.
-  To get the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for excel was a tedious task and not scalable. To solve this problem, I knew just one answer - Automate! A small script to convert data between formats was all I needed.
+During production support, when something went wrong, business people often wanted some pointers on what could be the issue, and the issues were often data issues. So much so that we even had a team hoodie with tagline 'It's a DATA Issue'.
+
+Typically content creators used to create data using different tools and data formats varied across these tools. They always preferred data in spreadsheets. Getting the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for Excel was a tedious task. A small script to convert data between formats was all I needed.
 
 <p align = "middle">
-        <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left">
+        <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left"> #What Can I do
 	    <img src="/assets/support_people.png" alt="Support People" width="300">
 	    <figcaption align="middle"> Different Data Formats Need </figcaption>
 </p>
 
 
-**3. Debugging with Preview and Live stack**
+**3. Debugging with preview and live stacks**
 
-Preview and Publish stack played a vital role in content creation. Certain parameters along with Date used to drive the the transition from Preview to Live stack.
-	With big launches, huge data creation used to happen and apparently content creators used to face many issues with data being shown on Preview Stack and not on Live Stack.
+Preview and live stacks played a vital role in content creation. Certain parameters along with date used to drive the the transition from Preview to Live stack.
+	With big launches, huge data creation used to happen and apparently content creators used to face many issues with data being shown on preview stack and not on live stack.
 
-While debugging, to reach to certain conclusion I needed to check the state of JSON data.
+While debugging, to reach a certain conclusion I needed to inspect the JSON data.
 Manually going through each parameter within every response was time consuming. I used to miss some of the important publish driven parameters. Also, date format was not readable and I used to convert it using online tools.
 
 
@@ -72,7 +70,7 @@ Manually going through each parameter within every response was time consuming. 
     <figcaption align="middle"> Preview Live Content Debugging </figcaption>
 </p>
 
-I realized repetitive steps and wrote script for the same. Refer [gist](http://bit.do/gist_extract_publish_driven_parameters) for the script.
+I made a note of repetitive steps and wrote a script for the same. Refer [gist](http://bit.do/gist_extract_publish_driven_parameters) for the script.
 
 These were just some of my experiences. But you get the idea. Don’t you?
 
@@ -82,13 +80,13 @@ These were just some of my experiences. But you get the idea. Don’t you?
     An obligatory <a href="http://xkcd.com/1319">XKCD</a>
 </p>
 
-Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experiences, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
+Quite a few of us are usually little hesitant to try out these kind of things because we want to quickly finish the task at hand. But in my experience, a little extra time spent on automating the stuff we do over and over, can save a lot of time and effort in the long run.
 
-**To summarise, here are the take aways:**
+**To summarize, here are the takeaways:**
 
 1. <u> When you repeat, Think! </u>
 
-    If you are doing same thing over and over again, stop, and think. Do I really need to repeat the same steps again? This might be a good candidate for automation.
+    If you are doing same thing over and over again, stop and think "Do I really need to repeat the same steps again?" That could be a good candidate for automation.
 
 2. <u>Don’t try to automate everything at once!</u>
 
@@ -98,13 +96,12 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
      You will struggle to find what you need, be patient and keep working till you get it right! Don’t give up, there will be light at the end of the long tunnel. ;)
 
-4. <u> Automate All The Things! </u>
+4. <u> Automate all the things! </u>
 
-    Well, its fun! You reduce the time you spend on repetitive tasks, speed up task and learn along side! :)
+    Well, it's fun! You reduce the time you spend on repetitive tasks, speed up things and learn along side! :)
 
 <p align="middle">
-    <img src="/assets/automate-all-the-things.png" alt="Automate All Things" width = "400">
-
+    <img src="/assets/automate-all-the-things.png" alt="Automate all the things" width = "400">
 </p>
 
 
