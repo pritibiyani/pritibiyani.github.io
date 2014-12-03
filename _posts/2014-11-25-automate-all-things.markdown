@@ -101,7 +101,7 @@ Quite a few of us are usually little hesitant to try out these kind of things be
     Well, it's fun! You reduce the time you spend on repetitive tasks, speed up things and learn along side! :)
 
 <p align="middle">
-    <img src="/assets/automate-all-the-things.png" alt="Automate all the things" width = "400">
+    <img src="/assets/automate_all_the_things.png" alt="Automate all the things" width = "400">
 </p>
 
 
