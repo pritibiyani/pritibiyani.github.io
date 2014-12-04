@@ -50,7 +50,7 @@ During production support, when something went wrong, business people often want
 Typically content creators used to create data using different tools and data formats varied across these tools. They always preferred data in spreadsheets. Getting the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for Excel was a tedious task. A small script to convert data between formats was all I needed.
 
 <p align = "middle">
-        <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left"> #What Can I do
+        <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left">
 	    <img src="/assets/support_people.png" alt="Support People" width="300">
 	    <figcaption align="middle"> Different Data Formats Need </figcaption>
 </p>
