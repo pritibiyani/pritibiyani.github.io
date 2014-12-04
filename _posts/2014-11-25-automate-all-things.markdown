@@ -105,7 +105,11 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
 <br/>
 <br/>
-###### Thanks to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shirish Padalkar](https://twitter.com/_Garbage_), [Rahul Phulore](https://twitter.com/missingfaktor), Bhumika and [Vishnu Narang](https://twitter.com/vishnu_narang) for valuable time and early feedback. :) ######
+<br/>
+<br/>
+<br/>
+Thanks to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shirish Padalkar](https://twitter.com/_Garbage_), [Rahul Phulore](https://twitter.com/missingfaktor), Bhumika and [Vishnu Narang](https://twitter.com/vishnu_narang) for valuable time and early feedback. :)
+
 
 
 
