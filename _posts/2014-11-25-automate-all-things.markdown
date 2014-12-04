@@ -19,9 +19,9 @@ The architecture of the complete project can be divided into two major chunks: C
 
 Content creation was done using various tools ([CMS]( http://en.wikipedia.org/wiki/Content_management_system)). This was distributed among different organizations.
 To support different formats of contents, we had an adapter layer for data transformation in between.
-As being marketing site, Content creation was major task and routine work.
+As being marketing site, content creation was major task and routine work.
 
-Business/content creator wanted data to preview before publishing and hence we had preview and live slice in Delivery stack.
+Business/content creator wanted data to be previewed before publishing and hence we had preview and live slice in Delivery stack.
 With every new feature, to test all these platforms we had different production like environments(SIT, Integration, UAT etc) in place.
 
 To have sample pages, we had sample data set up on some of the environments.
@@ -33,7 +33,7 @@ What follows are a few situations that I came across, where I tried to automate 
 **1. Setting up data, again and again!**
 
 This was one thing I never looked forward to. Every time a new feature was released, I had to set up the test data on multiple environments. Though I could use REST plugins for browser (like POSTMAN), it was difficult to track all that test data for a feature.
- Also, we had provision on each environment to clear the data. With cleaning of data, I needed to set up data again. Also, it was becoming very difficult to upload multiple variations of same data.
+ Also, we had provision on each environment to clear the data. With cleaning of data, I needed to set up data again. In addition to this, it was becoming very difficult to upload multiple variations of same data.
 
 I wrote a small [script](http://bit.do/gist_post_data_to_env) which will upload data to specified environment. It solved above mentioned problems with bulk upload and tracking.
 
@@ -45,20 +45,19 @@ I wrote a small [script](http://bit.do/gist_post_data_to_env) which will upload 
 
 **2. Different data formats!**
 
-During production support, when something went wrong, business people often wanted some pointers on what could be the issue, and the issues were often data issues. So much so that we even had a team hoodie with tagline 'It's a DATA Issue'.
+During production support, when something went wrong, business people often wanted some pointers on what could be the issue, and the issues were often data issues. So much so that we even had a team hoodie with tagline <i>'It's a DATA Issue!'</i>.
 
 Typically content creators used to create data using different tools and data formats varied across these tools. They always preferred data in spreadsheets. Getting the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for Excel was a tedious task. A small script to convert data between formats was all I needed.
 
 <p align = "middle">
         <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left">
 	    <img src="/assets/support_people.png" alt="Support People" width="300">
-	    <figcaption align="middle"> Different Data Formats Need </figcaption>
 </p>
 
 
 **3. Debugging with preview and live stacks**
 
-Preview and live stacks played a vital role in content creation. Certain parameters along with date used to drive the the transition from Preview to Live stack.
+Preview and live stacks played a vital role in content creation. Certain parameters along with date used to drive the the transition from preview to live stack.
 	With big launches, huge data creation used to happen and apparently content creators used to face many issues with data being shown on preview stack and not on live stack.
 
 While debugging, to reach a certain conclusion I needed to inspect the JSON data.
