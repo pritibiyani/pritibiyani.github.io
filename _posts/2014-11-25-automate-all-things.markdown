@@ -103,6 +103,8 @@ Quite a few of us are usually little hesitant to try out these kind of things be
     <img src="/assets/automate_all_the_things.png" alt="Automate all the things" width = "400">
 </p>
 
+Thanks to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shirish](https://twitter.com/_Garbage_), [Rahul](https://twitter.com/missingfaktor), Bhumika and [Vishnu](https://twitter.com/vishnu_narang)
+
 
 
 
