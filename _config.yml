@@ -1,5 +1,5 @@
 # Site settings
-title: ""
+title: "Priti Biyani"
 baseurl: "" # the subpath of your site, e.g. /blog/
 permalink: /blog/:year/:month/:day/:title
 url: "http://pritibiyani.github.io" # the base hostname & protocol for your site
