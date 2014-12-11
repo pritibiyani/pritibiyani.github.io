@@ -10,3 +10,22 @@ github_username:  pritibiyani
 markdown: kramdown
 comments: True
 highlighter: pygments
+
+  sharing :
+    provider : all
+    twitter :
+      size :
+      via :
+      count :
+    facebook :
+      appid : 205602882797935
+      layout : button_count
+      font :
+      faces : false
+      width : 90
+    googleplus :
+      size : medium
+      width :
+      annotation : bubble
+    linkedin :
+      counter : right
