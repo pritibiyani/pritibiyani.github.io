@@ -110,8 +110,6 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 <br/>
 Thanks a million to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shirish Padalkar](https://twitter.com/_Garbage_), [Rahul Phulore](https://twitter.com/missingfaktor), [Bhumika S](https://www.linkedin.com/pub/bhumika-s/16/562/299) and [Vishnu Narang](https://twitter.com/vishnu_narang) for valuable time and early feedback. :)
 
-"Automate all the things! "
-
 
 
 
