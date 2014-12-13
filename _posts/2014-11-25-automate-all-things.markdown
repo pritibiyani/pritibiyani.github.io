@@ -37,6 +37,8 @@ This was one thing I never looked forward to. Every time a new feature was relea
 
 I wrote a small [script](http://bit.do/gist_post_data_to_env) which will upload data to specified environment. It solved above mentioned problems with bulk upload and tracking.
 
+{% gist pritibiyani/7f1f6df80d908c1a9c01 %}
+
 <p align="middle">
     <img src="/assets/post_to_diff_env.png" alt="Post to different environment" width = "400">
 </p>
@@ -110,9 +112,6 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 <br/>
 Thanks a million to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shirish Padalkar](https://twitter.com/_Garbage_), [Rahul Phulore](https://twitter.com/missingfaktor), [Bhumika S](https://www.linkedin.com/pub/bhumika-s/16/562/299) and [Vishnu Narang](https://twitter.com/vishnu_narang) for valuable time and early feedback. :)
 
-<div class="post-sharing">
-{% include JB/sharing %}
-</div>
 
 
 
