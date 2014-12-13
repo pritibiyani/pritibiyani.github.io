@@ -1,4 +1,4 @@
-{% if site.JB.sharing.provider and page.sharing != false %}
+{% if site.JB.sharing.provider %}
 
   {% case site.JB.sharing.provider %}
 	{% when "like" %}
