@@ -110,9 +110,30 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 <br/>
 Thanks a million to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shirish Padalkar](https://twitter.com/_Garbage_), [Rahul Phulore](https://twitter.com/missingfaktor), [Bhumika S](https://www.linkedin.com/pub/bhumika-s/16/562/299) and [Vishnu Narang](https://twitter.com/vishnu_narang) for valuable time and early feedback. :)
 
-<div class="post-sharing">
-  {% include JB/sharing %}
+<div class="social-share">
+    <div class="tweet-button">
+        <a class="tweet-button" href="https://twitter.com/share" class="twitter-share-button" data-via="pritibiyani">Tweet</a>
+
+        <!-- Put this just before the closing body tag -->
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+
+    <div class="gplus-button">
+        <!-- Google + -->
+        <p class="gplus-button"><g:plusone size="medium"></g:plusone></p>
+
+        <!-- Add this just before the closing body tag of your web page -->
+        <script type="text/javascript">
+          (function() {
+            var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+            po.src = 'https://apis.google.com/js/plusone.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+          })();
+        </script>
+    </div>
+
+    <div class="fb-button">
+    <div class="fb-share-button" data-href="http://pritibiyani.github.io/blog/2014/11/25/automate-all-things/" data-layout="button_count"></div>
+    </div>
 </div>
-
-
 
