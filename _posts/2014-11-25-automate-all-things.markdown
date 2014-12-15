@@ -132,8 +132,7 @@ Thanks a million to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shiris
         </script>
     </div>
 
-    <div class="fb-button">
-    <div class="fb-share-button" data-href="http://pritibiyani.github.io/blog/2014/11/25/automate-all-things/" data-layout="button_count"></div>
-    </div>
+<div class="fb-like" data-href="http://pritibiyani.github.io/blog/2014/11/25/automate-all-things/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
+
 </div>
 
