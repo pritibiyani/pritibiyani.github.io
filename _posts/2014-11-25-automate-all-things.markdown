@@ -42,6 +42,8 @@ I wrote a small [script](http://bit.do/gist_post_data_to_env) which will upload 
 </p>
 <br/>
 
+{% gist 7f1f6df80d908c1a9c01 %}
+
 
 **2. Different data formats!**
 
