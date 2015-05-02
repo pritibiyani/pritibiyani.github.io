@@ -46,6 +46,7 @@ We started writing simple tests to cover most basic of user flows. While we wrot
 1. [Fluent interfaces](http://martinfowler.com/bliki/FluentInterface.html)
 2. Expression Builder
 3. Test Data Builder
+
 You (re)inventing design patterns is different than you learning them beforehand and applying them! I quite enjoyed this experience.
 
 
@@ -63,7 +64,7 @@ We did planning for this event, where we divided stories into small, medium and 
 * On top of all this, being [contributor](https://github.com/openMF/mifosx/graphs/contributors) in itself is a rewarding feeling! It's good to see, that [CI](https://github.com/openMF/mifosx#build-status) and integration tests still helping in project.
 
 
-I am fortunate enough to be part of this. Looking at solution we came up with we found the problem negligible which was complex earlier! I can take away many things from this project. I learnt how to decide testing strategy, refactoring, setting up pipelines, and how distributed project works! I loved this journey where we addressed small-small problems with baby steps and came up with some solution!
+I am fortunate enough to be part of this. Looking at solution we came up with, we found the problem negligible which was complex earlier! I can take away many things from this project. I learnt how to decide testing strategy, refactoring, setting up pipelines, and how distributed project works! I loved this journey where we addressed small-small problems with baby steps and came up with some solution!
 
 
 
