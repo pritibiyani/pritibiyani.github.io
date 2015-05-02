@@ -29,3 +29,10 @@ sharing :
    annotation : bubble
  linkedin :
    counter : right
+
+defaults:
+  -
+    scope:
+      path: "posts" # an empty string here means all files in the project
+    values:
+      layout: post
