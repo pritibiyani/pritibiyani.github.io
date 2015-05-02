@@ -1,8 +1,9 @@
 ---
 layout: post
-title: contribution to third pillar
+title: contribution to third pillar!
 published: true
-categories: testing strategy test Pyramid
+tags: agile testing automation qa build_pipelines
+categories: work
 ---
 
 This is something very old, but still this will stand as my first official project in ThoughtWorks.
@@ -25,7 +26,7 @@ This project domain was complex, many rules and calculations! I was not able to 
 
 **How we tried to solve addressed problems**
 
-Adding testing support was a big challenge in itself! We had 3 options in front of us, as in, at what layer of [test pyramid] (http://martinfowler.com/bliki/TestPyramid.html) tests should be written:
+Adding testing support was a big challenge in itself! We had 3 options in front of us, as in, at what layer of [test pyramid](http://martinfowler.com/bliki/TestPyramid.html) tests should be written:
 
 1. Writing unit tests
 2. Integration tests
@@ -41,18 +42,17 @@ Code snippet for one exmample!
 
 **Implementing Integration Tests**
 
-We started writing simple tests to cover most basic of user flows. While we wrote these tests, we were constantly referring [this](https://demo.openmf.org/apidocs/apiLive.htm) API documentation. Our initial test suite was all in one file, and was written using a library named [restassured](https://github.com/jayway/restassured). Soon we realized we were duplicating code and patterns. It was time to refactor! While we continued refactoring and covering other areas of application, we applied principles of good object orientation, and came up with what we found to be a very neat set of designs. Our mentor, [Gurpreet Luthra](https://www.linkedin.com/in/gurpreetluthra), was very happy with the outcome. Later, we discovered that we had reinvented some of the established software design patterns, such as:
+We started writing simple tests to cover most basic of user flows. While we wrote these tests, we were constantly referring [this](https://demo.openmf.org/apidocs/apiLive.htm) API documentation. Our initial test suite was all in one file, and was written using a library named [restassured](https://github.com/jayway/restassured). Soon we realized we were duplicating code and patterns. It was time to refactor! While we continued refactoring and covering other areas of application, we applied principles of good object orientation, and came up with what we found to be a very neat set of designs. Our mentor, [Gurpreet Luthra](https://www.linkedin.com/in/gurpreetluthra), was very happy with the [outcome](https://github.com/openMF/mifosx/tree/develop/mifosng-provider/src/integrationTest/java/org/mifosplatform/integrationtests). Later, we discovered that we had reinvented some of the established software design patterns, such as:
 
 1. [Fluent interfaces](http://martinfowler.com/bliki/FluentInterface.html)
-2. Expression Builder
+2. [Expression Builder](http://martinfowler.com/bliki/ExpressionBuilder.html)
 3. Test Data Builder
 
-You (re)inventing design patterns is different than you learning them beforehand and applying them! I quite enjoyed this experience.
-
+(re)inventing design patterns is different than you learning them beforehand and applying them! I quite enjoyed this experience.
 
 **Who broke the build**
 
-The next step of course was to have this tests running in CI. For each pull request set of Integration test will run, that will give feedback to whoever has sent pull request, that he/she have not broken the build.
+The next step of course was to have this tests running in [CI](https://github.com/openMF/mifosx#build-status). For each pull request set of Integration test will run, that will give feedback to whoever has sent pull request, that he/she have not broken the build.
 
 **What are other things**
 
@@ -61,7 +61,7 @@ We did planning for this event, where we divided stories into small, medium and 
 
 * It feels great when your small contribution can help large project and they acknowledge this! one of the active member of  Mifosx, [blogged](http://mifos.org/blog/thoughtworks-hsp-team-gives-mifos-x-community-solid-footing-grow/) about us.
 
-* On top of all this, being [contributor](https://github.com/openMF/mifosx/graphs/contributors) in itself is a rewarding feeling! It's good to see, that [CI](https://github.com/openMF/mifosx#build-status) and integration tests still helping in project.
+* On top of all this, being [contributor](https://github.com/openMF/mifosx/graphs/contributors) in itself is a rewarding feeling! It's good to see, that CI and integration tests still helping in project.
 
 
 I am fortunate enough to be part of this. Looking at solution we came up with, we found the problem negligible which was complex earlier! I can take away many things from this project. I learnt how to decide testing strategy, refactoring, setting up pipelines, and how distributed project works! I loved this journey where we addressed small-small problems with baby steps and came up with some solution!

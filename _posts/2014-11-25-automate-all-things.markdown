@@ -2,7 +2,8 @@
 layout: post
 title:  "Automate all the things!"
 date:   2014-11-25 13:30:04
-categories: agile testing automation qa
+tags: agile testing automation qa
+categories: work
 ---
 
 In agile world, there is a theme of [ruthless automation](https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation). But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
