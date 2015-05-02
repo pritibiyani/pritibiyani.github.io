@@ -1,7 +1,7 @@
 ---
 layout: post
 title: contribution to third pillar
-published: false
+published: true
 categories: testing strategy test Pyramid
 ---
 
