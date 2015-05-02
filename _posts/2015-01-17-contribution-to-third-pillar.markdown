@@ -17,9 +17,13 @@ Why official?
 Well, This was [MifoxX](http://www.openmf.org/) project. This project was being run in ThoughtWorks under [HSP program]( http://www.thoughtworks.com/insights/blog/humanitarian-software-program).
 Little context about Mifosx, it is building software to grow microfinance. MifosX aims to build a Micro-Finance Platform for organizations which are providing Micro-Credit / Micro-Finance to the poor -- so that these organizations can manage and run their operations in a cheap, cost-effective and efficient manner.
 The platform is basically a Javabased server which contains the business rules, domain logic, talks to databases/backend systems and exposes all MifosX functionality over REST/HTTP/JSON.
-This project domain was complex, many rules and calculations! I was not able to imagine being open source(indeed distributed) this project did not had any tests! They wanted ThoughtWorks to help in deciding testing strategy and the next step of course, make them run at common place to identify who broke the functionality(setting up build radiator).
 
-**How we went and tried to solve addressed problems**
+This project domain was complex, many rules and calculations! I was not able to imagine being open source(indeed distributed) this project did not had any tests! They wanted ThoughtWorks to help in:
+
+ 1. Deciding testing strategy
+ 2. and the next step of course, make them run at common place to identify who broke the functionality(setting up build radiator).
+
+**How we tried to solve addressed problems**
 
 Adding testing support was a big challenge in itself! We had 3 options in front of us, as in, at what layer of [test pyramid] (http://martinfowler.com/bliki/TestPyramid.html) tests should be written:
 
