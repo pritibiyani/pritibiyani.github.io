@@ -1,8 +1,9 @@
 require 'Date'
 
 desc 'create a new draft post'
-task :post do
-  title = ENV['TITLE']
+task :new_post do
+  puts 'Enter new post title'
+  title = STDIN.gets.strip
   slug = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
   file = File.join(File.dirname(__FILE__), '_posts', slug + '.markdown')
 
