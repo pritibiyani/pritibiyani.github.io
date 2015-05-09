@@ -15,9 +15,9 @@ Why official?
 3. I understood how it's important to understand the domain, specially when it's banking!
 4. Refactoring!
 
-Well, This was [MifoxX](http://www.openmf.org/) project. This project was being run in ThoughtWorks under [HSP program]( http://www.thoughtworks.com/insights/blog/humanitarian-software-program).
-Little context about Mifosx, it is building software to grow microfinance. MifosX aims to build a Micro-Finance Platform for organizations which are providing Micro-Credit / Micro-Finance to the poor -- so that these organizations can manage and run their operations in a cheap, cost-effective and efficient manner.
-The platform is basically a Javabased server which contains the business rules, domain logic, talks to databases/backend systems and exposes all MifosX functionality over REST/HTTP/JSON.
+Well, This was [Mifos X](http://www.openmf.org/) project. This project was being run in ThoughtWorks under [HSP program]( http://www.thoughtworks.com/insights/blog/humanitarian-software-program).
+Little context about Mifos X, it is building software to grow microfinance. MifosX aims to build a Micro-Finance Platform for organizations which are providing Micro-Credit / Micro-Finance to the poor -- so that these organizations can manage and run their operations in a cheap, cost-effective and efficient manner.
+The platform is basically a Javabased server which contains the business rules, domain logic, talks to databases/backend systems and exposes all Mifos X functionality over REST/HTTP/JSON.
 
 This project domain was complex, many rules and calculations! I was not able to imagine being open source(indeed distributed) this project did not had any tests! They wanted ThoughtWorks to help in:
 
@@ -36,13 +36,11 @@ Writing Unit test for a large, existing codebase would require a major refactori
 For functional tests, we sometimes need to rely on unit level assertions, which meant we couldn’t move ahead with this option either.
 Therefore we decided to go with integration tests. We identified some scenarios, for which we can write tests, which will cover breadth of the application.
 
-Writing Integration test, was majorly an API testing. We referred [this](https://demo.openmf.org/apidocs/apiLive.htm) API documentation.
-
-Code snippet for one exmample!
+`Code snippet for one example!`
 
 **Implementing Integration Tests**
 
-We started writing simple tests to cover most basic of user flows. While we wrote these tests, we were constantly referring [this](https://demo.openmf.org/apidocs/apiLive.htm) API documentation. Our initial test suite was all in one file, and was written using a library named [restassured](https://github.com/jayway/restassured). Soon we realized we were duplicating code and patterns. It was time to refactor! While we continued refactoring and covering other areas of application, we applied principles of good object orientation, and came up with what we found to be a very neat set of designs. Our mentor, [Gurpreet Luthra](https://www.linkedin.com/in/gurpreetluthra), was very happy with the [outcome](https://github.com/openMF/mifosx/tree/develop/mifosng-provider/src/integrationTest/java/org/mifosplatform/integrationtests). Later, we discovered that we had reinvented some of the established software design patterns, such as:
+We started writing simple tests to cover most basic of user flows. While we wrote these tests, we were constantly referring [this](https://demo.openmf.org/api-docs/apiLive.htm) API documentation. Our initial test suite was all in one file, and was written using a library named [restassured](https://github.com/jayway/restassured). Soon we realized we were duplicating code and patterns. It was time to refactor! While we continued refactoring and covering other areas of application, we applied principles of good object orientation, and came up with what we found to be a very neat set of designs. Our mentor, [Gurpreet Luthra](https://www.linkedin.com/in/gurpreetluthra), was very happy with the [outcome](https://github.com/openMF/mifosx/tree/develop/mifosng-provider/src/integrationTest/java/org/mifosplatform/integrationtests). Later, we discovered that we had reinvented some of the established software design patterns, such as:
 
 1. [Fluent interfaces](http://martinfowler.com/bliki/FluentInterface.html)
 2. [Expression Builder](http://martinfowler.com/bliki/ExpressionBuilder.html)
@@ -59,12 +57,14 @@ The next step of course was to have this tests running in [CI](https://github.co
 * This project was selected for hackathon at [GHC](http://archivecomputer.financialexpress.com/sections/news/2065-grace-hopper-india-hosts-hackathon-for-women) conference.
 We did planning for this event, where we divided stories into small, medium and large as per complexity. The response was great! Not many were able to contribute actually but they became familiar with technology, domain and how this distributed project works! We got one or two pull requests as well.
 
-* It feels great when your small contribution can help large project and they acknowledge this! one of the active member of  Mifosx, [blogged](http://mifos.org/blog/thoughtworks-hsp-team-gives-mifos-x-community-solid-footing-grow/) about us.
+* It feels great when your small contribution can help large project and they acknowledge this! one of the active member of  Mifos X, [blogged](http://mifos.org/blog/thoughtworks-hsp-team-gives-mifos-x-community-solid-footing-grow/) about us.
 
 * On top of all this, being [contributor](https://github.com/openMF/mifosx/graphs/contributors) in itself is a rewarding feeling! It's good to see, that CI and integration tests still helping in project.
 
 
-I am fortunate enough to be part of this. Looking at solution we came up with, we found the problem negligible which was complex earlier! I can take away many things from this project. I learnt how to decide testing strategy, refactoring, setting up pipelines, and how distributed project works! I loved this journey where we addressed small-small problems with baby steps and came up with some solution!
+I am fortunate enough to be part of this. Looking at solution we came up with, we found the problem negligible which was complex earlier! I can take away many things from this project. I learnt how to decide testing strategy, refactoring, setting up pipelines, and how distributed project works!
+
+I loved this journey where we addressed small-small problems with baby steps and came up with some solution!
 
 
 
