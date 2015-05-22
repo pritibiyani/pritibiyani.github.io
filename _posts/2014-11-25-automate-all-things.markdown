@@ -3,6 +3,8 @@ layout: post
 title:  "Automate all the things!"
 date:   2014-11-25 13:30:04
 tags: agile testing automation qa
+redirects:
+- blog/2014/11/25/automate-all-things/
 categories: work
 ---
 

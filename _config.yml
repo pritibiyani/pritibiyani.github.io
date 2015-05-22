@@ -5,6 +5,7 @@ permalink: /blog/:title
 url: "http://pritibiyani.github.io" # the base hostname & protocol for your site
 twitter_username: pritibiyani
 github_username:  pritibiyani
+redirects: yes
 
 # Build settings
 markdown: kramdown
