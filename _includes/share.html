@@ -1,0 +1,53 @@
+<!--<div class="social-share">-->
+    <!--<div class="tweet-button">-->
+        <!--<a class="tweet-button" href="https://twitter.com/share" class="twitter-share-button" data-via="pritibiyani">Tweet</a>-->
+
+        <!--&lt;!&ndash; Put this just before the closing body tag &ndash;&gt;-->
+        <!--<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>-->
+    <!--</div>-->
+
+    <!--<div class="gplus-button">-->
+        <!--&lt;!&ndash; Google + &ndash;&gt;-->
+        <!--<p class="gplus-button" ><g:plusone size="medium"></g:plusone></p>-->
+
+        <!--&lt;!&ndash; Add this just before the closing body tag of your web page &ndash;&gt;-->
+        <!--<script type="text/javascript">-->
+            <!--(function() {-->
+                <!--var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;-->
+                <!--po.src = 'https://apis.google.com/js/plusone.js';-->
+                <!--var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);-->
+            <!--})();-->
+        <!--</script>-->
+    <!--</div>-->
+
+    <!--<div class="fb-like" data-href="http://pritibiyani.github.io/blog/2014/11/25/automate-all-things/" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>-->
+
+<!--</div>-->
+
+<div class="social-share">
+    <!--Share this on &rarr;-->
+    <div class="tweet-button">
+        <a class ="twitter-share-button" href="https://twitter.com/intent/tweet?text={{ page.title }}&url={{ site.url }}{{ page.url }}&via={{ site.twitter_username }}&related={{ site.twitter_username }}" rel="nofollow" target="_blank" title="Share on Twitter">Twitter</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+
+    <div class="gplus-button">
+        <!-- Google + -->
+        <p class="gplus-button"><g:plusone size="medium"></g:plusone></p>
+
+        <!-- Add this just before the closing body tag of your web page -->
+        <script type="text/javascript">
+            (function() {
+                var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+                po.src = 'https://apis.google.com/js/plusone.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+            })();
+        </script>
+    </div>
+
+    <!--<a href="https://plus.google.com/share?url={{ site.url }}{{ page.url }}" rel="nofollow" target="_blank" title="Share on Google+">Google+</a>-->
+
+    <div class="fb-like" data-href="https://facebook.com/sharer.php?u={{ site.url }}{{ page.url }}" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true">
+    </div>
+</div>
+
