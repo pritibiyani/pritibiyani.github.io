@@ -10,6 +10,8 @@ github_username:  pritibiyani
 markdown: kramdown
 comments: True
 highlighter: pygments
+gems:
+  - jekyll-redirect-from
 
 defaults:
   -
