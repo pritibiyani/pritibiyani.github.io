@@ -238,9 +238,12 @@
 .social-share {
   border-top: 2px solid #EEE;
   padding-top: 10px;
-  overflow: hidden;
-}
 
-.tweet-button, .gplus-button, .fb-button {
-  float: left;
+    .tweet-button, .gplus-button, .fb-button {
+        display: inline-block;
+    }
+
+    .fb_iframe_widget > span {
+        vertical-align: baseline !important;
+    }
 }
