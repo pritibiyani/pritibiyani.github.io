@@ -37,8 +37,6 @@ Writing Unit test for a large, existing codebase would require a major refactori
 For functional tests, we sometimes need to rely on unit level assertions, which meant we couldn’t move ahead with this option either.
 Therefore we decided to go with integration tests. We identified some scenarios, for which we can write tests, which will cover breadth of the application.
 
-`Code snippet for one example!`
-
 **Step1: Implementing Integration Tests**
 
 We started writing simple tests to cover most basic of user flows. While we wrote these tests, we were constantly referring [this](https://demo.openmf.org/api-docs/apiLive.htm) API documentation. Our initial test suite was all in one file, and was written using a library named [restassured](https://github.com/jayway/restassured). Soon we realized we were duplicating code and patterns. It was time to refactor! While we continued refactoring and covering other areas of application, we applied principles of good object orientation, and came up with what we found to be a very neat set of designs. Our mentor, [Gurpreet Luthra](https://www.linkedin.com/in/gurpreetluthra), was very happy with the [outcome](https://github.com/openMF/mifosx/tree/develop/mifosng-provider/src/integrationTest/java/org/mifosplatform/integrationtests). Later, we discovered that we had reinvented some of the established software design patterns, such as:
