@@ -13,9 +13,10 @@ Why official?
 1. We did pair!
 2. We attended calls! Here it helped me to understand how open source project works!
 3. I understood how it's important to understand the domain, specially when it's banking!
-4. Refactoring!
+4. Refactoring! (I have heard this before, but learnt this very first time!)
 
-Well, This was [Mifos X](http://www.openmf.org/) project. This project was being run in ThoughtWorks under [HSP program]( http://www.thoughtworks.com/insights/blog/humanitarian-software-program).
+Well, This was [Mifos X](http://www.openmf.org/) project. This project was being run in ThoughtWorks under [HSP program]( http://www.thoughtworks.com/insights/blog/humanitarian-software-program),
+under [ThoughtWork's Third pillar](http://www.martinfowler.com/bliki/ThreePillars.html).<br/>
 Little context about Mifos X, it is building software to grow microfinance. MifosX aims to build a Micro-Finance Platform for organizations which are providing Micro-Credit / Micro-Finance to the poor -- so that these organizations can manage and run their operations in a cheap, cost-effective and efficient manner.
 The platform is basically a Javabased server which contains the business rules, domain logic, talks to databases/backend systems and exposes all Mifos X functionality over REST/HTTP/JSON.
 
@@ -24,7 +25,7 @@ This project domain was complex, many rules and calculations! I was not able to 
  1. Deciding testing strategy
  2. and the next step of course, make them run at common place to identify who broke the functionality(setting up build radiator).
 
-**How we tried to solve addressed problems**
+**How we tried to solve addressed problems?**
 
 Adding testing support was a big challenge in itself! We had 3 options in front of us, as in, at what layer of [test pyramid](http://martinfowler.com/bliki/TestPyramid.html) tests should be written:
 
@@ -38,7 +39,7 @@ Therefore we decided to go with integration tests. We identified some scenarios,
 
 `Code snippet for one example!`
 
-**Implementing Integration Tests**
+**Step1: Implementing Integration Tests**
 
 We started writing simple tests to cover most basic of user flows. While we wrote these tests, we were constantly referring [this](https://demo.openmf.org/api-docs/apiLive.htm) API documentation. Our initial test suite was all in one file, and was written using a library named [restassured](https://github.com/jayway/restassured). Soon we realized we were duplicating code and patterns. It was time to refactor! While we continued refactoring and covering other areas of application, we applied principles of good object orientation, and came up with what we found to be a very neat set of designs. Our mentor, [Gurpreet Luthra](https://www.linkedin.com/in/gurpreetluthra), was very happy with the [outcome](https://github.com/openMF/mifosx/tree/develop/mifosng-provider/src/integrationTest/java/org/mifosplatform/integrationtests). Later, we discovered that we had reinvented some of the established software design patterns, such as:
 
@@ -48,16 +49,16 @@ We started writing simple tests to cover most basic of user flows. While we wrot
 
 (re)inventing design patterns is different than you learning them beforehand and applying them! I quite enjoyed this experience.
 
-**Who broke the build**
+**Step2: Who broke the build?**
 
 The next step of course was to have this tests running in [CI](https://github.com/openMF/mifosx#build-status). For each pull request set of Integration test will run, that will give feedback to whoever has sent pull request, that he/she have not broken the build.
 
-**What are other things**
+**What are other things?**
 
 * This project was selected for hackathon at [GHC](http://archivecomputer.financialexpress.com/sections/news/2065-grace-hopper-india-hosts-hackathon-for-women) conference.
 We did planning for this event, where we divided stories into small, medium and large as per complexity. The response was great! Not many were able to contribute actually but they became familiar with technology, domain and how this distributed project works! We got one or two pull requests as well.
 
-* It feels great when your small contribution can help large project and they acknowledge this! one of the active member of  Mifos X, [blogged](http://mifos.org/blog/thoughtworks-hsp-team-gives-mifos-x-community-solid-footing-grow/) about us.
+* It feels great when your small contribution can help large project and they acknowledge this! Edward Cable, Mifos Community Manager [blogged](http://mifos.org/blog/thoughtworks-hsp-team-gives-mifos-x-community-solid-footing-grow/) about us.
 
 * On top of all this, being [contributor](https://github.com/openMF/mifosx/graphs/contributors) in itself is a rewarding feeling! It's good to see, that CI and integration tests still helping in project.
 
