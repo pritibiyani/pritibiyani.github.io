@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Teaching is an adventurous ride!
-published: false
+published: true
 categories:
 ---
 
@@ -16,6 +16,7 @@ I entered into corporate world realized a lot of flaws in education system. It i
  2. Many things you learnt at college, but you dont see implication of those and you feel less thrilled about it and hence one end up in reading books rather than understanding them! Seeing things actually working and doing along side makes a lot of impact then just going through books and understanding!
  3. College is the time, where you can learn, read, try out many things! When you start working, you get very less time! With lack of direction, knowledge, student end up in reading/mugging up books!
 
+I always thought, If I could know this in my engineering ...!<br>
 Time flew and it was my turn to do something for the students in engineering/diploma.
 
  Manisha mam happened to contact me and it was An "Aha!" moment! She wanted me to conduct some activities in the college, which will essentially help students. She is of the opinion, _"Immediate seniors telling us something gives more inspiration than someone rooted in that field!, students can connect and relate better!"_
@@ -40,21 +41,20 @@ This gave me further insight of what I can plan next! I wanted to take some hand
 **Some tools, and some fundamentals!**
 <sub>2015, March</sub>
 
-I always thought, If I could know this in my engineering ...!
+Lately in March 2015, I took session on git for third year students! They knew concept of SCM as they have learnt in (Software Engineering)[http://www.pearsonhighered.com/samplechapter/0321200195.pdf] subject, but never came across some examples, where they could relate concepts like versioning, rollback, ..!
+
+**Why I decided to take session on git?**
+
+1. This will help them to relate to concepts they have learnt already!
+2. They can use this to maintain their assignments and get rid of having 'Final' version under every assignment till very last day!
+3. I remember, during college days, someone's laptop used to crash(purposefully sometimes ;) ), and as it was not under version control or no any backup, they used to face problem!
+4. It used to happen a lot, project works till some changes and later, it stops working and it's difficult to find the point till it was working!
+
+Realized, learning git will help them in college and eventually in industry, be it whatever profession they choose!
+
+I explained basics of what is git about, we saw some videos, taught basic commands and some internals of git! I Planned to take hands on session at the same time, but could not do that!The very next day, they tried basic and did small online tutorial of git under presence of mam and I came to know that they found it helpful. [This feedback](http://bit.do/git_session) gave me more insights into what next I can plan. 
 
 
-Lately in March 2015, I took session on git for third year students!  I remembered problems I have faced when I was not aware about some version control system.
-It was more around how it will help them in college and eventually in industry, be it whatever profession they choose!
-I thought of giving introduction about some version control system, which they have learnt in Software engineering subject, but never saw implication of the same.
-
-
- 1. Help them in regular assignments, and for teachers its just one link to check, like we do submit on coursera!
- 2. It will help them in not only tech things, will help to maintain blogs, share their travel experiecnes, or whatever!
- 3. It will of course along side build up their online profile, and as they will explore more, learning will be there!
-
-Planned to take hands on session at the same time, but could not do that! It was just 2 hour session and later came to know from Otari mam, that they found it helpful. [This feedback](http://bit.do/git_session) gave me more insights into what next I can plan. They did try that very next day and started using it!  This session where I taught, I learnt!
-
-_When you teach, you learn; when you give, you get!_
 
 <p align = "middle">
         <img src="/assets/o1.jpg" alt="Orchid College Session" width="350" style="float: left" border="3">
@@ -63,5 +63,6 @@ _When you teach, you learn; when you give, you get!_
 </p>
 
 
-This experience was something very different than what I do daily!
-It felt nice to teach them and during this I remembered teachers who made an impact on me: I owe whatever I'm today to them!
+**_When you teach, you learn; when you give, you get!_**
+
+It always felt good when you can help others, and I find you learn more in that process! I am looking forward to take more similar sessions in the college once it starts!
