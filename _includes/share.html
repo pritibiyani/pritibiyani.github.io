@@ -3,7 +3,7 @@
     {% if page.share_url %}
         {% assign share_url = page.share_url %}
     {% else %}
-        {% assign share_url = {{site.url}} {{page.url}} %}
+        {% capture share_url %}{{ site.url }}{{ page.url }}{% endcapture %}
     {% endif %}
 
     <div class="tweet-button">
