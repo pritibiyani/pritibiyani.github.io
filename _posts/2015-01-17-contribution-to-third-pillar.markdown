@@ -1,6 +1,6 @@
 ---
 layout: post
-title: contribution to third pillar!
+title: Contribution to third pillar!
 published: true
 tags: agile testing automation qa build_pipelines
 categories: work
