@@ -46,7 +46,7 @@ We started writing simple tests to cover most basic of user flows. While we wrot
 3. Test Data Builder
 
 (re)inventing design patterns is different than you learning them beforehand and applying them! I quite enjoyed this experience.
-I will share strategy in next post, this can be used for API testing!
+<br>I will share strategy in next post, this can be used for API testing!
 
 **Step2: Who broke the build?**
 
