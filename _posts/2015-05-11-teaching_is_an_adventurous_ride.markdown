@@ -41,13 +41,13 @@ This gave me further insight of what I can plan next! I wanted to take some hand
 **Some tools, and some fundamentals!**
 <sub>2015, March</sub>
 
-Lately in March 2015, I took session on git for third year students! They knew concept of SCM as they have learnt in (Software Engineering)[http://www.pearsonhighered.com/samplechapter/0321200195.pdf] subject, but never came across some examples, where they could relate concepts like versioning, rollback, ..!
+Lately in March 2015, I took session on git for third year students! They knew concept of SCM as they have learnt in [Software Engineering](http://www.pearsonhighered.com/samplechapter/0321200195.pdf) subject, but never came across some examples, where they could relate concepts like versioning, rollback, ..!
 
 **Why I decided to take session on git?**
 
 1. This will help them to relate to concepts they have learnt already!
 2. They can use this to maintain their assignments and get rid of having 'Final' version under every assignment till very last day!
-3. I remember, during college days, someone's laptop used to crash(purposefully sometimes ;) ), and as it was not under version control nor any backup in some external drive, they used to face problem!
+3. I remember, during college days, someone's laptop used to crash(purposefully sometimes :wink: ), and as it was not under version control nor any backup in some external drive, they used to face problem!
 4. It used to happen a lot, project works till someone makes a change in code and then it stops working, it's difficult to find the point where it was working back in time!
 
 Realized, learning git will help them in college and eventually in industry, be it whatever profession they choose!
