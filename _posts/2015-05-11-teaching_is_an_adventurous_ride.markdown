@@ -19,7 +19,7 @@ When I entered into corporate world, realized a lot of flaws in our education sy
 I always think, If I had known this in my engineering ...!<br>
 Time flew and it was my turn to do something for the students in engineering/diploma.
 
- Manisha mam happened to contact me and it was An "Aha!" moment! She wanted me to conduct some activities in the college, which will essentially help students. She is of the opinion, _"Immediate seniors telling students something gives more inspiration than someone rooted in that field!, students can connect and relate better!"_
+ [Manisha mam](https://in.linkedin.com/pub/manisha-choudhari/1a/71b/1b0) happened to contact me and it was An "Aha!" moment! She wanted me to conduct some activities in the college, which will essentially help students. She is of the opinion, _"Immediate seniors telling students something gives more inspiration than someone rooted in that field!, students can connect and relate better!"_
    I started thinking, what I can share with these students with the kind of exposure I had and still make an impression and inspire them!
 
  I was thrilled, excited, happy and nervous!
