@@ -6,7 +6,8 @@ categories:
 ---
 
 <p align="middle">
-    <img src="/assets/vodqa_bangalore.jpg" alt="Orchid College Session"  border="1">
+    <img src="/assets/vodqa_bangalore.jpg" alt="vodQA Bangalore"  border="1">
+   <figcaption align="right">Created collage from: <a href = "http://www.fotor.com/features/collage.html">Footer.com</a></figcaption>
 </p>
 
 [vodQA](https://www.facebook.com/groups/vodqa/) is an event for people who are equally passionate about software testing and continuously strive to be better at it! This time theme was "[Push the Envelope!](http://info.thoughtworks.com/registration-vodqa-bangalore-2015.html)"
@@ -22,17 +23,20 @@ We are working on a project, is a mobile app for iOS, Android and Mobile web. Th
  3. Each platform behavior is differnet. (touch on droid/ios, click on web)
  4. Different UX interaction pattern. (Navigation drawer for droid, tab bar in iOS and Nav bar in mobile web)
 
- Though above things vary for our app, each screen on different platform exposes similar functionality. In spite of above complexity, we wanted to have single Page object for our automation suite, keeping flavour of the famous [Page object pattern](http://martinfowler.com/bliki/PageObject.html), which will enable us to add automation quickly for all instead of spending equal amount 3 platforms and we came up with generic framework to test, and this is our talk about!
+ Though above things vary for our app, each screen on different platform exposes similar functionality. In spite of above complexity, we wanted to have single Page object for our automation suite, keeping flavour of the famous [Page object pattern](http://martinfowler.com/bliki/PageObject.html), which will enable us to add automation quickly for all, instead of spending equal amount of time for all 3 platforms and we came up with generic framework to test!
+
+ _What we did? How did it save time to add automation for 3 platforms? What is our learning?_ ... and this is what our talk is about!
 
 
-Check out our talk here:
+**Check out our talk here:**
 <div class="video">
     <figure>
         <iframe width="640" height="480" src="//www.youtube.com/embed/1pcW8urtoz0?rel=0" frameborder="0" allowfullscreen></iframe>
     </figure>
 </div>
 
-Check out our slides here:
+
+**Check out our slides here:**
 
 <div>
 <object width="425" height="354" id="player">
@@ -41,6 +45,7 @@ Check out our slides here:
 <param name="allowScriptAccess" value="always"/>
 <embed src="http://www.authorstream.com/player.swf?fb=0&nb=1&ct=5&ap=0&pl=as&c=dfdfdf&p=2509881_635690261162401250&fi=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowFullScreenInteractive="true" width="425" height="354"></embed>
 </object>
+</div>
 
 
 
