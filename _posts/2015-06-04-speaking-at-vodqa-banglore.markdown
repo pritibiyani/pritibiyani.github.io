@@ -29,6 +29,7 @@ We are working on a project, is a mobile app for iOS, Android and Mobile web. Th
 
 
 **Check out our talk here:**
+
 <div class="video">
     <figure>
         <iframe width="640" height="480" src="//www.youtube.com/embed/b1On2xlURcY?rel=0" frameborder="0" allowfullscreen></iframe>
