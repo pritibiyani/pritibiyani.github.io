@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Speaking at vodQA Bangalore!
-published: true
+published: false
 categories:
 ---
 
@@ -27,6 +27,7 @@ We are working on a project, is a mobile app for iOS, Android and Mobile web. Th
 
  _What we did? How did it save time to add automation for 3 platforms? What is our learning?_ ... and this is what our talk about!
 
+Add about role play
 
 **Check out our talk here:**
 
