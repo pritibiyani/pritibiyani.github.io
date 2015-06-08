@@ -4,15 +4,16 @@ title: Speaking at vodQA Bangalore!
 published: true
 categories:
 ---
+[vodQA](https://www.facebook.com/groups/vodqa/) is an event for people who are equally passionate about software testing and continuously strive to be better at it! This time theme was "[Push the Envelope!](http://info.thoughtworks.com/registration-vodqa-bangalore-2015.html)"
+
+[Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b) and I presented our talk "***One page to test them all***  - _A cross platform mobile automation framework!_"
 
 <p align="middle">
     <img src="/assets/vodqa_bangalore.jpg" alt="vodQA Bangalore"  border="1">
    <figcaption align="right">Created collage from: <a href = "http://www.fotor.com/features/collage.html">Footer.com</a></figcaption>
 </p>
 
-[vodQA](https://www.facebook.com/groups/vodqa/) is an event for people who are equally passionate about software testing and continuously strive to be better at it! This time theme was "[Push the Envelope!](http://info.thoughtworks.com/registration-vodqa-bangalore-2015.html)"
 
-[Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b) and I presented our talk "_One page to test them all_ !"
 
 **What was our talk about?**
 
@@ -29,8 +30,10 @@ We are working on a project, is a mobile app for iOS, Android and Mobile web. Th
 
 **Role play in presentation**
 
-We wanted to present on this topic, but we were not clear how to present this one, ..  ! And [Aroj] (https://twitter.com/arojp) came up with this idea of role play and I liked it! <br>
+We wanted to present on this topic, but we were not clear how to present this one and still deliver the intent in a proper way! And [Aroj](https://twitter.com/arojp) came up with this idea of role play!
+
 We presented a talk as if we are pairing. While Pairing, we think different approaches, discuss pros and cons of each and finally decide to go with one of the approach! Same we did as part of our presentation!
+
 
 **Check out our talk here:**
 
