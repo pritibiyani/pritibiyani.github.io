@@ -14,7 +14,6 @@ categories:
 </p>
 
 
-
 **What was our talk about?**
 
 We are working on a project, is a mobile app for iOS, Android and Mobile web. This app is for famous airline in USA.
@@ -46,17 +45,8 @@ We presented a talk as if we are pairing. While Pairing, we think different appr
 
 **Check out our slides here:**
 
-<div>
-<object width="425" height="354" id="player">
-<param name="movie" value="http://www.authorstream.com/player.swf?fb=0&nb=1&ct=5&ap=0&pl=as&c=dfdfdf&p=2509881_635690261162401250&fi=1" />
-<param name="allowFullScreenInteractive" value="true" />
-<param name="allowScriptAccess" value="always"/>
-<embed src="http://www.authorstream.com/player.swf?fb=0&nb=1&ct=5&ap=0&pl=as&c=dfdfdf&p=2509881_635690261162401250&fi=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowFullScreenInteractive="true" width="425" height="354"></embed>
-</object>
-</div>
-
-
-
+<script async class="speakerdeck-embed" width="425" data-id="49370aadf70d401fa016ea09507661bd" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js">
+</script>
 
 
 
