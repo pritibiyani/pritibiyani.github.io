@@ -30,7 +30,7 @@ We are working on a project, is a mobile app for iOS, Android and Mobile web. Th
 
 **Role play in presentation**
 
-We wanted to present on this topic, but we were not clear how to present this one and still deliver the intent in a proper way! And [Aroj](https://twitter.com/arojp) came up with this idea of role play!
+We were not sure how to present this and still deliver the intent in a proper way! And [Aroj](https://twitter.com/arojp) came up with this idea of role play!
 
 We presented a talk as if we are pairing. While Pairing, we think different approaches, discuss pros and cons of each and finally decide to go with one of the approach! Same we did as part of our presentation!
 
