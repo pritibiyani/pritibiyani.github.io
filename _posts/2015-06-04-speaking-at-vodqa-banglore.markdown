@@ -23,7 +23,12 @@ We are working on a project, is a mobile app for iOS, Android and Mobile web. Th
  3. Each platform behavior is different. (touch on droid/ios, click on web)
  4. Different UX interaction pattern. (Navigation drawer for droid, tab bar in iOS and Nav bar in mobile web)
 
- Though above things vary for our app, each screen on different platform exposes similar functionality. In spite of above variations, we wanted to have single Page object for our automation suite, keeping flavour of the famous [Page object pattern](http://martinfowler.com/bliki/PageObject.html), which will enable us to add automation quickly for all, instead of spending equal amount of time for all 3 platforms and we came up with generic framework to test!
+ Though above things vary for our app, each screen on different platform exposes similar functionality. There is example provided by [calabash-x-platform](https://github.com/calabash/x-platform-example) and they have suggested to use different page object for each platform, but you can reuse feature file, step definition.
+
+  In spite of above mentioned variations, we wanted to have single page object for our automation suite, keeping flavour of the famous [Page object pattern](http://martinfowler.com/bliki/PageObject.html), which will enable us to add automation quickly for all, instead of spending equal amount of time for all 3 platforms and we came up with generic framework to test!
+
+  In short we wanted to have common feature file, common step definition and common page object as well!
+
 
  _What we did? How did it save time to add automation for 3 platforms? What is our learning?_ ... and this is what our talk about!
 
@@ -31,14 +36,14 @@ We are working on a project, is a mobile app for iOS, Android and Mobile web. Th
 
 We were not sure how to present this and still deliver the intent in a proper way! And [Aroj](https://twitter.com/arojp) came up with this idea of role play!
 
-We presented a talk as if we are pairing. While Pairing, we think different approaches, discuss pros and cons of each and finally decide to go with one of the approach! Same we did as part of our presentation!
+We presented a talk as if we are pairing. While pairing, we think different approaches, discuss pros and cons of each and finally decide to go with one of the approach! Same we did as part of our presentation!
 
 
 **Check out our talk here:**
 
 <div class="video">
     <figure>
-        <iframe width="640" height="480" src="//www.youtube.com/embed/b1On2xlURcY?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="730" height="480" src="//www.youtube.com/embed/b1On2xlURcY?rel=0" frameborder="0" allowfullscreen></iframe>
     </figure>
 </div>
 
