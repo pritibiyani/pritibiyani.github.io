@@ -52,7 +52,7 @@ Lately in March 2015, I took session on git for third year students! They knew c
 
 Realized, learning git will help them in college and eventually in industry, be it whatever profession they choose!
 
-I explained basics of what is git about, we saw some videos, taught basic commands and some internals of git! I Planned to take hands on session at the same time, but could not do that! The very next day, they tried the basics and did small online tutorial of git under presence of mam and I came to know that they found it helpful. <br>[This feedback](http://bit.do/git_session) gave me more insights into what I can plan for my next visit.
+I explained basics of what is git about, we saw some videos, taught basic commands and some internals of git! I Planned to take hands on session at the same time, but could not do that! The very next day, they tried the basics and did small online tutorial of git under presence of mam and I came to know that they found it helpful. <br>[This feedback](http://www.ideaboardz.com/retros/export/880863/Session%20in%20orchid.pdf) gave me more insights into what I can plan for my next visit.
 
 
 
