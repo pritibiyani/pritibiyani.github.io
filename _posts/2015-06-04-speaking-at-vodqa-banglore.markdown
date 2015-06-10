@@ -25,10 +25,9 @@ We are working on a project, is a mobile app for iOS, Android and Mobile web. Th
 
  Though above things vary for our app, each screen on different platform exposes similar functionality. There is example provided by [calabash-x-platform](https://github.com/calabash/x-platform-example) and they have suggested to use different page object for each platform, but you can reuse feature file, step definition.
 
-  In spite of above mentioned variations, we wanted to have single page object for our automation suite, keeping flavour of the famous [Page object pattern](http://martinfowler.com/bliki/PageObject.html), which will enable us to add automation quickly for all, instead of spending equal amount of time for all 3 platforms and we came up with generic framework to test!
+  In spite of above mentioned variations, we wanted to have single page object for our automation suite, keeping flavour of the famous [Page object pattern](http://martinfowler.com/bliki/PageObject.html), which will enable us to add automation quickly for all, instead of spending equal amount of time for all 3 platforms!
 
   In short we wanted to have common feature file, common step definition and common page object as well!
-
 
  _What we did? How did it save time to add automation for 3 platforms? What is our learning?_ ... and this is what our talk about!
 
@@ -43,15 +42,13 @@ We presented a talk as if we are pairing. While pairing, we think different appr
 
 <div class="video">
     <figure>
-        <iframe width="730" height="480" src="//www.youtube.com/embed/b1On2xlURcY?rel=0" frameborder="0" allowfullscreen></iframe>
+        <iframe width="640" height="480" src="//www.youtube.com/embed/b1On2xlURcY?rel=0" frameborder="0" allowfullscreen></iframe>
     </figure>
 </div>
 
 
 **Check out our slides here:**
 
-<script async class="speakerdeck-embed" width="425" data-id="49370aadf70d401fa016ea09507661bd" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js">
-</script>
 
 
 
