@@ -102,9 +102,11 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
     Well, it's fun! You reduce the time you spend on repetitive tasks, speed up things and learn along side! :)
 
-_I am lazy and I find ways to [reduce repetitive tasks](http://threevirtues.com/) _
+
 <p align="middle">
     <img src="/assets/automate_all_the_things.png" alt="Automate all the things" width = "400">
+       <figcaption align="center"><i>I am lazy and I find ways </i><a href = "http://threevirtues.com/">to reduce repetitive tasks </a></figcaption>
+
 </p>
 
 <br/>
