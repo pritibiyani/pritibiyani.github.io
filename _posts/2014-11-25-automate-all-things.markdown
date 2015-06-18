@@ -102,6 +102,7 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
     Well, it's fun! You reduce the time you spend on repetitive tasks, speed up things and learn along side! :)
 
+_I am lazy and I find ways to [reduce repetitive tasks](http://threevirtues.com/) _
 <p align="middle">
     <img src="/assets/automate_all_the_things.png" alt="Automate all the things" width = "400">
 </p>
@@ -111,5 +112,6 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 <br/>
 <br/>
 <br/>
+
 Thanks a million to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shirish Padalkar](https://twitter.com/_Garbage_), [Rahul Phulore](https://twitter.com/missingfaktor), [Bhumika S](https://www.linkedin.com/pub/bhumika-s/16/562/299) and [Vishnu Narang](https://twitter.com/vishnu_narang) for valuable time and early feedback. :)
 
