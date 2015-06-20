@@ -41,18 +41,18 @@ This gave me further insight of what I can plan next! I wanted to take some hand
 **Some tools, and some fundamentals!**
 <sub>2015, March</sub>
 
-Lately in March 2015, I took session on git for third year students! They knew concept of SCM as they have learnt in [Software Engineering](http://www.pearsonhighered.com/samplechapter/0321200195.pdf) subject, but never came across some examples, where they could relate concepts like versioning, rollback, ..!
+Lately in March 2015, I took session on git for third year students! They knew concept of SCM as they have learnt in [Software Engineering](http://www.pearsonhighered.com/samplechapter/0321200195.pdf) subject, but never came across some examples, where they could relate concepts like versioning, rollback etc.
 
 **Why I decided to take session on git?**
 
 1. This will help them to relate to concepts they have learnt already!
-2. They can use this to maintain their assignments and get rid of having 'Final' version under every assignment till very last day!
+2. They can use this to maintain their assignments and get rid of having '_Final_' version under every assignment till very last day!
 3. I remember, during college days, someone's laptop used to crash(purposefully sometimes :wink: ), and as it was not under version control nor any backup in some external drive, they used to face problem!
 4. It used to happen a lot, project works till someone makes a change in code and then it stops working, it's difficult to find the point where it was working back in time!
 
 Realized, learning git will help them in college and eventually in industry, be it whatever profession they choose!
 
-I explained basics of what is git about, we saw some videos, taught basic commands and some internals of git! I Planned to take hands on session at the same time, but could not do that! The very next day, they tried the basics and did small online tutorial of git under presence of mam and I came to know that they found it helpful. <br>[This feedback](http://www.ideaboardz.com/retros/export/880863/Session%20in%20orchid.pdf) gave me more insights into what I can plan for my next visit.
+I explained basics of what is git about, we saw some videos, taught basic commands and some internals of git! I Planned to take hands on session at the same time, but could not do that. The very next day, they tried the basics and did small online tutorial of git under presence of mam and I came to know that they found it helpful. <br>[This feedback](http://bit.do/git_orchid_feedback) gave me more insights into what I can plan for my next visit.
 
 
 
