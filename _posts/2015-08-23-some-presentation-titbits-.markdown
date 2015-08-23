@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Some Presentation titbits!
-published: false
+published: true
 categories: Presentation, talk
 ---
 
@@ -11,13 +11,15 @@ I'm still a beginner at my speaking skills, but If you follow some tricks, you c
  + **Start presentation with something which will grab audience's attention!**
 
     Most people when they come to work with us already have some idea of how their speech will go.  And the most common mistake people make is starting wrong.  They begin with some polite thanks, a little self-introduction, perhaps a shout-out to someone in the audience!
+
     But you will say what's wrong with this?
+
     World has changed! Audience will start snoring if you don't start your presentation with something that will wake up their senses! So jump right in, start with an action!
 
     Use some analogy and link that to your talk or give some case study and your entire talk will revolve around that or may be just start with joke just make audience to laugh! (if you talk is after lunch, you should really think about this :P) or you can quote someone and then start or with funny picture or you can may be start with a question (It may be direct or rhetorical!) or ....!
     The point is, grabbing audience attention is like ice breaker!
 
-     Well, we started with story in [XP-conf talk](/blog/speaking-at-xp-conf/) and as soon as we finished our story, people started clapping!
+     Well, Yahya started with story in [XP-conf talk](/blog/speaking-at-xp-conf/) where we paired and as soon as he finished story, people started clapping and that was the _aha_ moment!:relaxed:
 
  + **Judge your audience!**
 
@@ -35,11 +37,13 @@ I'm still a beginner at my speaking skills, but If you follow some tricks, you c
 
  + **Presenter notes**
 
-    I do generally forget important points or just drag one point so much or I go on talking on some different point! Writing down actual points you will be talking helps a lot and help you to come on the point for people like me!
+    I do generally forget important points or just drag one point so much or I go on talking on some different point! :expressionless:
+
+    Writing down actual points you will be talking helps a lot and help you to come on the point for people like me!
 
 + **Don't be too heavy!**
 
-    This doesn't mean you have to lose your weight! :P
+    This doesn't mean you have to lose your weight! :stuck_out_tongue:
 
      >If you can't explain it simply, you don't understand it well enough! --Albert Einstein
 
@@ -47,7 +51,8 @@ I'm still a beginner at my speaking skills, but If you follow some tricks, you c
 
 + **Shock your audience!**
 
-    Yes, that helps again to grab audience attention and to wake up them ;)
+    Yes, that helps again to grab audience attention and to wake up them :wink:
+    
     There are plethora of ways to shock audience. You can in between end the presentation, may be show some funny slide/video, make them to imagine what if ..!
 
  + **Try to make it as interactive as possible!**
