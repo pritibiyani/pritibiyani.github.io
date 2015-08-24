@@ -10,16 +10,17 @@ I'm still a beginner at my speaking skills, but If you follow some tricks, you c
 
  + **Start presentation with something which will grab audience's attention!**
 
-    Most people when they come to work with us already have some idea of how their speech will go.  And the most common mistake people make is starting wrong.  They begin with some polite thanks, a little self-introduction, perhaps a shout-out to someone in the audience!
+    Most people when they come to work with us already have some idea of how their speech will go. And the most common mistake people make is starting wrong. They begin with some polite thanks, a little self-introduction, perhaps a shout-out to someone in the audience!
 
     But you will say what's wrong with this?
 
     World has changed! Audience will start snoring if you don't start your presentation with something that will wake up their senses! So jump right in, start with an action!
 
-    Use some analogy and link that to your talk or give some case study and your entire talk will revolve around that or may be just start with joke just make audience to laugh! (if you talk is after lunch, you should really think about this :P) or you can quote someone and then start or with funny picture or you can may be start with a question (It may be direct or rhetorical!) or ....!
+    Use some analogy and link that to your talk or give some case study and your entire talk will revolve around that or may be just start with joke just make audience to laugh! (if you talk is after lunch, you should really think about this :stuck_out_tongue_winking_eye:) or you can quote someone and then start or with funny picture or you can may be start with a question (It may be direct or rhetorical!) or ....!
+
     The point is, grabbing audience attention is like ice breaker!
 
-     Well, Yahya started with story in [XP-conf talk](/blog/speaking-at-xp-conf/) where we paired and as soon as he finished story, people started clapping and that was the _aha_ moment!:relaxed:
+     Well, [Yahya](https://twitter.com/meetykp)(we were pairing) started with story in [XP-conf talk](/blog/speaking-at-xp-conf/) where we paired and as soon as he finished story, people started clapping and that was the _aha_ moment!:relaxed:
 
  + **Judge your audience!**
 
