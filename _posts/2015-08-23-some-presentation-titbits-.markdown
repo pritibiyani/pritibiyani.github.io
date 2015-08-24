@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Some Presentation titbits!
-published: true
+published: false
 categories: Presentation, talk
 ---
 
@@ -52,7 +52,7 @@ I'm still a beginner at my speaking skills, but If you follow some tricks, you c
 + **Shock your audience!**
 
     Yes, that helps again to grab audience attention and to wake up them :wink:
-    
+
     There are plethora of ways to shock audience. You can in between end the presentation, may be show some funny slide/video, make them to imagine what if ..!
 
  + **Try to make it as interactive as possible!**
