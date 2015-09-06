@@ -35,7 +35,7 @@ This was two day conference. Our talk was on second day. The day started with st
 
 3.  What are possible reasons of being your build flaky?
 
-4.  How we can mitigate this randomness?
+4.  How can we mitigate this randomness?
 
 5.  Some strategies to resolve this flakiness if your team is already plagued with the disease of "flakiness".
 
@@ -46,7 +46,7 @@ This was two day conference. Our talk was on second day. The day started with st
 </script>
 
 <br/>
-The talk went pretty well. We were waiting for feedback and when we were just about to leave, anchors asked crowd 'which talk you liked the most?' and it was ours! The best feedback is people's choice award! :innocent:
+The talk went pretty well. We were waiting for feedback and when we were just about to leave, organizers asked crowd 'which talk you liked the most?' and it was ours! The best feedback is people's choice award! :innocent:
 
 <br/>
 
