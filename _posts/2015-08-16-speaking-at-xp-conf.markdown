@@ -31,9 +31,9 @@ This was two day conference. Our talk was on second day. The day started with st
 
 1.  What are these flaky tests? a.k.a Non deterministic tests!
 
-2.  What is their nature? How they are harmful in any project?
+2.  How these tests are harmful in a project?
 
-3.  What are possible reasons of being your build flaky?
+3.  What are reasons for being your build flaky?
 
 4.  How can we mitigate this randomness?
 
