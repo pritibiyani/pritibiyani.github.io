@@ -14,6 +14,7 @@ highlighter: pygments
 gems:
   - jekyll-redirect-from
   - jemoji
+  - jekyll-sitemap
 
 defaults:
   -
