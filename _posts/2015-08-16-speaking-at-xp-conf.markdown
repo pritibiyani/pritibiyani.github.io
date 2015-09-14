@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Speaking at XP Conf, Bangalore!
-published: false
+published: true
 categories: Conference, Presentation
 ---
 
@@ -21,7 +21,7 @@ This was two day conference. Our talk was on second day. The day started with st
 
  And I think we did pretty good marketing!
 
- The topic was __Who Will test your tests ?__
+ The topic was __Who Will test your tests?__
 
  We all know advantage of writing tests and we do write different types of tests at different level. Initially they slow down us, but sooner they give us confidence and help us in faster development, we can take risk of doing major refactoring! If anything goes wrong in our application, we come to know because of test suites failing in our CI. When something goes wrong, some of the team member who must have broken the build, would go and check the failure and fix it.
 
@@ -31,15 +31,39 @@ This was two day conference. Our talk was on second day. The day started with st
 
 1.  What are these flaky tests? a.k.a Non deterministic tests!
 
+    The tests which sometimes pass and sometimes fail. Their failure seems to be random and they acts like boy who cried for a wolf!
+
 2.  How these tests are harmful in a project?
+
+    When every run of the test suite gives you the possibility to yield a different result, the test is almost completely worthless. When the suite shows you a bug, you have a high chance that you cannot reproduce it, and when you try to fix the bug, you cannot prove that your fix works. Indeed we end up wasting lot of time!
+    These tests are more harmful in nature as they pollute the team culture. Earlier when test would have failed, someone would go and check for the failure, but with random nature, everyone stop believing RED and GREEN builds! This is also known as [Broken Window theory](https://en.wikipedia.org/wiki/Broken_windows_theory)
 
 3.  What are reasons for being your build flaky?
 
+    At high level flakiness reasons are:
+
+    - Infrastructure problem (Agent issues / Input-Output)
+
+    - Badly written production code (Synchronization, Concurrency, Asynchronous waiting, Improper handling of resources)
+
+    - Poorly written Test code (Along with reasons similar to production code; External system calls in test, Time dependent tests, Test order dependency)
+
+     We explained each cause with psuedo code and care to be taken for them. (Refer slides.)
+
 4.  How can we mitigate this randomness?
+
+    Here for every problem has one hidden solution, write proper code! Handle each and every resource in code properly. Treat your test code as production code itself.
 
 5.  Some strategies to resolve this flakiness if your team is already plagued with the disease of "flakiness".
 
-6.  Something to think about how we can avoid this at first place! Some techniques like [Poka Yoke](http://techie-notebook.blogspot.com/2012/07/poka-yoke-applying-mistake-proofing-to.html) How we can write such a beautiful code, which will not allow our build to be flaky! :relaxed:
+    You can attack from all dimensions simultaneously. The very first solution would be changing mindset, "_Stop calling your build flaky!_" Try to fix infrastructure issues and at the same time quarantine the plagued tests and keep your test suite healthy. Have some strategy to fix these quarantined tests.
+
+6.  Prevention is better than cure!
+
+    Something to think about, how we can avoid this at first place! Some techniques like [Poka Yoke](http://techie-notebook.blogspot.com/2012/07/poka-yoke-applying-mistake-proofing-to.html). How we can write such a beautiful code, which will not allow our build to be flaky! :relaxed:
+
+    For example, may be you are dealing with some resource in your application and your static code analysis will warn you about handling code improperly.
+    or it will not at all compile in case you have used Time.now in test code. In short, things which will prevent you from causing the randomness!
 
 **Check out our slides here:**
 <script async class="speakerdeck-embed" data-id="4d03d3254e374d25b877ff236b1b00b4" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js">

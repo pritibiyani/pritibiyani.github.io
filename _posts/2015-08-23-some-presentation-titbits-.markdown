@@ -55,11 +55,11 @@ I'm still improvising on my presentation skill, but If you follow some tricks, y
 
     There are plethora of ways to shock audience. You can in between end the presentation, may be show some funny slide/video, make them to imagine what if ..!
 
- + **Try to make it as interactive as possible!**
+ + **Don't talk too much!**
 
     >Presentations aren't about presenter, they're about audience and what audience needs. If the presenter is talking too much it's a sign that he or she has forgotten who's important! -Simon Raybould
 
-    Yes, So you need to be so much cautious! The simple trick is, if you feel little thirsty / you get feeling that you are talking too much, ask the audience! Look at audience reaction, judge them and ask questions, promote them to tell their stories, or may be tell them share their learning! It's great way where you can keep it interactive, get them engaged and get you most connected with them!
+    You need to keep in interactive! If you realize that you are talking too much, probably the audience has stopped listening to it!  The simple trick is, if you feel little thirsty / you get feeling that you are talking too much, ask the audience! Look at audience reaction, judge them and ask questions, promote them to tell their stories, or may be tell them share their learning! It's great way where you can keep it interactive, get them engaged and get you most connected with them!
 
 + **Nervousness**
 
