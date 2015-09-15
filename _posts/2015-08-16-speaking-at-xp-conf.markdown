@@ -77,7 +77,7 @@ This was two day conference. Our talk was on second day. The day started with st
 
 * The talk went pretty well. We were waiting for feedback and when we were just about to leave, organizers asked crowd '_which talk you liked the most?_' and it was ours! The best feedback is **people's choice** award! :innocent:
 
-* As soon as Yahya finished with first slide, people started clapping! This was an unexpected reaction :innocent:
+* As soon as Yahya finished with first slide, people started clapping! It was such an impact! This was an unexpected reaction :innocent:
 
 <br/>
 
