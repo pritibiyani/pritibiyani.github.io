@@ -52,5 +52,9 @@ We presented a talk as if we are pairing. While pairing, we think different appr
 <script async class="speakerdeck-embed" data-id="49370aadf70d401fa016ea09507661bd" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js">
 </script>
 
+**And after all this ...**
+
+Thank you [Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b), for being such a great pair; vodQA Bangalore team, for taking efforts to take dry runs and giving us feedback and people who have attended this talk!
+
 
 

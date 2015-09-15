@@ -7,9 +7,10 @@ categories: Conference, Presentation
 
 This time occasion was of [XP-conf](http://xpconference.in/) in Bangalore. This was very first time XP-conf was being held in India.
 
+<h3> What's conference about? </h3>
  The purpose for this conference is delivering value from clean code to continuous value delivery, increase awareness about good coding practices from coding design and testing of software development, a platform where novice can learn from experts about XP practices! This platform, which will act as a catalyst for organizations who want to adapt agile methodologies and practices.
 
- Theme for conference was "Clean Code"! We could grab the opportunity of presenting over here because of our colleague [Shirish Padalkar](https://about.me/shirishpadalkar). He has submitted abstract and as he could not present one, we got chance! [Yahya](https://twitter.com/meetykp) and I paired for this talk!
+ Theme for conference was "Clean Code"! We could grab the opportunity of presenting over here because of our colleague [Shirish Padalkar](https://about.me/shirishpadalkar).[Yahya](https://twitter.com/meetykp) and I paired for this talk!
 
 This was two day conference. Our talk was on second day. The day started with stand up, where speakers has given chance for marketing their talk!
 
@@ -21,6 +22,7 @@ This was two day conference. Our talk was on second day. The day started with st
 
  And I think we did pretty good marketing!
 
+<h3> D Day! </h3>
  The topic was __Who Will test your tests?__
 
  We all know advantage of writing tests and we do write different types of tests at different level. Initially they slow down us, but sooner they give us confidence and help us in faster development, we can take risk of doing major refactoring! If anything goes wrong in our application, we come to know because of test suites failing in our CI. When something goes wrong, some of the team member who must have broken the build, would go and check the failure and fix it.
@@ -29,16 +31,16 @@ This was two day conference. Our talk was on second day. The day started with st
 
   and this was our topic! We talked about:
 
-1.  What are these flaky tests? a.k.a Non deterministic tests!
+1.  **What are these flaky tests? a.k.a Non deterministic tests!**
 
     The tests which sometimes pass and sometimes fail. Their failure seems to be random and they act like boy who cried for a wolf!
 
-2.  How these tests are harmful in a project?
+2.  **How these tests are harmful in a project?**
 
     When every run of the test suite gives you the possibility to yield a different result, the test is almost completely worthless. When the suite shows you a bug, you have a high chance that you cannot reproduce it, and when you try to fix the bug, you cannot prove that your fix works. Indeed we end up wasting lot of time!
-    These tests are more harmful in nature as they pollute the team culture. Earlier when test would have failed, someone would go and check for the failure, but with random nature, everyone stop believing RED and GREEN builds! This is also known as [Broken Window theory](https://en.wikipedia.org/wiki/Broken_windows_theory)
+    These tests are more harmful in nature as they pollute the team culture. Earlier when test would have failed, someone would go and check for the failure, but with random nature, everyone stop believing RED and GREEN builds! This is also known as [Broken Window theory](https://en.wikipedia.org/wiki/Broken_windows_theory).
 
-3.  What are reasons for being your build flaky?
+3.  **What are reasons for being your build flaky?**
 
     At high level flakiness reasons are:
 
@@ -50,15 +52,17 @@ This was two day conference. Our talk was on second day. The day started with st
 
      We explained each cause with psuedo code and care to be taken for them. (Refer slides.)
 
-4.  How can we mitigate this randomness?
+4.  **How can we mitigate this randomness?**
 
-    Here for every problem has one hidden solution, write proper code! Handle each and every resource in code properly. Treat your test code as production code itself.
+    Here for every problem has one hidden solution, _write proper code!_ Handle each and every resource in code properly. Treat your test code as production code itself.
 
-5.  Some strategies to resolve this flakiness if your team is already plagued with the disease of "flakiness".
+5.  **What should we do, we already have a "flakiness"?**
+
+    Some strategies to resolve this flakiness if your team is already plagued with the disease of "flakiness".
 
     You can attack from all dimensions simultaneously. The very first solution would be changing mindset, "_Stop calling your build flaky!_" Try to fix infrastructure issues and at the same time quarantine the plagued tests and keep your test suite healthy. Have some strategy to fix these quarantined tests.
 
-6.  Prevention is better than cure!
+6.  **And of course saying, "_Prevention is better than cure!_ "**
 
     Something to think about, how we can avoid this at first place! Some techniques like [Poka Yoke](http://techie-notebook.blogspot.com/2012/07/poka-yoke-applying-mistake-proofing-to.html). How we can write such a beautiful code, which will not allow our build to be flaky! :relaxed:
 
@@ -70,7 +74,7 @@ This was two day conference. Our talk was on second day. The day started with st
 </script>
 
 <br/>
-The talk went pretty well. We were waiting for feedback and when we were just about to leave, organizers asked crowd 'which talk you liked the most?' and it was ours! The best feedback is people's choice award! :innocent:
+The talk went pretty well. We were waiting for feedback and when we were just about to leave, organizers asked crowd '_which talk you liked the most?_' and it was ours! The best feedback is **people's choice** award! :innocent:
 
 <br/>
 
@@ -78,6 +82,13 @@ The talk went pretty well. We were waiting for feedback and when we were just ab
     <img src="/assets/Xp_conf_2.jpg" alt="vodQA Bangalore"  border="1">
    <figcaption align="right">Created collage from: <a href = "http://www.fotor.com/features/collage.html">Footer.com</a></figcaption>
 </p>
+
+
+
+<h3> and after all this ... </h3>
+Thanks a lot [Shirish Padalkar](https://about.me/shirishpadalkar) for opening up opportunity to us, giving us feedback time to time and [Yahya](https://twitter.com/meetykp), surely I learnt a lot while pairing !
+
+ And A big thank you to XP conference team for giving us chance instead of our colleague and all the people who attended this talk!
 
 
 
