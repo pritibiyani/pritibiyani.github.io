@@ -31,7 +31,7 @@ This was two day conference. Our talk was on second day. The day started with st
 
 1.  What are these flaky tests? a.k.a Non deterministic tests!
 
-    The tests which sometimes pass and sometimes fail. Their failure seems to be random and they acts like boy who cried for a wolf!
+    The tests which sometimes pass and sometimes fail. Their failure seems to be random and they act like boy who cried for a wolf!
 
 2.  How these tests are harmful in a project?
 
