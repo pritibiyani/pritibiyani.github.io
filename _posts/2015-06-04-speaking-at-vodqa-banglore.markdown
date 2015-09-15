@@ -54,7 +54,7 @@ We presented a talk as if we are pairing. While pairing, we think different appr
 
 **And after all this ...**
 
-Thank you [Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b), for being such a great pair; vodQA Bangalore team, for taking efforts to take dry runs and giving us feedback and people who have attended this talk!
+Thank you [Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b), for being such a great pair and mentor; vodQA Bangalore team, for taking efforts to take dry runs and giving us feedback and people who have attended this talk!
 
 
 
