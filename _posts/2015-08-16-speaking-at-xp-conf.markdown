@@ -23,13 +23,12 @@ This was two day conference. Our talk was on second day. The day started with st
  And I think we did pretty good marketing!
 
 <h3> D Day! </h3>
- The topic was __Who Will test your tests?__
 
  We all know advantage of writing tests and we do write different types of tests at different level. Initially they slow down us, but sooner they give us confidence and help us in faster development, we can take risk of doing major refactoring! If anything goes wrong in our application, we come to know because of test suites failing in our CI. When something goes wrong, some of the team member who must have broken the build, would go and check the failure and fix it.
 
  This is okay till it's a valid failure! Suddenly one day, out of no clue and no reason your test starts failing! With habit someone would go and check the cause of failure, and it will turn out to be just a random. Obviously, re-running the test would be first solution, if it's timeout then increasing timeout would be another, and then if these don't work, fingers will be pointed to poor agent on which test is running! With this, no one will trust failing tests and test suite will start giving us hard time instead of giving us confidence!
 
-  and this was our topic! We talked about:
+  and this was our topic, **Who will test your tests?** We talked about:
 
 1.  **What are these flaky tests? a.k.a Non deterministic tests!**
 
