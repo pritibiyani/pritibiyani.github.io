@@ -10,7 +10,7 @@ This time occasion was of [XP-conf](http://xpconference.in/) in Bangalore. This 
 <h3> What's conference about? </h3>
  The purpose for this conference is delivering value from clean code to continuous value delivery, increase awareness about good coding practices from coding design and testing of software development, a platform where novice can learn from experts about XP practices! This platform, which will act as a catalyst for organizations who want to adapt agile methodologies and practices.
 
- Theme for conference was "Clean Code"! We could grab the opportunity of presenting over here because of our colleague [Shirish Padalkar](https://about.me/shirishpadalkar).[Yahya](https://twitter.com/meetykp) and I paired for this talk!
+ Theme for conference was "Clean Code"! We could grab the opportunity of presenting over here because of our colleague [Shirish Padalkar](https://about.me/shirishpadalkar). [Yahya](https://twitter.com/meetykp) and I paired for this talk!
 
 This was two day conference. Our talk was on second day. The day started with stand up, where speakers has given chance for marketing their talk!
 
@@ -73,7 +73,11 @@ This was two day conference. Our talk was on second day. The day started with st
 </script>
 
 <br/>
-The talk went pretty well. We were waiting for feedback and when we were just about to leave, organizers asked crowd '_which talk you liked the most?_' and it was ours! The best feedback is **people's choice** award! :innocent:
+<h3> Some _aha_ moment! </h3>
+
+* The talk went pretty well. We were waiting for feedback and when we were just about to leave, organizers asked crowd '_which talk you liked the most?_' and it was ours! The best feedback is **people's choice** award! :innocent:
+
+* As soon as Yahya finished with first slide, people started clapping! This was an unexpected reaction :innocent:
 
 <br/>
 
