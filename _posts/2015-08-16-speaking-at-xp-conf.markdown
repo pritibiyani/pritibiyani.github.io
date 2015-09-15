@@ -73,7 +73,7 @@ This was two day conference. Our talk was on second day. The day started with st
 </script>
 
 <br/>
-<h3> Some _aha_ moment! </h3>
+<h3> Some <i>aha</i> moment! </h3>
 
 * The talk went pretty well. We were waiting for feedback and when we were just about to leave, organizers asked crowd '_which talk you liked the most?_' and it was ours! The best feedback is **people's choice** award! :innocent:
 
