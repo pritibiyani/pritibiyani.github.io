@@ -30,7 +30,7 @@ This was two day conference. Our talk was on second day. The day started with st
 
   and this was our topic, **Who will test your tests?** We talked about:
 
-1.  **What are these flaky tests? a.k.a Non deterministic tests!**
+1.  **What are these flaky tests? a.k.a [Non deterministic tests!](http://martinfowler.com/articles/nonDeterminism.html)**
 
     The tests which sometimes pass and sometimes fail. Their failure seems to be random and they act like a boy who cried for a wolf!
 
