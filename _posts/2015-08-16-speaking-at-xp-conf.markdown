@@ -10,9 +10,9 @@ This time occasion was of [XP-conf](http://xpconference.in/) in Bangalore. This 
 <h3> What's conference about? </h3>
  The purpose for this conference is delivering value from clean code to continuous value delivery, increase awareness about good coding practices from coding design and testing of software development, a platform where novice can learn from experts about XP practices! This platform, which will act as a catalyst for organizations who want to adapt agile methodologies and practices.
 
- Theme for conference was "Clean Code"! We could grab the opportunity of presenting over here because of our colleague [Shirish Padalkar](https://about.me/shirishpadalkar). [Yahya](https://twitter.com/meetykp) and I paired for this talk!
+ Theme for conference was "Clean Code"! We could grab the opportunity of presenting over here because of our colleague [Shirish Padalkar](https://about.me/shirishpadalkar). [Yahya](https://twitter.com/meetykp) and I paired for this talk.
 
-This was two day conference. Our talk was on second day. The day started with stand up, where speakers has given chance for marketing their talk!
+This was two day conference. Our talk was on second day. The day started with stand up, where speakers has given chance for marketing their talk.
 
 <p align="middle">
     <img src="/assets/Xp_conf_1.jpg" alt="vodQA Bangalore"  border="1">
@@ -32,7 +32,7 @@ This was two day conference. Our talk was on second day. The day started with st
 
 1.  **What are these flaky tests? a.k.a Non deterministic tests!**
 
-    The tests which sometimes pass and sometimes fail. Their failure seems to be random and they act like boy who cried for a wolf!
+    The tests which sometimes pass and sometimes fail. Their failure seems to be random and they act like a boy who cried for a wolf!
 
 2.  **How these tests are harmful in a project?**
 
@@ -49,7 +49,7 @@ This was two day conference. Our talk was on second day. The day started with st
 
     - Poorly written Test code (Along with reasons similar to production code; External system calls in test, Time dependent tests, Test order dependency)
 
-     We explained each cause with psuedo code and care to be taken for them. (Refer slides.)
+     We explained each cause with psuedo code and care to be taken for them. (<a href="#slides">Refer slides.</a>)
 
 4.  **How can we mitigate this randomness?**
 
@@ -68,7 +68,7 @@ This was two day conference. Our talk was on second day. The day started with st
     For example, may be you are dealing with some resource in your application and your static code analysis will warn you about handling code improperly.
     or it will not at all compile in case you have used Time.now in test code. In short, things which will prevent you from causing the randomness!
 
-**Check out our slides here:**
+<b id="slides">Check out our slides here :</b>
 <script async class="speakerdeck-embed" data-id="4d03d3254e374d25b877ff236b1b00b4" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js">
 </script>
 
