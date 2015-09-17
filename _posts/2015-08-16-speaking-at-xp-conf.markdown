@@ -47,8 +47,10 @@ This was two day conference. Our talk was on second day. The day started with st
 
     - Badly written production code (Synchronization, Concurrency, Asynchronous waiting, Improper handling of resources)
 
-    - Poorly written Test code (Along with reasons similar to production code; External system calls in test, Time dependent tests, Test order dependency)
+      If you can't write test, then your code design is wrong. On top of that you still keep on adding tests ignoring the fact how hard it is, it is going to give you hard time!
+        Bad design is the smell, if you don't fix it, it is on the verge of getting this flakiness disease!
 
+    - Poorly written Test code (Along with reasons similar to production code; External system calls in test, Time dependent tests, Test order dependency)
      We explained each cause with psuedo code and care to be taken for them. (<a href="#slides">Refer slides.</a>)
 
 4.  **How can we mitigate this randomness?**
