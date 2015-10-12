@@ -117,3 +117,8 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
 Thanks a million to [Rahul Kavale](https://twitter.com/yphalcombinator), [Shirish Padalkar](https://twitter.com/_Garbage_), [Rahul Phulore](https://twitter.com/missingfaktor), [Bhumika S](https://www.linkedin.com/pub/bhumika-s/16/562/299) and [Vishnu Narang](https://twitter.com/vishnu_narang) for valuable time and early feedback. :)
 
+You will find similar article over here on [ThoughtWorks insights](https://www.thoughtworks.com/insights/blog/when-to-automate-and-why).
+
+Whenever you write scripts, write in [OOPs way](https://practicingruby.com/articles/from-scripting-to-oop?u=dc2ab0f9bb)!
+
+
