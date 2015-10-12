@@ -1,14 +1,70 @@
 ---
 layout: post
-title: Learning from OO boot camp!
+title: Test design patterns, do they exist?
 published: true
 categories:
 ---
 
+
+What can be title?
+
+ - Treat your test code as production code!
+ - Test code is architecture, unlike a production code!
+ - Test design patterns, do they exists?
+ -
+
+
+ How can I strucutre this?
+
+ - Like a conversation style, uncle bob has done for structured programming!
+ - Start can be set as a conversation style!
+
+Structure
+
+ - Start
+ - Conversation. To set why we need to have a good code in a function automation suite.
+ - Then, what are the problem with bad code? We want to get things done! Re-writing of a code!
+ - There is problem with every code, which is writeen very fast and not think through!
+
+Problems:
+
+  - Money + Shape
+  - Pastie  complete the problem (can use strategy pattern )
+  - One example for web automation  How we can tie different patterns to problem.
+
+
+What is take away?
+
+ - Writing good code is very important, be it whatever!
+ - Clean code is the key!
+ - 9 principle you can start using it!
+ - Use SOLID principles.
+ - Make example of each and try to utilize that. 
+
 <h4> Purpose of the boot camp: </h4>
 
-We have different test suite maintained in our project and we write different types of the test. The general observation is, the coding principles/fundamentals we follow in our production code, we don't observe them in functional tests! These test lack things like proper structuring of code and this makes test suite become rigid, fragile, immobile and  
+We have different test suite maintained in our project and we write different types of the test. The general observation is, the coding principles/fundamentals we follow in our production code, we don't observe them in functional tests! These test lack things like proper structuring of code and this makes test suite becomes:
 
+ - Rigid
+
+    Single change leads to series of changes in subsequent layers and those layers are unknown sometimes!
+
+ - Fragile
+
+    When we make changes at place 'A', it leads to cause in failure for 'X', where 'A' and 'X' are not related to each other. Because of breaking other unknown things, team members tend to overlook the failure and hesitate to make any changes.
+
+ - Immobile
+
+    It becomes impossible to reuse the things. To extract out reusable part becomes pain and utterly impossible, hence we end up in re-writing new design, rather than using existing one!
+
+Why this happen?
+- We don't think, we just implement!
+
+- My code is working, CI is green, all OK, right?
+
+- 
+
+What are the reasons behind this
 
 
 Why Object boot camp?
