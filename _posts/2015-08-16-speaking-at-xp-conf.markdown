@@ -51,6 +51,7 @@ This was two day conference. Our talk was on second day. The day started with st
         Bad design is the smell, if you don't fix it, it is on the verge of getting this flakiness disease!
 
     - Poorly written Test code (Along with reasons similar to production code; External system calls in test, Time dependent tests, Test order dependency)
+
      We explained each cause with psuedo code and care to be taken for them. (<a href="#slides">Refer slides.</a>)
 
 4.  **How can we mitigate this randomness?**
@@ -95,6 +96,7 @@ Thanks a lot [Shirish Padalkar](https://about.me/shirishpadalkar) for opening up
 
  And A big thank you to XP conference team for giving us chance instead of our colleague and all the people who attended this talk!
 
+#####Thanks to [Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b), who gave me idea to write about this experience.
 
 
 
