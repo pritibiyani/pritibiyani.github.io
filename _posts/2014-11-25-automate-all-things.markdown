@@ -4,6 +4,7 @@ title:  "Automate all the things!"
 date:   2014-11-25 13:30:04
 tags: agile testing automation qa
 redirect_from: /blog/2014/11/25/automate-all-things/
+socialMediaShare: When and what to automate? Read more ..
 share_url: http://pritibiyani.github.io/blog/2014/11/25/automate-all-things/
 categories: tech
 ---

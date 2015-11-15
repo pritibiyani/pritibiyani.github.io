@@ -3,6 +3,7 @@ layout: post
 title: Contribution to third pillar!
 published: true
 tags: agile testing automation qa build_pipelines
+socialMediaShare: When and what to automate? Read more ..
 categories: work
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 title: Speaking at XP Conf, Bangalore!
 published: true
+socialMediaShare: Find out about talk given, Who will test your tests? #test @meetkyp
 categories: Conference, Presentation
 ---
 
