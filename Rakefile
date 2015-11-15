@@ -12,6 +12,7 @@ task :new_post do
     ---
     layout: post
     title: #{title}
+    socialMediaShare:
     published: false
     categories:
     ---
