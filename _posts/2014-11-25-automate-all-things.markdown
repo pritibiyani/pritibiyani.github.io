@@ -6,7 +6,7 @@ tags: agile testing automation qa
 redirect_from: /blog/2014/11/25/automate-all-things/
 socialMediaShare: When and what to automate? Read more ..
 share_url: http://pritibiyani.github.io/blog/2014/11/25/automate-all-things/
-categories: tech
+tags: automate daily tasks scripts
 ---
 
 In agile world, there is a theme of [ruthless automation](https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation). But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.

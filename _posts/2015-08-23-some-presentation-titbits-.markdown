@@ -2,7 +2,7 @@
 layout: post
 title: Some Presentation titbits!
 published: false
-categories: Presentation, talk
+tags: Presentation talk
 ---
 
 I'm still improvising on my presentation skill, but If you follow some tricks, you can make a really good impression.

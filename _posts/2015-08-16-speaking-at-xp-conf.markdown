@@ -3,7 +3,7 @@ layout: post
 title: Speaking at XP Conf, Bangalore!
 published: true
 socialMediaShare: Find out about talk given, Who will test your tests? #test @meetkyp
-categories: Conference, Presentation
+tags: Conference, Presentation
 ---
 
 This time occasion was of [XP-conf](http://xpconference.in/) in Bangalore. This was very first time XP-conf was being held in India.

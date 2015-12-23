@@ -4,7 +4,7 @@ title: Contribution to third pillar!
 published: true
 tags: agile testing automation qa build_pipelines
 socialMediaShare: When and what to automate? Read more ..
-categories: work
+tags: experiences contribution open source ThoughtWorks Third pillar learning
 ---
 
 This is something very old, but still this will stand as my first official project in ThoughtWorks.

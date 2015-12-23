@@ -3,7 +3,7 @@ layout: post
 title: Teaching is an adventurous ride!
 published: true
 socialMediaShare: When you teach, you learn; when you give, you get!
-categories:
+tags: teaching learning experience college industry
 ---
 
 <p align="middle">
