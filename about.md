@@ -6,4 +6,4 @@ permalink: /about/
 
 <script src="//about.me/embed/priti.biyani"></script>
 
-This is my attempt to share some of the learning and thoughts.
+People learn by experiences and this is my sheer attempt to share some of the thoughts, learning, experiences and ideas on technology, life, art and everything else! ...
