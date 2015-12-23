@@ -2,7 +2,7 @@
 layout: post
 title: Teaching is an adventurous ride!
 published: true
-socialMediaShare: When you teach, you learn; when you give, you get!
+social_media_share: "When you teach, you learn; when you give, you get!"
 tags: teaching learning experience college industry
 ---
 
