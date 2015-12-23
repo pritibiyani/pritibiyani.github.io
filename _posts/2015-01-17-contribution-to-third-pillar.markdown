@@ -3,7 +3,7 @@ layout: post
 title: Contribution to third pillar!
 published: true
 tags: agile testing automation qa build_pipelines
-social_media_share: "When and what to automate? Read more .."
+social_media_share: "Here sharing experience about contribution to an open source #ThoughtWorks #ThirdPillar #MifosX"
 tags: experiences contribution open source ThoughtWorks Third pillar learning
 ---
 
