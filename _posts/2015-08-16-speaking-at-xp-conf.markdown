@@ -16,7 +16,7 @@ This time occasion was of [XP-conf](http://xpconference.in/) in Bangalore. This 
 This was two day conference. Our talk was on second day. The day started with stand up, where speakers has given chance for marketing their talk.
 
 <p align="middle">
-    <img src="/assets/Xp_conf_1.jpg" alt="vodQA Bangalore"  border="1">
+    <img src="https://farm6.staticflickr.com/5642/23298431013_9d13881fb0_z.jpg" alt="vodQA Bangalore"  border="1">
    <figcaption align="right">Created collage from: <a href = "http://www.fotor.com/features/collage.html">Footer.com</a></figcaption>
 </p>
 
@@ -86,7 +86,7 @@ This was two day conference. Our talk was on second day. The day started with st
 <br/>
 
 <p align="middle">
-    <img src="/assets/Xp_conf_2.jpg" alt="vodQA Bangalore"  border="1">
+    <img src="https://farm6.staticflickr.com/5687/23842717221_3d7323519e_z.jpg" alt="vodQA Bangalore"  border="1">
    <figcaption align="right">Created collage from: <a href = "http://www.fotor.com/features/collage.html">Footer.com</a></figcaption>
 </p>
 

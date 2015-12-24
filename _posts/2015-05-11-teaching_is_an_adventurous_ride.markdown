@@ -7,7 +7,7 @@ tags: teaching learning experience college industry
 ---
 
 <p align="middle">
-    <img src="/assets/o3.png" alt="Teaching is fun difficult " width = "900" height="300">
+    <img src="https://farm6.staticflickr.com/5618/23629539880_56f0923437_b.jpg" alt="Teaching is fun difficult ">
     <figcaption align="right">Image from: <a href = "http://www.wordle.net/show/wrdl/803101/Davide%27s_Teaching_Philosophy">wordle.net</a></figcaption>
 </p>
 
@@ -58,8 +58,8 @@ I explained basics of what is git about, we saw some videos, taught basic comman
 
 
 <p align = "middle">
-        <img src="/assets/o1.jpg" alt="Orchid College Session" width="350" style="float: left" border="3">
-	    <img src="/assets/o2.jpg" alt="Orchid College Session" width="350" border="3">
+        <img src="https://farm2.staticflickr.com/1680/23816920252_44854f9355_n.jpg" alt="Orchid College Session" style="float: left" border="3">
+	    <img src="https://farm2.staticflickr.com/1494/23842725071_6a6517d16c_n.jpg" alt="Orchid College Session" border="3">
 	    <figcaption align="middle">Teaching git and basics! </figcaption>
 </p>
 

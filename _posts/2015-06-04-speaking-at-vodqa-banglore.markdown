@@ -10,7 +10,7 @@ tags: conferences vodQA
 [Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b) and I presented our talk "***One page to test them all***  - _A cross platform mobile automation framework!_"
 
 <p align="middle">
-    <img src="/assets/vodqa_bangalore.jpg" alt="vodQA Bangalore"  border="1">
+    <img src="https://farm6.staticflickr.com/5656/23296997504_522f4535c6_b.jpg" alt="vodQA Bangalore"  border="1">
    <figcaption align="right">Created collage from: <a href = "http://www.fotor.com/features/collage.html">Footer.com</a></figcaption>
 </p>
 
