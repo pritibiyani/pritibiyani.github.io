@@ -12,9 +12,11 @@ task :new_post do
     ---
     layout: post
     title: #{title}
-    social_media_share:
     published: false
     categories:
+    tags:
+    social_media_share:
+    feature_image:
     ---
     EOS
   end
