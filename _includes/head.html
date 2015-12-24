@@ -3,16 +3,31 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width initial-scale=1">
 
-  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  {% if page.title %}{% assign title = page.title %}
+  {% else %}{% assign title = site.title %}
+  {% endif %}
 
-  <meta property="og:site_name" content="{{site.title}}"/>
-  <meta property="og:title" content="{{page.title}}" />
-  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
-  <!--<meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}"/>-->
-  <!--<meta property="og:image" content="{% if page.feature_image %}{{page.feature_image}}{% else %}{{site.url}}/assets/name.png{% endif %}">-->
-  <!--<meta property="og:image:width" content="450"/>-->
-  <!--<meta property="og:image:height" content="298"/>-->
+  {% if page.social_media_share %}{% assign description = page.social_media_share %}
+  {% else %}{% assign description = site.description %}
+  {% endif %}
+
+  {% if page.feature_image %}{% assign image = page.feature_image %}
+  {% else %}{% assign image = {{site.url}}/assets/name.png %}
+  {% endif %}
+
+  {% if page.share_url %}{% assign share_url = page.share_url %}
+  {% else %} {% capture share_url %}{{ site.url }}{{ page.url }}{% endcapture %}
+  {% endif %}
+
+
+    <title>{{ title }}</title>
+  <meta name="description" content="{{ description}}">
+
+  <meta property="og:site_name" content="{{ site.title }}"/>
+  <meta property="og:title" content="{{ title }}" />
+  <meta property="og:url" content="{{ share_url }}" />
+  <meta property="og:description" content="{{ description }}"/>
+  <meta property="og:image" content="{{ image }}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
@@ -20,8 +35,8 @@
 
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@pritibiyani">
-  <meta name="twitter:title" content="{{page.title}}">
-  <meta name="twitter:description" content="{% if page.social_media_share %}{{page.social_media_share}}{% else %}{{site.description}}{% endif %}">
-  <meta name="twitter:image" content="{% if page.feature_image %}{{page.feature_image}}{% else %}{{site.url}}/assets/name.png{% endif %}">
+  <meta name="twitter:title" content="{{ title }}">
+  <meta name="twitter:description" content="{{ description }}">
+  <meta name="twitter:image" content="{{ image }}">
 
 </head>
