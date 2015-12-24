@@ -16,7 +16,7 @@ The project I was working on was a rich content website which demanded a complex
 The architecture of the complete project can be divided into two major chunks: Content Creation and Content Delivery.
 
 <p align="middle">
-    <img src="/assets/project_overview.png" alt="Automate All Things" width = "400">
+    <img src="https://farm2.staticflickr.com/1651/23629348970_0c3a911635_z.jpg" alt="Automate All Things">
     	    <figcaption align="middle"> Project Architecture </figcaption>
 
 </p>
@@ -42,7 +42,8 @@ This was one thing I never looked forward to. Every time a new feature was relea
 I wrote a small [script](http://bit.do/gist_post_data_to_env) which will upload data to specified environment. It solved above mentioned problems with bulk upload and tracking.
 
 <p align="middle">
-    <img src="/assets/post_to_diff_env.png" alt="Post to different environment" width = "400">
+    <img src="https://farm6.staticflickr.com/5779/23629539100_44f1746abf_z.jpg" alt="Post to different environment">
+    <figcaption align="middle"> Post data to different env  </figcaption>
 </p>
 <br/>
 
@@ -54,8 +55,8 @@ During production support, when something went wrong, business people often want
 Typically content creators used to create data using different tools and data formats varied across these tools. They always preferred data in spreadsheets. Getting the data in consumable format for content creators, manually fetching JSON data from the system and formatting the data for Excel was a tedious task. A small script to convert data between formats was all I needed.
 
 <p align = "middle">
-        <img src="/assets/content_creator.png" alt="Business/Content Creator" width="300" style="float: left">
-	    <img src="/assets/support_people.png" alt="Support People" width="300">
+        <img src="https://farm6.staticflickr.com/5686/23298434233_59efd3db53_n.jpg" alt="Business/Content Creator" style="float: left">
+	    <img src="https://farm2.staticflickr.com/1526/23842723291_11c454e305_n.jpg" alt="Support People" >
 </p>
 
 
@@ -69,7 +70,7 @@ Manually going through each parameter within every response was time consuming. 
 
 
 <p align="middle">
-    <img src="/assets/Preview_Live_Debugging.png" alt="Automate All Things" width = "400" height="300">
+    <img src="https://farm2.staticflickr.com/1504/23298432293_dfb10edf72_n.jpg" alt="Automate All Things">
     <figcaption align="middle"> Preview Live Content Debugging </figcaption>
 </p>
 
@@ -78,7 +79,7 @@ I made a note of repetitive steps and wrote a script for the same. Refer [gist](
 These were just some of my experiences. But you get the idea. Don’t you?
 
 <p align="middle">
-    <img src="/assets/automation.png" alt ="XKCD" width = "400" height="350">
+    <img src="https://farm6.staticflickr.com/5828/23816920682_73d64539aa_z.jpg" alt ="XKCD">
     <br/>
     An obligatory <a href="http://xkcd.com/1319">XKCD</a>
 </p>
@@ -105,13 +106,11 @@ Quite a few of us are usually little hesitant to try out these kind of things be
 
 
 <p align="middle">
-    <img src="/assets/automate_all_the_things.png" alt="Automate all the things" width = "400">
+    <img src="https://farm2.staticflickr.com/1669/23635763270_91a98c0af6_z.jpg" alt="Automate all the things" >
        <figcaption align="center"><i>I am lazy and I find ways </i><a href = "http://threevirtues.com/">to reduce repetitive tasks </a></figcaption>
 
 </p>
 
-<br/>
-<br/>
 <br/>
 <br/>
 <br/>
