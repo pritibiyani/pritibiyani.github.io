@@ -2,7 +2,7 @@
 title: "Priti Biyani"
 baseurl: "" # the subpath of your site, e.g. /blog/
 permalink: /blog/:title
-url: "http://pritibiyani.github.io" # the base hostname & protocol for your site
+url: "https://pritibiyani.github.io" # the base hostname & protocol for your site
 twitter_username: pritibiyani
 github_username:  pritibiyani
 description: "Thoughts, learning, experiences and ideas on technology, life, art and everything else! ..."
