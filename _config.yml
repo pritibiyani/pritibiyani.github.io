@@ -11,7 +11,7 @@ yaml gems: ['emoji_for_jekyll']
 # Build settings
 markdown: kramdown
 comments: True
-highlighter: pygments
+highlighter: rouge
 gems:
   - jekyll-redirect-from
   - jemoji
