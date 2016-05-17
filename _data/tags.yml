@@ -1,2 +1,5 @@
-- slug: automation
+---
+automation:
   name: automation
+conference:
+  name: Conference
