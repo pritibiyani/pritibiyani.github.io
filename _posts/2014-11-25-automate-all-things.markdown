@@ -7,7 +7,13 @@ tags: automate daily tasks scripts agile testing automation qa
 social_media_share: "When and what to automate, Read more .."
 feature_image: https://farm2.staticflickr.com/1669/23635763270_91a98c0af6_m.jpg
 share_url: https://pritibiyani.github.io/blog/2014/11/25/automate-all-things/
+category: programming
+tags: [ automation ]
+
 ---
+
+<p id="post-meta">{{ tags_content }}</p>
+
 
 In agile world, there is a theme of [ruthless automation](https://www.google.co.in/webhp?sourceid=chrome-instant&ion=1&espv=2&ie=UTF-8#q=ruthless automation). But in my opinion, we don't push this principle nearly enough. In my last project, there were quite a few missed opportunities in terms of automation. Let me share my story of how I automated some chores that are otherwise taken for granted, and was thereby able to push the envelope further.
 

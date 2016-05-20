@@ -5,6 +5,7 @@ published: true
 social_media_share: "When you teach, you learn; when you give, you get!"
 feature_image: https://farm6.staticflickr.com/5618/23629539880_56f0923437_m.jpg
 tags: teaching learning experience college industry
+category: teaching 
 ---
 
 <p align="middle">
