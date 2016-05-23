@@ -19,7 +19,7 @@ task :new_post do
     layout: post
     title: #{title}
     published: false
-    categories:
+    category:
     tags: []
     social_media_share:
     feature_image:
