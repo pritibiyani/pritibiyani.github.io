@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cross Platform Mobile Automation
-published: true
+published: false
 category: 
 tags: [automation, mobile]
 social_media_share: "Building cross platform mobile automation framework #mobile #automation #crossPlatform"
@@ -20,7 +20,7 @@ Mobile devices are becoming important platform for customers and it plays crucia
  2. Test suite is covering high level end to end flows. (Minimal number of tests are present at UI layer.)  
  
  <p align="middle">
-     <img src="/assets/images/cross_platform_test_execution.jpeg" alt="Cross Platform automation tests">
+     <img src="/assets/images/cross_platform_test_execution.jpg" alt="Cross Platform automation tests">
      <figcaption align="middle"> Cross Platform automation tests  </figcaption>
  </p>
  <br/>
@@ -79,6 +79,14 @@ If we create page objects for this, flow for ordering food will be:
 3. User details << take user details >>
 4. Choosing form of payment
 5. Redirecting    
+<div class ="carousel">
+      <div><img src="/assets/images/slider/Android_01.png" width="216" height="384" alt=""></div>
+      <div><img src="/assets/images/slider/Android_02.png" width="216" height="384" alt=""></div>
+      <div><img src="/assets/images/slider/Android_03.png" width="216" height="384" alt=""></div>
+      <div><img src="/assets/images/slider/Android_04.png" width="216" height="384" alt=""></div>
+      <div><img src="/assets/images/slider/Android_05.png" width="216" height="384" alt=""></div>
+      <div><img src="/assets/images/slider/Android_06.png" width="216" height="384" alt=""></div>
+</div>
   
 <<slider of images will be good>>  
 This si  
