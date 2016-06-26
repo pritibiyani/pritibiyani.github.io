@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Cross Platform Mobile Automation
-published: false
+published: true
 category: 
 tags: [automation, mobile]
 social_media_share: "Building cross platform mobile automation framework #mobile #automation #crossPlatform"
@@ -70,7 +70,7 @@ The challenge with this approach was, how we can have one page being all differe
 
 We solved above problems one by one and keeping basic automation expectations in mind. 
 
-+ Locators for each platform   
++ **Locators for each platform**   
  It's just way of specifying for each platform is different., where I see platform as key and locator as it's value. Simply as follows, if in Ruby:
  
      {% highlight ruby %}
@@ -81,7 +81,7 @@ We solved above problems one by one and keeping basic automation expectations in
      }
      {% endhighlight %}
 
-+ Different UI interaction   
++ **Different UI interaction**   
  Platform specific behaviour will change for each of the ui component on the device. Entering text for textbox will vary for the platform. Well, again it's just way of specifying the element on the page for different platforms. We have solved specifying locator for each platform already; all we need is an abstraction for each of the UI component.
      
      {% highlight ruby %}
@@ -100,7 +100,7 @@ We solved above problems one by one and keeping basic automation expectations in
  </p>
  
  
-+ Different automation tools   
++ **Different automation tools**   
  Currently there is no single API which exposes a common API for all these platforms. Although the name seems similar on each of the API, underneath actions are different. This can be solved by defining a module which will do all UI actions and whose responsibility will be defining a common interface for different platform. 
  
  With this design in place, our page objects will be platform agnostic and any change in the corresponding API upgrade will not affect the behavior of page objects. 
@@ -110,16 +110,19 @@ We solved above problems one by one and keeping basic automation expectations in
      <figcaption align="middle"> Driver - All UI actions will be delegated to platform specific driver </figcaption>
  </p>
 
-+ Different UI Navigation patterns   
- A classic example of this being Navigation drawer on android, tab bar on ios and menu bar on web. This can be solved by defining abstraction for menu representation and delegating UI actions to common API module. You can look at the implementation [here](https://github.com/CrossPlatformPageObject/cross-platform-single-page-example/tree/master/app/pages/menu).       
-     
-Here we go with one page for all platform, end to end implementation will look like: 
- <p align="middle">
-     <img src="/assets/images/complete_implementation.jpg" alt="Same page for different platform">
-     <figcaption align="middle"> All glued together!  </figcaption>
- </p>
-     
-+ Abstracting wait and transition
++ **Different UI Navigation patterns**   
+ A classic example of this being Navigation drawer on android, tab bar on ios and menu bar on web. This can be solved by defining abstraction for menu representation and delegating UI actions to common API module. We can have menu as page and menuItems can be a special element type. You can look at the implementation [here](https://github.com/CrossPlatformPageObject/cross-platform-single-page-example/tree/master/app/pages/menu).       
+
+ So even if UI elements are different and UI gestures are different, we can define a similar component as an abstraction which will represent all the platform. 
+ For example, 
+ 
+ 1. Tab bar layout  
+  We can model this in different ways, either we can have each tab as a page and base page will have functionality to navigate to each of the tab or it can be special type of element, where click on each tab will be a transition element.
+  
+2. Dialog  
+ There are different types of dialog: alert, confirmation, prompt etc. If there are standard dialogs and the behavior is consistent, we can define dialog as element, where any user action on that dialog will be different transition. If dialogs are doing more than just being information, then we can model dialog as different page itself.
+ 
++ **Abstracting wait and transition**
 
    We saw that set of actions are getting repeated when we are navigating from one page to another page. 
    
@@ -143,63 +146,38 @@ Here we go with one page for all platform, end to end implementation will look l
               :error => [ UserDetailsErrorDialog ] 
           })
      {% endhighlight %}
+
+**One page for all in action**     
+Here we go with one page for all platform, end to end implementation will look like: 
+ <p align="middle">
+     <img src="/assets/images/complete_implementation.jpg" alt="Same page for different platform">
+     <figcaption align="middle"> All glued together!  </figcaption>
+ </p>
      
-**Example**
+     
+**Accommodating change in Functional test**
     
-In any case, at functional UI layer test, your automaton should change only in two of the cases:
+We have solved all the  concerns we had when we started to think about one page for all platforms. Let's see how it's easy to incorporate any change in this approach. In any case, at functional UI layer test, your automation should change only in two of the cases:
  
 1. Any change any UI elements. (Element locator change)
 2. Any change in the existing flow. (Transition change)
     
-If we want to accommodate these changes in our current framework, it's a change at single place for all the platforms. 
-      
-Let's take an example for this. With help my colleagues, I have developed small app for each platform, a Food app. It lists food items and one can order food for by cash or or by paying in advance.
+_"If we want to accommodate these changes in our current framework, it's a change at single place for all the platforms!"_
+   
+<br>      
+<hr>
+1. Github project  
+ For demonstration of automation framework, created sample Food app for all platforms, you can find those [here](https://github.com/CrossPlatformPageObject).
+ Refer Automation framework for this food app [here](https://github.com/CrossPlatformPageObject/cross-platform-single-page-example).    
+
+2. Talk  
+ We have given talk at multiple places, find the talk [here](https://www.youtube.com/watch?v=b1On2xlURcY) and similar [experience summary](http://pritibiyani.github.io/blog/speaking-at-vodqa-banglore) for very first talk.
  
+3. Slides  
+ I presented at Selenium conference on the very similar topic. Find slides [here](https://speakerdeck.com/pritibiyani/one-page-to-test-them-all-an-automation-framework-for-cross-platform).
 
-  
-  
-If we create page objects for this, flow for ordering food will be: 
-
-1. Food list page  << add_food_to_card >> 
-2. Cart  << checkout >>  
-3. User details << submit user details >>
-4. Choosing form of payment << Cash / Credit Cart>>
-5. Redirecting to Purchase summary if Cash option is selected.
-
-use case for   
-  
-----------
-2. Change things locator: Introduce abstraction. 
-1. Simple page object. 
-3. What makes automation cluttered and not stable : Transitions.
-5. 
-
-In detail, if you want to have a look at challenge and solution, you can have a look [here]()
-Let's take one example and try to solve the problem.
-one example. and how internally things happen 
-
-Use cases: 
-1. Adding new page
-2. Updating existing one. 
-
-Design aspect:
-1. We want to keep things separate which from things which are goign to change. 
-2. Abstractions and oop design
-3. Clear responsibility driven way. 
-
-
-
-Handling wait! 
-Screenshot and example. 
-How to run nee to add in wiki. with setup needed. 
-
-How this will help in different scenarios:
- 
-1. Adding new page. 
-2. Modifications in page. 
-3. Adding new flavour of the app. 
-4. Adding new platform. 
-We added different flavour of app and how to test that?
+    
+#####[Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b) and I paired to build this framework for cross platforms.  
 
 
     
