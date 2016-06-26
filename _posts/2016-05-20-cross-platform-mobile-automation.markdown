@@ -56,48 +56,125 @@ These are some of the ways people have tried to write their automation suite. Bu
  <br/>
 The challenge with this approach was, how we can have one page being all different platforms and their behavior is different. We solved these challenges in an iterative way taking one challenge at a time. If we consider android, iOS and mobile web platforms, following are the challenges:
 
-1. Different Automation Tools  
- Currently there is no single tool which can be used for all platforms.
-
+1. Locating UI elements mechanism is different  
+ As each platform eco-system is different itself, mechanism for identifying each locator is different.
+ 
 2. Different UI interaction  
  UI gesture for each platform is different and so does an API varies provided for same ui interaction.
-
-3. Locating UI elements mechanism is different  
- As each platform eco-system is different itself, mechanism for identifying each locator is different.
+ 
+3. Different Automation Tools  
+ Currently there is no single tool which can be used for all platforms.
 
 4. Different UI navigation patterns  
  Each platform recommends some style guide and UI varies from platform to platform.
 
-Let's take an example for this. With help my colleagues, I have developed small app for each platform, a Food app. It lists food items and one can order food for by cash or or by paying in advance. 
+We solved above problems one by one and keeping basic automation expectations in mind. 
 
++ Locators for each platform   
+ It's just way of specifying for each platform is different., where I see platform as key and locator as it's value. Simply as follows, if in Ruby:
+ 
+     {% highlight ruby %}
+        {
+       web: "#Food Items:"
+       droid: "* id:'FoodItems'"
+       ios: "* title:'Food Items'"
+     }
+     {% endhighlight %}
+
++ Different UI interaction   
+ Platform specific behaviour will change for each of the ui component on the device. Entering text for textbox will vary for the platform. Well, again it's just way of specifying the element on the page for different platforms. We have solved specifying locator for each platform already; all we need is an abstraction for each of the UI component.
+     
+     {% highlight ruby %}
+          t = Textbox.new ({
+                               web: "#username",
+                               droid: "* id:'username'",
+                               ios: "* id:'user_name'"
+                           })
+     {% endhighlight %}
+    
+ Eventually there will be other elements like checkbox, button, table, dialog and so on. We can define different behavior as per each component and common behavior for all this can be extracted out to element class. 
+    
+ <p align="middle">
+         <img src="/assets/images/element_abstraction.png" alt="Same page for different platform">
+         <figcaption align="middle"> Element abstraction </figcaption>
+ </p>
+ 
+ 
++ Different automation tools   
+ Currently there is no single API which exposes a common API for all these platforms. Although the name seems similar on each of the API, underneath actions are different. This can be solved by defining a module which will do all UI actions and whose responsibility will be defining a common interface for different platform. 
+ 
+ With this design in place, our page objects will be platform agnostic and any change in the corresponding API upgrade will not affect the behavior of page objects. 
+      
+ <p align="middle">
+     <img src="/assets/images/driver_abstraction.png" alt="Same page for different platform">
+     <figcaption align="middle"> Driver - All UI actions will be delegated to platform specific driver </figcaption>
+ </p>
+
++ Different UI Navigation patterns   
+ A classic example of this being Navigation drawer on android, tab bar on ios and menu bar on web. This can be solved by defining abstraction for menu representation and delegating UI actions to common API module. You can look at the implementation [here](https://github.com/CrossPlatformPageObject/cross-platform-single-page-example/tree/master/app/pages/menu).       
+     
+Here we go with one page for all platform, end to end implementation will look like: 
+ <p align="middle">
+     <img src="/assets/images/complete_implementation.jpg" alt="Same page for different platform">
+     <figcaption align="middle"> All glued together!  </figcaption>
+ </p>
+     
++ Abstracting wait and transition
+
+   We saw that set of actions are getting repeated when we are navigating from one page to another page. 
+   
+    1. Click on button.
+    2. Wait for next page to load. 
+    3. Return the next page when loading is complete. 
+
+    <br/>And whenever we repeat, there is an opportunity of abstracting it. Here, all we need to do is identify the correct class, where we can have this responsibility. We definitely can't put it in driver as it is responsible for interaction. If we go one level higher, element seem to be correct place for this. Again every element click action does not lead to transition and what we can have in this case is another element type, Transition Aware element! 
+     
+    This element in addition to locator will have knowledge of transition it can lead to. Transition can be of two type, success and error and each can very well have multiple transition in itself. Considering all these requirements, we can specify like this:  
+       
+  {% highlight ruby %}
+          @button = TransitionElement.new( 
+          {  		
+               :web   => '#continue_button', 
+               :ios   => "* marked:'Order'", 
+               :droid => "* marked:'Order Food'" 
+          },           
+          { 		
+              :to =>    [ UserDetails, PurchaseSummary]   # represent success transition
+              :error => [ UserDetailsErrorDialog ] 
+          })
+     {% endhighlight %}
+     
+**Example**
+    
+In any case, at functional UI layer test, your automaton should change only in two of the cases:
+ 
+1. Any change any UI elements. (Element locator change)
+2. Any change in the existing flow. (Transition change)
+    
+If we want to accommodate these changes in our current framework, it's a change at single place for all the platforms. 
+      
+Let's take an example for this. With help my colleagues, I have developed small app for each platform, a Food app. It lists food items and one can order food for by cash or or by paying in advance.
+ 
+
+  
+  
 If we create page objects for this, flow for ordering food will be: 
-
-<<Diagram will help here. >>
 
 1. Food list page  << add_food_to_card >> 
 2. Cart  << checkout >>  
-3. User details << take user details >>
-4. Choosing form of payment
-5. Redirecting    
-<div class ="carousel">
-      <div><img src="/assets/images/slider/Android_01.png" width="216" height="384" alt=""></div>
-      <div><img src="/assets/images/slider/Android_02.png" width="216" height="384" alt=""></div>
-      <div><img src="/assets/images/slider/Android_03.png" width="216" height="384" alt=""></div>
-      <div><img src="/assets/images/slider/Android_04.png" width="216" height="384" alt=""></div>
-      <div><img src="/assets/images/slider/Android_05.png" width="216" height="384" alt=""></div>
-      <div><img src="/assets/images/slider/Android_06.png" width="216" height="384" alt=""></div>
-</div>
-  
-<<slider of images will be good>>  
-This si  
+3. User details << submit user details >>
+4. Choosing form of payment << Cash / Credit Cart>>
+5. Redirecting to Purchase summary if Cash option is selected.
 
+use case for   
+  
+----------
 2. Change things locator: Introduce abstraction. 
 1. Simple page object. 
 3. What makes automation cluttered and not stable : Transitions.
-4. Navigation pattern | Abstraction | Simple modelling for it. 
 5. 
 
-In detail, if you want to have a look at challenge and solution, you can have a look [here](The challenges and solution to each problem, you can view it [here](https://github.com/CrossPlatformPageObject/cross-platform-single-page-example/blob/master/README.md#challenges-in-implementating-single-page-for-different-platforms).
+In detail, if you want to have a look at challenge and solution, you can have a look [here]()
 Let's take one example and try to solve the problem.
 one example. and how internally things happen 
 
@@ -106,9 +183,9 @@ Use cases:
 2. Updating existing one. 
 
 Design aspect:
-1. We want to keep things seperate which from things which are goign to change. 
+1. We want to keep things separate which from things which are goign to change. 
 2. Abstractions and oop design
-3. Clear responsbiloty driven way. 
+3. Clear responsibility driven way. 
 
 
 
@@ -116,6 +193,13 @@ Handling wait!
 Screenshot and example. 
 How to run nee to add in wiki. with setup needed. 
 
+How this will help in different scenarios:
+ 
+1. Adding new page. 
+2. Modifications in page. 
+3. Adding new flavour of the app. 
+4. Adding new platform. 
 We added different flavour of app and how to test that?
 
 
+    
