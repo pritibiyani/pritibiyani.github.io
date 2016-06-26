@@ -1,0 +1,39 @@
+.thumbnail {
+  height: 100px !important;
+  width: 160px;
+  opacity: 0.9;
+  &:hover, &:focus {
+    opacity: 1;
+  }
+}
+
+.slick-slide {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.slick-prev{
+  transform: rotate(-45deg) !important;
+  -ms-transform: rotate(-45deg) !important;
+  -webkit-transform: rotate(-45deg) !important;
+
+  &:before{
+    width: 1em !important;
+    height: 1em !important;
+    border-left: 0.2em solid $brand-color !important;
+    border-top: 0.2em solid $brand-color !important;
+  }
+}
+
+.slick-next{
+  transform: rotate(45deg) !important;
+  -ms-transform: rotate(45deg) !important;
+  -webkit-transform: rotate(45deg) !important;
+
+  &:before{
+    width: 1em !important;
+    height: 1em !important;
+    border-right: 0.2em solid $brand-color !important;
+    border-top: 0.2em solid $brand-color !important;
+  }
+}
