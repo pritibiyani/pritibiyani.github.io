@@ -2,10 +2,10 @@
 layout: post
 title: Cross Platform Mobile Automation
 published: true
-category: 
+category: programming
 tags: [automation, mobile]
 social_media_share: "Building cross platform mobile automation framework #mobile #automation #crossPlatform"
-feature_image:
+feature_image: /assets/images/complete_implementation.jpg
 ---
 
 Mobile devices are becoming important platform for customers and it plays crucial role when it comes for organisation's digital strategy. And when it's mobile, there are bunch of variations present; iOS, android, iPad, windows, blackberry, mobile web and so on!  With such rapid development going on around these many platforms, we need to have refined end to end high level functional tests for these number of platforms. If such is a case, we would like to have some mechanism in place where we write once and get free for others, unlike Java. The blog post talks about the exact problem and solution we came up with!
