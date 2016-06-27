@@ -5,7 +5,7 @@ published: true
 category: programming
 tags: [automation, mobile]
 social_media_share: "Building cross platform mobile automation framework #mobile #automation #crossPlatform"
-feature_image: /assets/images/complete_implementation.jpg
+feature_image: http://pritibiyani.github.io/assets/images/complete_implementation.jpg
 ---
 
 Mobile devices are becoming important platform for customers and it plays crucial role when it comes for organisation's digital strategy. And when it's mobile, there are bunch of variations present; iOS, android, iPad, windows, blackberry, mobile web and so on!  With such rapid development going on around these many platforms, we need to have refined end to end high level functional tests for these number of platforms. If such is a case, we would like to have some mechanism in place where we write once and get free for others, unlike Java. The blog post talks about the exact problem and solution we came up with!
@@ -166,6 +166,7 @@ _"If we want to accommodate these changes in our current framework, it's a chang
    
 <br>      
 <hr>
+
 1. Github project  
  For demonstration of automation framework, created sample Food app for all platforms, you can find those [here](https://github.com/CrossPlatformPageObject).
  Refer Automation framework for this food app [here](https://github.com/CrossPlatformPageObject/cross-platform-single-page-example).    
@@ -177,7 +178,7 @@ _"If we want to accommodate these changes in our current framework, it's a chang
  I presented at Selenium conference on the very similar topic. Find slides [here](https://speakerdeck.com/pritibiyani/one-page-to-test-them-all-an-automation-framework-for-cross-platform).
 
     
-#####[Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b) and I paired to build this framework for cross platforms.  
+[Aroj](https://www.linkedin.com/pub/aroj-george/b/573/74b) and I paired to build this framework for cross platforms.  
 
 
     
