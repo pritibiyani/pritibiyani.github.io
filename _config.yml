@@ -23,3 +23,14 @@ defaults:
       path: "posts" # an empty string here means all files in the project
     values:
       layout: post
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: my_categories
+    values:
+      layout: blog_by_category
+
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
