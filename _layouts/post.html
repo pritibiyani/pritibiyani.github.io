@@ -9,17 +9,11 @@ layout: default
       <div id="tags">
         {% assign post = page %}
           {% if post.category %}
-          <!--{% assign category = site.my_categories | where: "slug", post.category %}-->
-
-          {% for cat in site.my_categories %}
-            {% if cat.slug ==  post.category %}
-                {% assign category = cat %}
-            {% endif %}
-          {% endfor %}
-
+          {% assign category = site.my_categories | where: "slug", post.category %}
+          {% assign category = category[0] %}
           {% if category.slug  %}
             {% capture category_content %}
-                <span class="label" style="background-color:{{ category.color }}"><a href="/blog/category/{{ category.slug }}/">{{ category.name }}</a></span>
+            <span class="label"><a href="{{ category.url }}/">{{ category.name }}</a></span>
             {% endcapture %}
           {% endif %}
           {% else %}
