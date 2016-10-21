@@ -8,7 +8,7 @@ layout: default
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
       <div id="tags">
         {% assign post = page %}
-          {% if post.category %}
+          {% if post.category1 %}
           {% assign category_collection = site.collections | where: "label", "my_categories" %}
           category_collection {{ category_collection }} <br>
           my_categories: {{ site.collections['my_categories'] }} <br>
