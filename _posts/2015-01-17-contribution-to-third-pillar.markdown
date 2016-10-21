@@ -6,6 +6,7 @@ tags: agile testing automation qa build_pipelines
 social_media_share: "Here sharing experience about contribution to an open source #ThoughtWorks #ThirdPillar #MifosX"
 tags: [ projectExperience, testStrategy, testPyramid]
 category: programming
+
 ---
 
 This is something very old, but still this will stand as my first official project in ThoughtWorks.
