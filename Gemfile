@@ -6,3 +6,4 @@ gem 'jekyll-redirect-from'
 gem 'jemoji'
 gem 'jekyll-sitemap'
 gem 'rouge'
+gem 'jekyll-admin', group: :jekyll_plugins
