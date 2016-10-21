@@ -164,7 +164,6 @@ DEPENDENCIES
   jekyll-admin
   jekyll-docs
   jekyll-redirect-from
-  jekyll-sitemap
   jemoji
   rouge
 
