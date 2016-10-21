@@ -4,8 +4,9 @@ title: Speaking at vodQA Bangalore!
 published: true
 social_media_share: "Find out about talk given at #vodQA Bangalore, One page to test them all #automation @arojp"
 feature_image: https://farm6.staticflickr.com/5656/23296997504_522f4535c6_m.jpg
-tags: conferences vodQA
+tags: [conferences, vodQA]
 category: conference
+
 ---
 [vodQA](https://www.facebook.com/groups/vodqa/) is an event for people who are equally passionate about software testing and continuously strive to be better at it! This time theme was "[Push the Envelope!](http://info.thoughtworks.com/registration-vodqa-bangalore-2015.html)"
 
