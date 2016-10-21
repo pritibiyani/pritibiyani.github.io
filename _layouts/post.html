@@ -6,16 +6,22 @@ layout: default
   <header class="post-header">
     <h1 class="post-title">{{ page.title }}</h1>
     <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
-
       <div id="tags">
         {% assign post = page %}
           {% if post.category %}
-            {% for site_category in site.data.categories %}
-                {% if site_category.slug == post.category %}
-                    {% assign category = site_category %}
-                {% endif %}
-            {% endfor %}
+          {% assign category_collection = site.collections | where: "label", "my_categories" %}
+          category_collection {{ category_collection }} <br>
+          my_categories: {{ site.collections['my_categories'] }} <br>
+          collections: {{ site.collections}} <br> <br>
+          {% for product in site.collections %}
+            Collections Data: {{ product }} <br>
+          {% endfor %}
+          <br>
+          {% assign category = category_collection | where: "name", post.category %}
+          category_collection {{ category }} <br>
 
+
+          Category :{{ category }}
           {% if category %}
             {% capture category_content %} in
                 <span class="label" style="background-color:{{ category.color }}"><a href="/blog/category/{{ category.slug }}/">{{ category.name }}</a></span>
@@ -28,7 +34,7 @@ layout: default
         {% if post.tags.size > 0 %}
            {% capture tags_content %} with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
            {% for post_tag in post.tags %}
-                 {% assign tag = site.data.tags[post_tag] %}
+                 {% assign tag = site.tags[post_tag] %}
                  {% if tag %}
                     {% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
                     {% assign tags_content = tags_content_temp %}
@@ -38,7 +44,7 @@ layout: default
             {% assign tags_content = '' %}
         {% endif %}
 
-          <p id="post-meta">Posted Category : {{ category_content }} Tag: {{ tags_content }}</p>
+          <!--<p id="post-meta">Posted Category : {{ category_content }} Tag: {{ tags_content }}</p>-->
       </div>
 </header>
 
