@@ -4,7 +4,7 @@ title: Speaking at XP Conf, Bangalore!
 published: true
 social_media_share: "Find out about talk given in #xp-conference, Who will test your tests? #test @meetkyp"
 feature_image: https://farm6.staticflickr.com/5687/23842717221_3d7323519e_z.jpg
-tags: [conferences, Presentation]
+tags: [conferences, presentations]
 category: conference
 ---
 

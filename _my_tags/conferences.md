@@ -1,0 +1,4 @@
+---
+name: conferences
+slug: conferences
+---

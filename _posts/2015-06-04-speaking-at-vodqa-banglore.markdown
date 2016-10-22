@@ -4,7 +4,7 @@ title: Speaking at vodQA Bangalore!
 published: true
 social_media_share: "Find out about talk given at #vodQA Bangalore, One page to test them all #automation @arojp"
 feature_image: https://farm6.staticflickr.com/5656/23296997504_522f4535c6_m.jpg
-tags: [conferences, vodQA]
+tags: [conferences, presentations]
 category: conference
 
 ---

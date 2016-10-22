@@ -1,4 +1,0 @@
----
-slug: random  
-name: random
----

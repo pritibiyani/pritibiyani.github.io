@@ -30,6 +30,12 @@ defaults:
       type: my_categories
     values:
       layout: blog_by_category
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: my_tags
+    values:
+      layout: blog_by_tag
 
 collections:
   my_categories:

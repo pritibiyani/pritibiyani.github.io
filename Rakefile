@@ -13,7 +13,7 @@ task :new_post do
 	slug  = "#{Date.today}-#{title.downcase.gsub(/[^\w]+/, '-')}"
 	file  = File.join(File.dirname(__FILE__), '_posts', slug + '.markdown')
 
-	File.open(file, "w") do |f|
+	File.open(file, 'w') do |f|
 		f << <<-EOS.gsub(/^    /, '')
     ---
     layout: post
@@ -35,26 +35,46 @@ task :drafts do
 	puts `find ./_posts -type f -exec grep -H 'published: false' {} \\;`
 end
 
-desc 'Add tags to data files'
-task :add_tag do
-	name       = prompt_for_message 'Enter Tag'
-	slug       = name.downcase
-	tags       = YAML.load_file('_data/tags.yml')
-	tags[slug] ={ 'name' => name }
-	File.open('_data/tags.yml', 'w') { |f| f.write(tags.to_yaml) }
-
-# 	add_to_file | need to check for categorory as well
-	create_permalink_file_for_tag slug
-end
-
-desc 'Add categories to data files'
+desc 'Create category'
 task :add_category do
 	name     = prompt_for_message 'Enter Category name'
 	slug     = name.downcase
 	category = { 'slug' => slug, 'name' => name, 'color' => '#3498db' }
 
-	add_to_file 'categories.yml', category
-	create_permalink_file_for_category slug
+	# add_to_file 'categories.yml', category
+	generate_file_for_category category
+end
+
+desc 'Create tag'
+task :add_tags do
+	tags       = prompt_for_message 'Enter tag names separated by space '
+	tags_array = tags.split(' ')
+	tags_array.each do |t|
+		tag = { 'slug' => t.downcase, 'name' => t }
+		generate_tag_file tag
+	end
+end
+
+desc 'Create tag'
+task :add_tag do
+	tag_name = prompt_for_message 'Enter tag name'
+	tag_slug = prompt_for_message 'Enter tag slug'
+	tag      = { 'slug' => tag_slug, 'name' => tag_name }
+	generate_tag_file tag
+end
+
+def generate_tag_file(tag)
+	file_path = "_my_tags/#{tag['name']}.md"
+	file      = File.join(File.dirname(__FILE__), file_path)
+	File.open(file, "w") do |f|
+		f << <<-EOS.gsub(/^    /, '')
+---
+name: #{tag['name']}
+slug: #{tag['slug']}
+---
+		EOS
+	end
+	# File.open(file, 'w') { |f| f.write(tag.to_yaml) } unless File.exist?(file)
 end
 
 def add_to_file(filename, content_to_add)
@@ -63,20 +83,8 @@ def add_to_file(filename, content_to_add)
 	File.open("_data/#{filename}", 'w') { |f| f.write(data.to_yaml) }
 end
 
-def create_permalink_file(kind, slug)
-	data      = { 'layout'    => "blog_by_#{kind}",
-	              'permalink' => "/blog/#{kind}/#{slug}/",
-	              kind        => slug,
-	              'title'     => "Articles by #{kind}: #{slug}"
-	}
-	file_path = "blog/#{kind}/#{slug}.md"
-	File.open(file_path, 'w') { |f| f.write(data.to_yaml) } unless File.exist?(file_path)
-end
-
-def create_permalink_file_for_tag(tag_slug)
-	create_permalink_file 'tag', tag_slug
-end
-
-def create_permalink_file_for_category(category_slug)
-	create_permalink_file 'category', category_slug
+def generate_file_for_category(category)
+	file_path = '_my_categories/' + category['slug'] + '.md'
+	file      = File.join(File.dirname(__FILE__), file_path)
+	File.open(file, 'w') { |f| f.write(category.to_yaml) } unless File.exist?(file)
 end
