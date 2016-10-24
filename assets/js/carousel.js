@@ -6,10 +6,19 @@ $(document).ready(function () {
         slidesToShow: 3,
         slidesToScroll: 3,
         dots: true,
-        onAfterChange: function(){
+        onAfterChange: function () {
             var cat = ($('#carousel').slickCurrentSlide()) + 1;
             $('.client-text > li').hide();
-            $('.client-text > li:nth-child('+ cat +')').show();
+            $('.client-text > li:nth-child(' + cat + ')').show();
         }
+    });
+
+    $('.fade').slick({
+        arrows: true,
+        dots: true,
+        infinite: true,
+        speed: 300,
+        fade: true,
+        cssEase: 'linear'
     });
 });
