@@ -29,7 +29,7 @@ layout: default
                     {% assign tag = tag[0] %}
                     {% capture tags_content_temp %}
                         {{ tags_content }}
-                        <a href="{{ tag.url }}">{{ tag.slug }}</a>
+                        <a href="{{ tag.url }}">{{ tag.name }}</a>
                     {% endcapture %}
                     {% assign tags_content = tags_content_temp %}
                 {% endif %}

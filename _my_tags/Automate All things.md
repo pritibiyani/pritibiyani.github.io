@@ -1,4 +1,4 @@
 ---
 slug: automation
-name: Automate All things
+name: AutomateAllThings
 ---

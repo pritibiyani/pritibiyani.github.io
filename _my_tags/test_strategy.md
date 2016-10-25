@@ -1,4 +1,4 @@
 ---
 slug: testStrategy
-name: Test Strategy
+name: TestStrategy
 ---

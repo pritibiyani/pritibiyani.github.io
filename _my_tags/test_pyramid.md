@@ -1,4 +1,4 @@
 ---
 slug: testPyramid
-name: Test Pyramid
+name: TestPyramid
 ---

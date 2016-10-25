@@ -1,4 +1,4 @@
 ---
 slug: projectExperience
-name: Project Stories
+name: ProjectStories
 ---
