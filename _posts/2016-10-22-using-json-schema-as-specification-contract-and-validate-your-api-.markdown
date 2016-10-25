@@ -1,11 +1,11 @@
 ---
-title: JSON Schema- as a specification, contract and validation! 
+title: JSON Schema - as a specification, contract and validation! 
 layout: post
 published: false
 category: programming
-tags: [api, json, automation]
-social_media_share: 
-feature_image:
+tags: [api, json, automation, projectExperience]
+social_media_share: Using JSON schema as a specification, contract and validation and make your life easy when you are validating #json #api #jsonSchema
+feature_image: https://pritibiyani.github.io//assets/images/horrible_json.jpg
 ---
 
 We all have been in a situation where we depend on other team/pair for APIs. And then when we try to consume those, the dialogues we get to here, 
@@ -37,8 +37,8 @@ To tackle this situation, you need to start in very early phase. You can follow 
    This is a contract between two teams for one of the book in a list. 
    <br>As a consumer, you want to make sure following conditions are satisfied or not for book object:  
    
-   - Price should be always float type and nonzero. 
-   - Additionally, author, title and price are mandatory fields.
+   - Price should be always of float type and nonzero. 
+   - Author, title and price are mandatory fields.
    - If published date is present, it should follow standard date-time format.
   
   There are ways of achieving above conditions, we can access a particular field in a json and perform the check for semantic or can check for presence of absence of the values. But as this list grows, you know how messy and ugly it becomes! :expressionless:
@@ -85,7 +85,7 @@ Lets go through this schema: <br>
 You must have noticed it's pretty easy to follow the schema and we can relate to actual json. Remember, the conditions we wanted to have as a consumer? Let's see how these are being enforced by the schema. Given, as we are little familiar with Json schema, it should be easy to follow those.  <br>
 
 
-- Price should be always float type and nonzero. <br>
+- Price should be always of float type and nonzero. <br>
 If we take a look at following snippet, we see type of price as `number`, which means that this field can only accept float values. Additionally there are two fields `minimum` and `exclusiveMinimum`. `minimum` indicates that is can have minimum value as 0 (x >= 0 ). Another constraint, `exclusiveMinimum` is boolean. When its true, it indicates that range excludes minimum value and then our condition becomes (x > 0). 
 
 {% highlight javascript %}
