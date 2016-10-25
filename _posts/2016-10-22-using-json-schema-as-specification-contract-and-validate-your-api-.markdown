@@ -1,43 +1,49 @@
 ---
 title: JSON Schema- as a specification, contract and validation! 
 layout: post
-published: true
+published: false
 category: programming
 tags: [api, json, automation]
 social_media_share: 
 feature_image:
 ---
 
-You might have encountered a situation where you need to be dependent on API being developed by other team and your team continues development depending on shared contract between both the teams. And the one fine day, when you try to integrate end to end, boom! You will find surprises! You will get to hear, "*Ohh, this was supposed to be Integer, but it's a string now*! " or, "*This supposed to be an array and not an object!* " and many such more ... :hushed:
+We all have been in a situation where we depend on other team/pair for APIs. And then when we try to consume those, the dialogues we get to here, 
+"*Ohh, this was supposed to be Integer, but it's a string now*! " or, "*This supposed to be an array and not an object!*" and many such more ... :hushed:
 
-Sooner you realize that checking this manually is getting worst and worst and this is what happened in one of my recent project. 
+This can happen because of expectation mismatch or poor sharing mechanism of contract. The new cropping API issues will surprise you more than yesterday and list will keep on growing! And one fine day, you will find yourself in a loop of checking more API issues and fixes. You will surely get dream of getting stuck in middle of horrible JSONs! :scream:
 
-To deal with this situation, you can go with one of following option depending on your project needs: 
+<p align="middle">
+    <img src="/assets/images/horrible_json.jpg" alt="Horrible JSON everywhere" class="img-responsive img-thumbnail">
+    	    <figcaption align="center">Image from: <a href = "https://memegenerator.net/instance/72656608">https://memegenerator.net/</a></figcaption>
 
-1. Check for specific values in API for a scenario  
- This would be helpful in a situation where one need to check multiple api calls adn validate the end result.<br> 
+</p>
+
+ 
+To tackle this situation, you need to start in very early phase. You can follow 2-step process to make your life easy when dealing with API:
+
+1. Check for semantic and structure of API  
+ Check for type of a field, mandatory fields, allowed values for a particular fields, some additional constraints like nonzero, Integer etc., specific requirement for a particular string (value should be correct email or value should follow particular date format). 
+
+2. Journey based assertion  
+ If API is satisfying semantic and structure, then go ahead to check for a journey.<br> 
  For eg. This one is classic example. In case of transferring amount from account A to B, the api test will check if the amount in end result is correct for both accounts. <br>
  For different languages, there are many libraries available to check rest API. For java, one can go with [rest-assured](http://rest-assured.io/), for Ruby, can use [rest-client](https://github.com/rest-client/rest-client).
      
-2. Check for a semantic and structure of the the API   
- In a situation where you are concern about only contract and not values, then you can go with this one. <br> 
- For eg. On a page, you want to show list of books with details such as title, author name, price and many such properties. In this case, you would just go through a JSON and pick up needed details. Moreover, you will not bother about values. <br>
- This was what exact situation for us and blog post will address the option we went ahead with.
-
-    Lets take one example:
+    This blog post addresses how to check semantic and structure of the API. Let's take one example:
    
    <script src="https://gist.github.com/pritibiyani/f86c55fca4fbf4e5835a7c670bc16022.js"></script>
    
-   This is what agreed shared contract between two teams for one of the book in a collection. 
-   <br>As a consumer, you want to make sure following conditions are satisfied or not:  
+   This is a contract between two teams for one of the book in a list. 
+   <br>As a consumer, you want to make sure following conditions are satisfied or not for book object:  
    
-   - price should be always float type and not zero. 
+   - Price should be always float type and nonzero. 
    - Additionally, author, title and price are mandatory fields.
    - If published date is present, it should follow standard date-time format.
   
   There are ways of achieving above conditions, we can access a particular field in a json and perform the check for semantic or can check for presence of absence of the values. But as this list grows, you know how messy and ugly it becomes! :expressionless:
    
-   Similarly, lets say you are an API provider and you want to let your API consumers know basic structure and semantics of to be developed API, so that they can build on top of that.    
+   Similarly, let's say you are an API provider and you want to let your API consumers know basic structure and semantics of to be developed API, so that they can build on top of that.    
    
    If you had, above two problems then you must use JSON schema. 
 
@@ -53,11 +59,13 @@ To deal with this situation, you can go with one of following option depending o
 <br>
 
 + **What is JSON Schema and how would it be useful to check for contract?**
-//Image
 
+<p align="middle">
+    <img src="/assets/images/schema_definition.png" alt="Schema" class="img-responsive img-thumbnail">
 
+</p>
 
-In simple terms, JSON schema is contract for your JSON document. Schema is nothing but a way to define structure and semantics. JSON schema exactly does the same. It defines rules for your contract and can validate JSON documents against schema. <p>
+In simple terms, JSON schema is contract for your JSON document. Schema is nothing but a way to define structure and semantics. JSON schema exactly does the same. It defines rules for your contract and can validate JSON documents against schema. 
    
    For the structure defined above, the schema would look like following: 
 <script src="https://gist.github.com/pritibiyani/b26cccedadbf59d6b95ca82b8cd23950.js"></script>
@@ -77,8 +85,8 @@ Lets go through this schema: <br>
 You must have noticed it's pretty easy to follow the schema and we can relate to actual json. Remember, the conditions we wanted to have as a consumer? Let's see how these are being enforced by the schema. Given, as we are little familiar with Json schema, it should be easy to follow those.  <br>
 
 
-- price should be always float type and not zero. <br>
-If we take a look at following snippet. we see price's type as `number`, which says that this field can only accept float values. Additionally there are two fields `minimum` and `exclusiveMinimum`. `minimum` says that is can have minimum value as 0 (x >= 0 ) and additional constraint, `exclusiveMinimum` is boolean. When its true, it indicates that range excludes minimum value and then our condition becomes (x > 0). 
+- Price should be always float type and nonzero. <br>
+If we take a look at following snippet, we see type of price as `number`, which means that this field can only accept float values. Additionally there are two fields `minimum` and `exclusiveMinimum`. `minimum` indicates that is can have minimum value as 0 (x >= 0 ). Another constraint, `exclusiveMinimum` is boolean. When its true, it indicates that range excludes minimum value and then our condition becomes (x > 0). 
 
 {% highlight javascript %}
     "price": {
@@ -89,15 +97,14 @@ If we take a look at following snippet. we see price's type as `number`, which s
 {% endhighlight  %}
  
 -  Author, title and price are mandatory fields. <br>
- The following code snippet is self explanatory. It says, that only price, title and author are mandatory fields. 
+ The following code snippet is self explanatory. It interprets that only price, title and author are mandatory fields. 
  
  {% highlight javascript %}
   "required": 
   [
      "author",
      "title",
-     "price"
-   ]
+     "price" ]
  {% endhighlight  %}
  
 - publishedOn if present, should follow date-time format. <br> 
@@ -114,15 +121,13 @@ The type is `string`. The `format` keyword allows to validate certain kind of a 
 
  I have written [Simple JSON schema demo](https://github.com/pritibiyani/JsonSchemaDemo) - a sample code in Ruby which validates the provided schema against the JSON document. If there are any errors in validating schema against JSON, the library gives error in very neat manner. Remember, if there is error at top level, it will not go inside. 
  {% highlight javascript %}
- 
  [
   "The property '#/' did not contain a required property of 'author' in 
-  schema file:///Users/Priti/projects/Ruby_Projects/jsonSchema/schema/book_schema.json", 
+  schema file:///~/jsonSchema/schema/book_schema.json", 
    
    "The property '#/' did not contain a required property of 'price' in 
-   schema file:///Users/Priti/projects/Ruby_Projects/jsonSchema/schema/book_schema.json"
+   schema file:///~/jsonSchema/schema/book_schema.json"
  ]
-
  {% endhighlight %}
  
  As per what I have observed, the validation is carried out in following order: required properties and then it traverse inside the properties to check against specified rules. This is performed in this order, as the cursor digs more deeper. You can play around more and check errors for Invalid JSON document.   
@@ -131,11 +136,11 @@ The type is `string`. The `format` keyword allows to validate certain kind of a 
  Well, if Ruby is not your favourite language, then there are other languages libraries available which will help you to build schema and validate document against those. Check [here](http://json-schema.org/implementations.html) for your preferred language and its corresponding stable library. 
      
 You might be wondering, *how to create this schema?* <br> 
-It will be error prone, if we have to do that manually. Well, there are again libraries, which will create schema provided JSON document. [jsonschema.net](http://jsonschema.net/#/) is online tool which help you to create basic schema provided JSON document. The additional constrains and rules, you can add as per the requirements.   
+It will be error prone, if we have to do that manually. Well, there are again libraries, which will create schema provided JSON document. [jsonschema.net](http://jsonschema.net/#/) is online tool which help you to create basic schema provided JSON document. You can add additional constrains and rules as per the requirements.   
  
 + **How to check in editor** 
     
-    If you are using any JetBrains IDE, there is inbuilt plugin which can be used to validate JSON against schema. You can follow, following screenshot to set up one for you.   
+    If you are using any JetBrains IDE, there is built-in plugin which can be used to validate JSON against schema. You can follow, following screenshot to set up one for you.   
     <p>
     <div class ="fade">
       <div><img src="/assets/images/json_schema_slider/json_schema_00.png" ></div>
@@ -146,21 +151,24 @@ It will be error prone, if we have to do that manually. Well, there are again li
       <div><img src="/assets/images/json_schema_slider/json_schema_05.png"></div>
     </div>
         <br/>
-        <figcaption align="middle"> using inbuilt plugin for validation of schema and JSON document </figcaption>
+        <figcaption align="middle"> Using built-in plugin for validation of schema and JSON document </figcaption>
     </p>
     
-    You can follow [this link](https://www.jetbrains.com/help/webstorm/2016.1/json-schema.html) to check more about setting up in editor. The drawback of this inbuilt plugin is, if schema is updated, it does not reflect on the fly. So use it with care.  
+    <br>To know in details, you can follow [this link](https://www.jetbrains.com/help/webstorm/2016.1/json-schema.html). The drawback of this built-in plugin is, if schema is updated, it does not reflect on the fly. So use it with care.  
 
 
 + **Summary**
  
- This blog post was to explain what simple json schema looks like. You can explore more into documentation and design schema as per your need. The schema helps in multiple way. It acts as contract between two teams, serves as a specification, simple to read and easy to follow and you can use it for validation once your APIs are ready. 
+ This blog post was to explain what simple json schema looks like. You can explore more into documentation and design schema as per your need. 
+ 
+ > The schema helps in multiple way. It acts as contract between two teams, serves as a specification, simple to read and easy to follow and you can use it for validation once your APIs are ready. 
     
 + **Reference links for schema**
   
     1. [Understanding JSON Schema](https://spacetelescope.github.io/understanding-json-schema/)
     2. [JSON Schema](http://json-schema.org/)
     3. [Heroku app built on top of json-validator java library](https://json-schema-validator.herokuapp.com/)
+    4. [Simple JSON schema demo in Ruby](https://github.com/pritibiyani/JsonSchemaDemo)
 
 
      
