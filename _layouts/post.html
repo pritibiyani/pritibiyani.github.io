@@ -22,7 +22,7 @@ layout: default
 
           {% if post.tags.size > 0 %}
           {{ site.my_tags }}
-            {% capture tags_content %} with <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
+            {% capture tags_content %} <span class="icon-price-tag{% if post.tags.size > 1 %}s{% endif %}"></span>: {% endcapture %}
             {% for post_tag in post.tags %}
                 {% assign tag = site.my_tags | where: "slug", post_tag %}
                 {% if tag %}
@@ -36,7 +36,7 @@ layout: default
             {% endfor %}
         {% endif %}
 
-          <p id="post-meta">Posted Category : {{ category_content }} Tag: {{ tags_content }}</p>
+          <p id="post-meta">Posted Category : {{ category_content }} Tags {{ tags_content }}</p>
       </div>
 </header>
 
