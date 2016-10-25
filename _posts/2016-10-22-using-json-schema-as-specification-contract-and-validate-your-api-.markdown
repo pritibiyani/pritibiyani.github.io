@@ -22,11 +22,11 @@ This can happen because of expectation mismatch or poor sharing mechanism of con
  
 To tackle this situation, you need to start in very early phase. You can follow 2-step process to make your life easy when dealing with API:
 
-1. Check for semantic and structure of API  
+1. **Check for semantic and structure of API**  
  Check for type of a field, mandatory fields, allowed values for a particular fields, some additional constraints like nonzero, Integer etc., specific requirement for a particular string (value should be correct email or value should follow particular date format). 
 
-2. Journey based assertion  
- If API is satisfying semantic and structure, then go ahead to check for a journey.<br> 
+2. **Journey based assertion**  
+ If API is satisfying above condition, then go ahead to check for a journey.<br> 
  For eg. This one is classic example. In case of transferring amount from account A to B, the api test will check if the amount in end result is correct for both accounts. <br>
  For different languages, there are many libraries available to check rest API. For java, one can go with [rest-assured](http://rest-assured.io/), for Ruby, can use [rest-client](https://github.com/rest-client/rest-client).
      
@@ -41,9 +41,9 @@ To tackle this situation, you need to start in very early phase. You can follow 
    - Author, title and price are mandatory fields.
    - If published date is present, it should follow standard date-time format.
   
-  There are ways of achieving above conditions, we can access a particular field in a json and perform the check for semantic or can check for presence of absence of the values. But as this list grows, you know how messy and ugly it becomes! :expressionless:
+  There are ways of achieving above conditions, we can access a particular field in a json and perform the check for type of a value or can check for presence of a particular field. But as this list grows, you know how messy and ugly it becomes! :expressionless:
    
-   Similarly, let's say you are an API provider and you want to let your API consumers know basic structure and semantics of to be developed API, so that they can build on top of that.    
+   Similarly, let's say you are an API provider and you want to let your consumers know about basic structure and rules of to be developed API, so that they can build on top of that.    
    
    If you had, above two problems then you must use JSON schema. 
 
@@ -65,7 +65,7 @@ To tackle this situation, you need to start in very early phase. You can follow 
 
 </p>
 
-In simple terms, JSON schema is contract for your JSON document. Schema is nothing but a way to define structure and semantics. JSON schema exactly does the same. It defines rules for your contract and can validate JSON documents against schema. 
+In simple terms, JSON schema is contract for your JSON document. It defines rules for your contract and can validate JSON documents against schema. 
    
    For the structure defined above, the schema would look like following: 
 <script src="https://gist.github.com/pritibiyani/b26cccedadbf59d6b95ca82b8cd23950.js"></script>
@@ -119,7 +119,7 @@ The type is `string`. The `format` keyword allows to validate certain kind of a 
 
 + **How to use this in your favourite language?**
 
- I have written [Simple JSON schema demo](https://github.com/pritibiyani/JsonSchemaDemo) - a sample code in Ruby which validates the provided schema against the JSON document. If there are any errors in validating schema against JSON, the library gives error in very neat manner. Remember, if there is error at top level, it will not go inside. 
+ I have written [Simple JSON schema demo](https://github.com/pritibiyani/JsonSchemaDemo) - a sample code in Ruby which validates the provided schema against the JSON document. If there are any errors in validating schema against JSON, the library gives error in readable and user friendly format. Remember, if there is error at top level, it will not go inside. 
  {% highlight javascript %}
  [
   "The property '#/' did not contain a required property of 'author' in 
@@ -159,7 +159,7 @@ It will be error prone, if we have to do that manually. Well, there are again li
 
 + **Summary**
  
- This blog post was to explain what simple json schema looks like. You can explore more into documentation and design schema as per your need. 
+ This blog post purpose was to make you introduce to JSON schema and how to use them. You can explore more into documentation and design schema as per your need. 
  
  > The schema helps in multiple way. It acts as contract between two teams, serves as a specification, simple to read and easy to follow and you can use it for validation once your APIs are ready. 
     
