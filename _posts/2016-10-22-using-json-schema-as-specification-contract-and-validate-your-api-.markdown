@@ -1,14 +1,14 @@
 ---
-title: Using JSON schema as specification, contract and validate your API. 
+title: JSON Schema- as a specification, contract and validation! 
 layout: post
-published: false
+published: true
 category: programming
 tags: [api, json, automation]
 social_media_share: 
 feature_image:
 ---
 
-You might have encountered a situation where you need to be dependent on API being developed by other team and your team continues development depending on shared contract between both the teams. And the one fine day, when you try to integrate end to end, boom! You will find surprises! You will get to hear, "*Ohh, this was supposed to be Integer, but it's a string now*! " or, "*This supposed to be an array and not an object!* " and many more ... :hushed:
+You might have encountered a situation where you need to be dependent on API being developed by other team and your team continues development depending on shared contract between both the teams. And the one fine day, when you try to integrate end to end, boom! You will find surprises! You will get to hear, "*Ohh, this was supposed to be Integer, but it's a string now*! " or, "*This supposed to be an array and not an object!* " and many such more ... :hushed:
 
 Sooner you realize that checking this manually is getting worst and worst and this is what happened in one of my recent project. 
 
@@ -20,7 +20,7 @@ To deal with this situation, you can go with one of following option depending o
  For different languages, there are many libraries available to check rest API. For java, one can go with [rest-assured](http://rest-assured.io/), for Ruby, can use [rest-client](https://github.com/rest-client/rest-client).
      
 2. Check for a semantic and structure of the the API   
- In a situation where you are just concern about contract and not values, then you can go with this one. <br> 
+ In a situation where you are concern about only contract and not values, then you can go with this one. <br> 
  For eg. On a page, you want to show list of books with details such as title, author name, price and many such properties. In this case, you would just go through a JSON and pick up needed details. Moreover, you will not bother about values. <br>
  This was what exact situation for us and blog post will address the option we went ahead with.
 
@@ -112,21 +112,26 @@ The type is `string`. The `format` keyword allows to validate certain kind of a 
 
 + **How to use this in your favourite language?**
 
- I have written (this)[https://github.com/pritibiyani/JsonSchemaDemo] sample code in Ruby which validates the provided schema against the JSON document. If there are any errors in validating schema against JSON, the library gives error in very neat manner. Remember, if there is error at top level, it will not go inside. 
+ I have written [Simple JSON schema demo](https://github.com/pritibiyani/JsonSchemaDemo) - a sample code in Ruby which validates the provided schema against the JSON document. If there are any errors in validating schema against JSON, the library gives error in very neat manner. Remember, if there is error at top level, it will not go inside. 
  {% highlight javascript %}
  
  [
-  "The property '#/' did not contain a required property of 'author' in schema file:///Users/Priti/projects/Ruby_Projects/jsonSchema/schema/book_schema.json",  "The property '#/' did not contain a required property of 'price' in schema file:///Users/Priti/projects/Ruby_Projects/jsonSchema/schema/book_schema.json"
+  "The property '#/' did not contain a required property of 'author' in 
+  schema file:///Users/Priti/projects/Ruby_Projects/jsonSchema/schema/book_schema.json", 
+   
+   "The property '#/' did not contain a required property of 'price' in 
+   schema file:///Users/Priti/projects/Ruby_Projects/jsonSchema/schema/book_schema.json"
  ]
 
- {% endhightlight %}
+ {% endhighlight %}
  
  As per what I have observed, the validation is carried out in following order: required properties and then it traverse inside the properties to check against specified rules. This is performed in this order, as the cursor digs more deeper. You can play around more and check errors for Invalid JSON document.   
  
  
- Well, if Ruby is not your favourite language, then there are other languages libraries available which will help you to build schema and validate document against those. Check (here)[http://json-schema.org/implementations.html] for your preferred language and its corresponding stable library. 
+ Well, if Ruby is not your favourite language, then there are other languages libraries available which will help you to build schema and validate document against those. Check [here](http://json-schema.org/implementations.html) for your preferred language and its corresponding stable library. 
      
-You might be wondering, how to create this schema? It will be error prone, if we have to do that manually. Well, there are again libraries, which will create schema provided JSON document. (jsonschema.net)[http://jsonschema.net/#/] is online tool which help you to create basic schema provided JSON document. The additional constrains and rules, you can add as per the requirements.   
+You might be wondering, *how to create this schema?* <br> 
+It will be error prone, if we have to do that manually. Well, there are again libraries, which will create schema provided JSON document. [jsonschema.net](http://jsonschema.net/#/) is online tool which help you to create basic schema provided JSON document. The additional constrains and rules, you can add as per the requirements.   
  
 + **How to check in editor** 
     
@@ -144,7 +149,7 @@ You might be wondering, how to create this schema? It will be error prone, if we
         <figcaption align="middle"> using inbuilt plugin for validation of schema and JSON document </figcaption>
     </p>
     
-    You can follow (this link)[https://www.jetbrains.com/help/webstorm/2016.1/json-schema.html] to check more about setting up in editor. The drawback of this inbuilt plugin is, if schema is updated, it does not reflect on the fly. So use it with care.  
+    You can follow [this link](https://www.jetbrains.com/help/webstorm/2016.1/json-schema.html) to check more about setting up in editor. The drawback of this inbuilt plugin is, if schema is updated, it does not reflect on the fly. So use it with care.  
 
 
 + **Summary**
