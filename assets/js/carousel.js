@@ -16,6 +16,7 @@ $(document).ready(function () {
     $('.fade').slick({
         arrows: true,
         dots: true,
+        autoplay: true,
         infinite: true,
         speed: 300,
         fade: true,
