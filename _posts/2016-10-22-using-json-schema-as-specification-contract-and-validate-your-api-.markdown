@@ -121,7 +121,12 @@ If we take a look at the following snippet, we see a type of price as `number`, 
 
 + **How to use this in your favorite language?**
 
- I have written [Simple JSON schema demo](https://github.com/pritibiyani/JsonSchemaDemo) - a sample code in Ruby which validates the provided schema against the JSON document. If there are any errors in validating schema against JSON, the library gives an error in readable and user-friendly format. Remember, if there is an error at the top level, it will not go inside. 
+ I have written code in Ruby and Java. These sample code validate the provided schema against the JSON document. 
+ 
+ - [Sample demo in Ruby](https://github.com/pritibiyani/JsonSchemaDemo) (using json-schema)
+ - [Sample demo in Java](https://github.com/pritibiyani/JsonSchema) (used json-validator)
+ 
+ If there are any errors in validating schema against JSON, the library gives an error in readable and user-friendly format. Remember, if there is an error at the top level, it will not go inside. 
  {% highlight javascript %}
  [
   "The property '#/' did not contain a required property of 'author' in 
@@ -135,7 +140,7 @@ If we take a look at the following snippet, we see a type of price as `number`, 
  As per what I have observed, the validation is carried out in the following order: required properties and then it traverse inside the properties to check against specified rules. This is performed in sequence as the cursor digs deeper. You can play around more and check errors for Invalid JSON document.   
  
  
- Well, if Ruby is not your favorite language, then there are other languages libraries available which will help you to build schema and validate the document against those. Check [here](http://json-schema.org/implementations.html) for your preferred language and its corresponding stable library. 
+ Well, if Ruby or Java is not your favorite language, then you can check [here](http://json-schema.org/implementations.html) for your preferred language. 
      
 You might be wondering, *how to create this schema?* <br> 
 It will be error prone if we have to do that manually. Well, there are again libraries, which will create schema provided JSON document. [jsonschema.net](http://jsonschema.net/#/) is an online tool which helps you to create basic schema provided JSON document. You can add additional constraints and rules as per the requirements. 
@@ -172,6 +177,7 @@ It will be error prone if we have to do that manually. Well, there are again lib
     2. [JSON Schema](http://json-schema.org/)
     3. [Heroku app built on top of json-validator java library](https://json-schema-validator.herokuapp.com/)
     4. [Simple JSON schema demo in Ruby](https://github.com/pritibiyani/JsonSchemaDemo)
+    4. [Simple JSON schema demo in Java](https://github.com/pritibiyani/JsonSchema)
 
 
      
