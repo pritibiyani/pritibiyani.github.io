@@ -184,8 +184,10 @@ It will be error prone if we have to do that manually. Well, there are again lib
  This blog post's purpose was to make you introduce to JSON schema and how to use them. You can explore more by going through documentation and design schema as per your need. 
  
  > The schema helps in a multiple way. It acts as a contract between two teams, serves as a specification, simple to read and easy to follow and you can use it for validation once your APIs are ready. 
+  
     
-+ **Reference links for JSON Schema: **
+##### I greatly appreciate [Swapnil Sankla](https://in.linkedin.com/in/swapnil-sankla-30525225) for reviewing the post multiple times and for suggestions. I have learnt so much, thank you! :smiley:   
++ **Reference links for JSON Schema:**
   
     1. [Understanding JSON Schema](https://spacetelescope.github.io/understanding-json-schema/)
     2. [JSON Schema](http://json-schema.org/)
