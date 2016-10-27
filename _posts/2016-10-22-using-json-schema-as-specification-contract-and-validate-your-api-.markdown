@@ -4,7 +4,7 @@ layout: post
 published: false
 category: programming
 tags: [api, json, automation, projectExperience]
-social_media_share: Using JSON schema as a specification, contract and validation and make your life easy when you are validating #json #api #jsonSchema
+social_media_share: Using JSON schema as a specification, contract and validation. Make your life easy when you are validating #json #api #jsonSchema
 feature_image: https://pritibiyani.github.io//assets/images/horrible_json.jpg
 ---
 
@@ -24,7 +24,7 @@ To tackle this situation, you need to start in very early phase. You can follow 
 
 1. **Check for semantic and structure of API**  
  Write a test to check structure and correctness of API.
- <br>The required fields are structured properly and are they coming under JSON Array or JSON object | Rephrase this one     
+ <br>The required fields are structured properly.
  <br>Correctness includes multiple factors such as checking for type of a field, mandatory fields, allowed values for particular fields, some additional constraints like nonzero, Integer etc., a specific requirement for a particular string (value should be correct email or value should follow particular date format). 
  
 2. **Journey based assertion**  
@@ -117,14 +117,14 @@ If we take a look at the following snippet, we see a type of price as `number`, 
     }
 {% endhighlight  %}
 
-     The type is `string`. The `format` keyword allows validating certain kind of string. For example, date or email. As of now in version 4 of JSON schema, supported formats are email, date, ipV4 & ipV6 address, URI and hostname. 
+The type is `string`. The `format` keyword allows validating certain kind of string. For example, date or email. As of now in version 4 of JSON schema, supported formats are email, date, ipV4 & ipV6 address, URI and hostname. 
 
 + **How to use this in your favorite language?**
 
  I have written code in Ruby and Java. These sample code validate the provided schema against the JSON document. 
  
- - [Sample demo in Ruby](https://github.com/pritibiyani/JsonSchemaDemo) (using json-schema)
- - [Sample demo in Java](https://github.com/pritibiyani/JsonSchema) (used json-validator)
+ - [Sample demo in Ruby](https://github.com/pritibiyani/JsonSchemaDemo) (using json-schema gem)
+ - [Sample demo in Java](https://github.com/pritibiyani/JsonSchema) (using json-validator dependency)
  
  If there are any errors in validating schema against JSON, the library gives an error in readable and user-friendly format. Remember, if there is an error at the top level, it will not go inside. 
  {% highlight javascript %}
@@ -164,14 +164,28 @@ It will be error prone if we have to do that manually. Well, there are again lib
     
     <br>To know in details, you can follow [this link](https://www.jetbrains.com/help/webstorm/2016.1/json-schema.html). The drawback of this built-in plugin is, if a schema is updated, it does not reflect on the fly for corresponding JSON document. So Use it with care!  
 
-
++ **Workflow**
+   
+   Given that you know how to write schema test, the important factor is, who should own these?
+ 
+  - API provider? 
+  - API consumer? <br> <br>
+ 
+   In an ideal world, this is how it should happen: 
+ 
+  -  Consumer and provider agree on a contract
+  -  Provider should write schema test and these test should act as a one of the decision maker for API to be released.
+  -  Consumer will only get API which passes these schema test. 
+ 
+   <br>And the world of dealing with API is simpler? Isn't it? :relaxed: 
+          
 + **Summary**
  
- This blog post's purpose was to make you introduce to JSON schema and how to use them. You can explore more into documentation and design schema as per your need. 
+ This blog post's purpose was to make you introduce to JSON schema and how to use them. You can explore more by going through documentation and design schema as per your need. 
  
  > The schema helps in a multiple way. It acts as a contract between two teams, serves as a specification, simple to read and easy to follow and you can use it for validation once your APIs are ready. 
     
-+ **Reference links for schema**
++ **Reference links for JSON Schema: **
   
     1. [Understanding JSON Schema](https://spacetelescope.github.io/understanding-json-schema/)
     2. [JSON Schema](http://json-schema.org/)
