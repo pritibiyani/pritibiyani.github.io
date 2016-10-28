@@ -1,7 +1,7 @@
 ---
 title: JSON Schema - as a specification, contract and validation! 
 layout: post
-published: false
+published: true
 category: programming
 tags: [api, json, automation, projectExperience]
 social_media_share: Using JSON schema as a specification, contract and validation. Make your life easy when you are validating #json #api #jsonSchema
@@ -173,7 +173,7 @@ It will be error prone if we have to do that manually. Well, there are again lib
  
    In an ideal world, this is how it should happen: 
  
-  -  Consumer and provider agree on a contract
+  -  Consumer and provider agree on a contract.
   -  Provider should write schema test and these test should act as a one of the decision maker for API to be released.
   -  Consumer will only get API which passes these schema test. 
  
@@ -182,7 +182,7 @@ It will be error prone if we have to do that manually. Well, there are again lib
 + **Summary**
  
  This blog post's purpose was to make you introduce to JSON schema and how to use them. You can explore more by going through documentation and design schema as per your need. 
- 
+
  > The schema helps in a multiple way. It acts as a contract between two teams, serves as a specification, simple to read and easy to follow and you can use it for validation once your APIs are ready. 
   
     
