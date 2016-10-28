@@ -4,7 +4,7 @@ layout: post
 published: true
 category: programming
 tags: [api, json, automation, projectExperience]
-social_media_share: Using JSON schema as a specification, contract and validation. Make your life easy when you are validating #json #api #jsonSchema
+social_media_share: Using JSON schema as a specification, contract and validation. Make your life #json #api #jsonSchema
 feature_image: https://pritibiyani.github.io//assets/images/horrible_json.jpg
 ---
 
