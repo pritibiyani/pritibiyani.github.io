@@ -1,4 +1,4 @@
-require 'Date'
+require 'date'
 require 'yaml'
 
 def prompt_for_message(message)
