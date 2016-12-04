@@ -143,8 +143,7 @@ The type is `string`. The `format` keyword allows validating certain kind of str
  Well, if Ruby or Java is not your favorite language, then you can check [here](http://json-schema.org/implementations.html) for your preferred language. 
      
 You might be wondering, *how to create this schema?* <br> 
-It will be error prone if we have to do that manually. Well, there are again libraries, which will create schema provided JSON document. [jsonschema.net](http://jsonschema.net/#/) is an online tool which helps you to create basic schema provided JSON document. You can add additional constraints and rules as per the requirements. 
-  <br> Mention about swagger 
+It will be error prone if we have to do that manually. Well, there are again libraries, which will create schema provided JSON document. [jsonschema.net](http://jsonschema.net/#/) is an online tool which helps you to create basic schema provided JSON document. You can add additional constraints and rules as per the requirements.  
  
 + **How to check in editor** 
     
